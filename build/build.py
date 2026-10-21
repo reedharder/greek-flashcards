@@ -152,13 +152,16 @@ def build_article_deck(key, a):
             back_audio=audio(", ".join(col), slow=True), tags=["recite", "article"])
 
 
+NU_NOTE = "<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant"
+
+
 def build_verb_deck(key, verbs, extras):
     seen = {}
     for v in verbs:
         for slot, form, end, tr in zip(VERB_SLOTS, v["forms"], v["endings"], v["trans"]):
             add(key, f"{key}-{v['tense']}-{slot}",
                 f"<div class='prompt'>{g(v['lemma'])} · {v['label']}</div><div class='ask'>{slot}</div>",
-                f"<div class='answer'>{g(form)}</div><div class='meta'>“{tr}” · ending {g(end)}</div>",
+                f"<div class='answer'>{g(form)}</div><div class='meta'>“{tr}” · ending {g(end)}{NU_NOTE if '(ν)' in form else ''}</div>",
                 back_audio=audio(form), tags=["produce", v["tense"]])
             seen.setdefault(form, []).append((f"{slot} {v['label']}", tr))
     for form, labels in seen.items():
@@ -172,7 +175,7 @@ def build_verb_deck(key, verbs, extras):
         add(key, f"{key}-recite-{v['tense']}",
             f"<div class='prompt'>Recite {g(v['lemma'])}: {v['label']}</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
             f"<table class='para'><caption>{v['label']} · stem {g(v['stem'])}</caption>{rows}</table>"
-            f"<div class='meta'>{v['source']}</div>",
+            f"<div class='meta'>{v['source']}{NU_NOTE if any('(ν)' in f for f in v['forms']) else ''}</div>",
             back_audio=audio(", ".join(v["forms"]), slow=True), tags=["recite", v["tense"]])
     for i, (prompt, ans, note) in enumerate(extras):
         add(key, f"{key}-extra-{i}", f"<div class='prompt'>{g(prompt)}</div>",

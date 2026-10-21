@@ -6687,7 +6687,7 @@
     {
      "id": "w5-paideuo-present-3rd pl.",
      "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present indicative active</div><div class='ask'>3rd pl.</div>",
-     "back": "<div class='answer'><span class=\"gk\">παιδεύουσι(ν)</span></div><div class='meta'>“they are educating, they educate” · ending <span class=\"gk\">-ουσι(ν)</span></div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύουσι(ν)</span></div><div class='meta'>“they are educating, they educate” · ending <span class=\"gk\">-ουσι(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "b7fd9269f4fb",
      "tags": [
@@ -6720,7 +6720,7 @@
     {
      "id": "w5-paideuo-imperfect-3rd sg.",
      "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · imperfect indicative active</div><div class='ask'>3rd sg.</div>",
-     "back": "<div class='answer'><span class=\"gk\">ἐπαίδευε(ν)</span></div><div class='meta'>“he/she/it was educating, used to educate” · ending <span class=\"gk\">-ε(ν)</span></div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπαίδευε(ν)</span></div><div class='meta'>“he/she/it was educating, used to educate” · ending <span class=\"gk\">-ε(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "cd905eabff58",
      "tags": [
@@ -6819,7 +6819,7 @@
     {
      "id": "w5-paideuo-future-3rd pl.",
      "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · future indicative active</div><div class='ask'>3rd pl.</div>",
-     "back": "<div class='answer'><span class=\"gk\">παιδεύσουσι(ν)</span></div><div class='meta'>“they will educate” · ending <span class=\"gk\">-ουσι(ν)</span></div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσουσι(ν)</span></div><div class='meta'>“they will educate” · ending <span class=\"gk\">-ουσι(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "6d099bdd3ae8",
      "tags": [
@@ -6852,7 +6852,7 @@
     {
      "id": "w5-paideuo-aorist-3rd sg.",
      "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist indicative active</div><div class='ask'>3rd sg.</div>",
-     "back": "<div class='answer'><span class=\"gk\">ἐπαίδευσε(ν)</span></div><div class='meta'>“he/she/it educated” · ending <span class=\"gk\">-ε(ν)</span></div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπαίδευσε(ν)</span></div><div class='meta'>“he/she/it educated” · ending <span class=\"gk\">-ε(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "6f41adf8924c",
      "tags": [
@@ -7126,7 +7126,7 @@
     {
      "id": "w5-paideuo-recite-present",
      "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: present indicative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
-     "back": "<table class='para'><caption>present indicative active · stem <span class=\"gk\">παιδευ- (from Principal Part I)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύω</span></td><td class='end'><span class=\"gk\">-ω</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύεις</span></td><td class='end'><span class=\"gk\">-εις</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύει</span></td><td class='end'><span class=\"gk\">-ει</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύομεν</span></td><td class='end'><span class=\"gk\">-ομεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύουσι(ν)</span></td><td class='end'><span class=\"gk\">-ουσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §20</div>",
+     "back": "<table class='para'><caption>present indicative active · stem <span class=\"gk\">παιδευ- (from Principal Part I)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύω</span></td><td class='end'><span class=\"gk\">-ω</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύεις</span></td><td class='end'><span class=\"gk\">-εις</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύει</span></td><td class='end'><span class=\"gk\">-ει</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύομεν</span></td><td class='end'><span class=\"gk\">-ομεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύουσι(ν)</span></td><td class='end'><span class=\"gk\">-ουσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §20<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "f543058c3db9",
      "tags": [
@@ -7137,7 +7137,7 @@
     {
      "id": "w5-paideuo-recite-imperfect",
      "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: imperfect indicative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
-     "back": "<table class='para'><caption>imperfect indicative active · stem <span class=\"gk\">ἐπαιδευ- (augment + present stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">ἐπαίδευον</span></td><td class='end'><span class=\"gk\">-ον</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">ἐπαίδευες</span></td><td class='end'><span class=\"gk\">-ες</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">ἐπαίδευε(ν)</span></td><td class='end'><span class=\"gk\">-ε(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">ἐπαιδεύομεν</span></td><td class='end'><span class=\"gk\">-ομεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">ἐπαιδεύετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">ἐπαίδευον</span></td><td class='end'><span class=\"gk\">-ον</span></td></tr></table><div class='meta'>Hansen & Quinn, §21</div>",
+     "back": "<table class='para'><caption>imperfect indicative active · stem <span class=\"gk\">ἐπαιδευ- (augment + present stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">ἐπαίδευον</span></td><td class='end'><span class=\"gk\">-ον</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">ἐπαίδευες</span></td><td class='end'><span class=\"gk\">-ες</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">ἐπαίδευε(ν)</span></td><td class='end'><span class=\"gk\">-ε(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">ἐπαιδεύομεν</span></td><td class='end'><span class=\"gk\">-ομεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">ἐπαιδεύετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">ἐπαίδευον</span></td><td class='end'><span class=\"gk\">-ον</span></td></tr></table><div class='meta'>Hansen & Quinn, §21<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "8706187640f3",
      "tags": [
@@ -7148,7 +7148,7 @@
     {
      "id": "w5-paideuo-recite-future",
      "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: future indicative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
-     "back": "<table class='para'><caption>future indicative active · stem <span class=\"gk\">παιδευσ- (from Principal Part II)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύσω</span></td><td class='end'><span class=\"gk\">-ω</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύσεις</span></td><td class='end'><span class=\"gk\">-εις</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύσει</span></td><td class='end'><span class=\"gk\">-ει</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύσομεν</span></td><td class='end'><span class=\"gk\">-ομεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύσετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύσουσι(ν)</span></td><td class='end'><span class=\"gk\">-ουσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §22</div>",
+     "back": "<table class='para'><caption>future indicative active · stem <span class=\"gk\">παιδευσ- (from Principal Part II)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύσω</span></td><td class='end'><span class=\"gk\">-ω</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύσεις</span></td><td class='end'><span class=\"gk\">-εις</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύσει</span></td><td class='end'><span class=\"gk\">-ει</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύσομεν</span></td><td class='end'><span class=\"gk\">-ομεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύσετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύσουσι(ν)</span></td><td class='end'><span class=\"gk\">-ουσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §22<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "09dcf5a57c92",
      "tags": [
@@ -7159,7 +7159,7 @@
     {
      "id": "w5-paideuo-recite-aorist",
      "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: aorist indicative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
-     "back": "<table class='para'><caption>aorist indicative active · stem <span class=\"gk\">ἐπαιδευσ- (from Principal Part III)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">ἐπαίδευσα</span></td><td class='end'><span class=\"gk\">-α</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">ἐπαίδευσας</span></td><td class='end'><span class=\"gk\">-ας</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">ἐπαίδευσε(ν)</span></td><td class='end'><span class=\"gk\">-ε(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">ἐπαιδεύσαμεν</span></td><td class='end'><span class=\"gk\">-αμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">ἐπαιδεύσατε</span></td><td class='end'><span class=\"gk\">-ατε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">ἐπαίδευσαν</span></td><td class='end'><span class=\"gk\">-αν</span></td></tr></table><div class='meta'>Hansen & Quinn, §23</div>",
+     "back": "<table class='para'><caption>aorist indicative active · stem <span class=\"gk\">ἐπαιδευσ- (from Principal Part III)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">ἐπαίδευσα</span></td><td class='end'><span class=\"gk\">-α</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">ἐπαίδευσας</span></td><td class='end'><span class=\"gk\">-ας</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">ἐπαίδευσε(ν)</span></td><td class='end'><span class=\"gk\">-ε(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">ἐπαιδεύσαμεν</span></td><td class='end'><span class=\"gk\">-αμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">ἐπαιδεύσατε</span></td><td class='end'><span class=\"gk\">-ατε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">ἐπαίδευσαν</span></td><td class='end'><span class=\"gk\">-αν</span></td></tr></table><div class='meta'>Hansen & Quinn, §23<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
      "frontAudio": null,
      "backAudio": "ac412cb9b82a",
      "tags": [

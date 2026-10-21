@@ -1,4 +1,4 @@
-"""Bundle app/cards.json + anki/media into the study app.
+"""Bundle app/cards.json + anki/media into the study app (cards, review sheets, audio in each voice).
 
 Outputs:
   app/index.html             standalone page (open locally in a browser)
@@ -25,18 +25,43 @@ extra = {w["id"]: w for w in COURSE_WEEKS}
 for w in private["weeks"]:
     w.update(extra.get(w["id"], {}))
 
-used = {c[k] for d in data["decks"] for c in d["cards"] for k in ("frontAudio", "backAudio") if c[k]}
-audio = {fn: base64.b64encode(open(os.path.join(ROOT, "anki", "media", fn), "rb").read()).decode() for fn in sorted(used)}
+
+
+def clip_keys(x):
+    """Every audio key referenced by cards and review sheets."""
+    if isinstance(x, dict):
+        for k, v in x.items():
+            if k in ("frontAudio", "backAudio", "audio", "recite") and isinstance(v, str):
+                yield v
+            elif k == "recite" and isinstance(v, list):
+                yield from (r for r in v if r)
+            else:
+                yield from clip_keys(v)
+    elif isinstance(x, list):
+        for v in x:
+            yield from clip_keys(v)
+
+
+MEDIA = os.path.join(ROOT, "anki", "media")
+used = sorted(set(clip_keys(data)))
+voices = data["voices"]
+# The Claude artifact can't serve loose files, so it embeds every clip; the other builds link to mp3 files.
+embedded = {v: {k: base64.b64encode(open(os.path.join(MEDIA, f"{v}_{k}.mp3"), "rb").read()).decode() for k in used}
+            for v in voices}
 
 
 def js(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 
-tpl = open(os.path.join(ROOT, "build", "app_template.html")).read().replace("__AUDIO__", js(audio))
+tpl = open(os.path.join(ROOT, "build", "app_template.html")).read()
 page = tpl.replace("__DATA__", js(private)).replace(
     "__SUBTITLE__", COURSE_SUBTITLE or "Ancient Greek paradigms and vocabulary")
 public_page = tpl.replace("__DATA__", js(data)).replace("__SUBTITLE__", "Ancient Greek paradigms and vocabulary")
+
+
+def with_audio(p, base):
+    return p.replace("__AUDIO__", "{}" if base else js(embedded)).replace("__AUDIOBASE__", base)
 
 
 def standalone(body):
@@ -45,16 +70,24 @@ def standalone(body):
             + body + "</body></html>")
 
 
-open(os.path.join(ROOT, "app", "artifact.html"), "w").write(page.replace("__DECKBASE__", ""))
-open(os.path.join(ROOT, "app", "index.html"), "w").write(standalone(page.replace("__DECKBASE__", "../anki/")))
+artifact = with_audio(page, "").replace("__DECKBASE__", "")
+open(os.path.join(ROOT, "app", "artifact.html"), "w").write(artifact)
+open(os.path.join(ROOT, "app", "index.html"), "w").write(
+    standalone(with_audio(page, "../anki/media/").replace("__DECKBASE__", "../anki/")))
 
 # GitHub Pages site: docs/index.html with the .apkg files beside it
 site = os.path.join(ROOT, "docs")
 os.makedirs(os.path.join(site, "anki"), exist_ok=True)
-open(os.path.join(site, "index.html"), "w").write(standalone(public_page.replace("__DECKBASE__", "anki/")))
+open(os.path.join(site, "index.html"), "w").write(
+    standalone(with_audio(public_page, "audio/").replace("__DECKBASE__", "anki/")))
+shutil.rmtree(os.path.join(site, "audio"), ignore_errors=True)
+os.makedirs(os.path.join(site, "audio"))
+for v in voices:
+    for k in used:
+        shutil.copyfile(os.path.join(MEDIA, f"{v}_{k}.mp3"), os.path.join(site, "audio", f"{v}_{k}.mp3"))
 open(os.path.join(site, ".nojekyll"), "w").close()
 for fn in os.listdir(os.path.join(ROOT, "anki")):
     if fn.endswith(".apkg"):
         shutil.copyfile(os.path.join(ROOT, "anki", fn), os.path.join(site, "anki", fn))
 
-print("page bytes", len(page.encode()), "audio clips", len(audio))
+print("artifact bytes", len(artifact.encode()), "clips per voice", len(used), "voices", voices)

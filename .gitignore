@@ -8,3 +8,6 @@ __pycache__/
 build/course.py
 app/index.html
 app/artifact.html
+# speech synthesis environment and downloaded voice models
+.venv-tts/
+build/voices/

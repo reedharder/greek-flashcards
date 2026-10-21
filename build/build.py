@@ -3,7 +3,7 @@
 Usage: python3 build/build.py
 Outputs:
   anki/*.apkg            one deck per week/task, plus Greek_All.apkg
-  anki/media/*.mp3       espeak-ng "grc" (reconstructed Ancient Greek) audio
+  anki/media/*.mp3       audio in two voices (see tts.py)
   app/cards.json         card data for the study app
 """
 import hashlib
@@ -44,24 +44,31 @@ def speakable(text):
     return re.sub(r"\s+", " ", s).strip(" ,")
 
 
-_audio_cache = {}
+_audio_jobs = {}   # key -> {"key", "text", "slow"}; rendered in every voice by tts.py
+VOICES = ["lessac", "melina"]
+ANKI_VOICE = "lessac"  # Anki cards carry one voice; the app lets you switch
 
 
 def audio(text, slow=False):
-    """Render text to mp3 (cached by content); return filename or None."""
+    """Register text for TTS; return its voice-independent clip key, or None if there is no Greek."""
     say = speakable(text)
     if not GREEK.search(say):
         return None
     key = hashlib.sha1((say + ("|slow" if slow else "")).encode()).hexdigest()[:12]
-    fn = f"grc_{key}.mp3"
-    path = os.path.join(MEDIA, fn)
-    if not os.path.exists(path):
-        wav = path[:-4] + ".wav"
-        subprocess.run(["espeak-ng", "-v", "grc", "-s", "115" if slow else "135", "-g", "6", "-w", wav, say], check=True)
-        subprocess.run(["lame", "--quiet", "-V", "6", "--resample", "22.05", wav, path], check=True)
-        os.remove(wav)
-    _audio_cache[fn] = say
-    return fn
+    _audio_jobs[key] = {"key": key, "text": say, "slow": slow}
+    return key
+
+
+def render_audio():
+    jobs = os.path.join(APP, "tts_jobs.json")
+    json.dump(list(_audio_jobs.values()), open(jobs, "w"), ensure_ascii=False)
+    py = os.path.join(ROOT, ".venv-tts", "bin", "python")
+    subprocess.run([py, os.path.join(ROOT, "build", "tts.py"), jobs], check=True)
+    os.remove(jobs)
+    keep = {f"{v}_{k}.mp3" for v in VOICES for k in _audio_jobs}
+    for fn in os.listdir(MEDIA):
+        if fn.endswith(".mp3") and fn not in keep:
+            os.remove(os.path.join(MEDIA, fn))
 
 
 def g(s):
@@ -231,6 +238,104 @@ build_verb_deck("w5-paideuo", PARADIGMS["w5"], EXTRAS["w5"])
 add_deck("w5-vocab", "w5", "vocab", "Vocabulary: Hansen & Quinn Unit 2", "Hansen & Quinn p. 53")
 build_vocab_deck("w5-vocab", VOCAB["w5"])
 
+
+# ---------------------------------------------------------------------------
+# Review sheets: the week's tables (forms split stem | ending) and vocab lists
+# ---------------------------------------------------------------------------
+def clusters(s):
+    out = []
+    for ch in unicodedata.normalize("NFD", s):
+        if out and unicodedata.combining(ch):
+            out[-1] += ch
+        else:
+            out.append(ch)
+    return out
+
+
+def split_form(form, ending):
+    """(stem, ending) with the ending matched on bare letters, so accents and breathings may differ."""
+    fc, ec = clusters(form), clusters(ending.lstrip("-"))
+    bare = lambda cs: [c[0].lower() for c in cs]
+    n = len(ec)
+    if n and bare(fc[-n:]) == bare(ec):
+        return nfc("".join(fc[:-n])), nfc("".join(fc[-n:]))
+    return nfc(form), ""
+
+
+def form_cell(form, ending=""):
+    stem, end = split_form(form, ending) if ending else (nfc(form), "")
+    return {"stem": stem, "end": end, "audio": audio(form)}
+
+
+def noun_review(nouns):
+    groups = {}   # one table per ending set, so the endings column fits every word in it
+    for p in nouns:
+        groups.setdefault((p["group"], tuple(p["endings"])), []).append(p)
+    out = []
+    for (group, ends), ps in groups.items():
+        # tell same-named tables apart by the first case where their endings differ
+        others = [e for g, e in groups if g == group and e != ends]
+        diff = next((i for i in range(len(ends)) if any(o[i] != ends[i] for o in others)), None)
+        title = group if diff is None else f"{group} ({ps[0]['slots'][diff]} {ends[diff]})"
+        out.append({"type": "noun", "title": title, "source": ps[0]["source"],
+                    "slots": ps[0]["slots"], "endings": ps[0]["endings"],
+                    "words": [{"lemma": p["lemma"], "gloss": p["gloss"], "gender": p["gender"],
+                               "recite": audio(", ".join(p["forms"]), slow=True),
+                               "forms": [form_cell(f, e) for f, e in zip(p["forms"], p["endings"])]} for p in ps]})
+    return out
+
+
+def article_review(a):
+    return [{"type": "article", "title": "The definite article " + a["lemma"], "source": a["source"],
+             "slots": a["slots"], "genders": a["genders"],
+             "recite": [audio(", ".join(r[i] for r in a["forms"]), slow=True) for i in range(len(a["genders"]))],
+             "rows": [[form_cell(f) for f in r] for r in a["forms"]]}]
+
+
+def verb_review(verbs, extras):
+    tenses = []
+    for v in verbs:
+        cells = []
+        for f, e in zip(v["forms"], v["endings"]):
+            c = form_cell(f, e)
+            # mark the augment and the tense sign σ inside the stem
+            if v["tense"] in ("imperfect", "aorist") and c["stem"].startswith("ἐ"):
+                c["aug"], c["stem"] = "ἐ", c["stem"][1:]
+            if v["tense"] in ("future", "aorist") and c["stem"].endswith("σ"):
+                c["sign"], c["stem"] = "σ", c["stem"][:-1]
+            cells.append(c)
+        tenses.append({"tense": v["tense"], "label": v["label"], "stem": v["stem"], "source": v["source"],
+                       "recite": audio(", ".join(v["forms"]), slow=True), "forms": cells, "trans": v["trans"]})
+    return [{"type": "verb", "title": verbs[0]["lemma"] + ": indicative active", "lemma": verbs[0]["lemma"],
+             "slots": VERB_SLOTS, "tenses": tenses,
+             "extras": [{"label": p, "greek": a, "note": n, "audio": audio(a)} for p, a, n in extras]}]
+
+
+def alphabet_review():
+    return [{"type": "alphabet", "title": "Alphabet",
+             "letters": [{"cap": c, "low": l, "name": n, "tr": t, "sound": snd, "audio": audio(n)}
+                         for c, l, n, t, snd in ALPHABET],
+             "marks": [{"sym": sym, "sound": snd} for sym, snd in DIPHTHONGS]}]
+
+
+def vocab_review(entries, title):
+    return {"type": "vocab", "title": title,
+            "entries": [{"head": nfc(h), "eng": e, "pos": p, "src": src, "audio": audio(h)} for h, e, p, src in entries]}
+
+
+REVIEW = {
+    "w1": {"tables": alphabet_review(), "vocab": []},
+    "w2": {"tables": noun_review(PARADIGMS["w2"]),
+           "vocab": [vocab_review(VOCAB["w2"], "Mastronarde Unit 3 + Mollin & Williamson Lesson 2")]},
+    "w3": {"tables": article_review(PARADIGMS["w3"][0]), "vocab": []},
+    "w4": {"tables": noun_review(PARADIGMS["w4"]), "vocab": [vocab_review(VOCAB["w4"], "Hansen & Quinn Unit 1")]},
+    "w5": {"tables": verb_review(PARADIGMS["w5"], EXTRAS["w5"]),
+           "vocab": [vocab_review(VOCAB["w5"], "Hansen & Quinn Unit 2")]},
+}
+# Week 6 is review: everything from Weeks 2–5
+REVIEW["w6"] = {"tables": [t for w in ("w2", "w3", "w4", "w5") for t in REVIEW[w]["tables"]],
+                "vocab": [v for w in ("w2", "w4", "w5") for v in REVIEW[w]["vocab"]]}
+
 # ---------------------------------------------------------------------------
 # Anki packaging
 # ---------------------------------------------------------------------------
@@ -272,10 +377,17 @@ class Note(genanki.Note):
         return genanki.guid_for(self.fields[0])
 
 
-def sound(fn):
-    return f"[sound:{fn}]" if fn else ""
+def anki_file(key):
+    return f"{ANKI_VOICE}_{key}.mp3"
 
 
+def sound(key):
+    return f"[sound:{anki_file(key)}]" if key else ""
+
+
+
+
+render_audio()
 all_decks, all_media = [], set()
 for key, d in cards_by_deck.items():
     w = week[d["week"]]
@@ -286,7 +398,7 @@ for key, d in cards_by_deck.items():
     for c in d["cards"]:
         deck.add_note(Note(model=MODEL, fields=[c["id"], c["front"], c["back"], sound(c["frontAudio"]), sound(c["backAudio"])],
                            tags=[t.replace(" ", "_").replace(".", "") for t in c["tags"]] + [f"week{w['num']}"]))
-        media.update(x for x in (c["frontAudio"], c["backAudio"]) if x)
+        media.update(anki_file(x) for x in (c["frontAudio"], c["backAudio"]) if x)
     fn = f"Greek_W{w['num']}_{kind}.apkg"
     genanki.Package(deck, media_files=[os.path.join(MEDIA, m) for m in sorted(media)]).write_to_file(os.path.join(ANKI, fn))
     d["apkg"] = fn
@@ -298,6 +410,6 @@ for key, d in cards_by_deck.items():
 genanki.Package(all_decks, media_files=[os.path.join(MEDIA, m) for m in sorted(all_media)]).write_to_file(
     os.path.join(ANKI, "Greek_All_Weeks.apkg"))
 
-json.dump({"weeks": WEEKS, "decks": list(cards_by_deck.values())},
+json.dump({"weeks": WEEKS, "decks": list(cards_by_deck.values()), "review": REVIEW, "voices": VOICES},
           open(os.path.join(APP, "cards.json"), "w"), ensure_ascii=False, indent=1)
 print("total cards", sum(len(d["cards"]) for d in cards_by_deck.values()), "audio files", len(all_media))

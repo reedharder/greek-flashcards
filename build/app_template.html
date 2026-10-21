@@ -121,6 +121,44 @@ audio { width: min(320px, 100%); height: 36px; }
 .done .gk { font-size: 34px; }
 .foot { font-size: var(--s-xs); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--marble); padding: 8px 14px; border-radius: 6px; font-size: var(--s-sm); }
+/* review sheets */
+.review { display: flex; flex-direction: column; gap: 22px; }
+.review > *, .sheet, .tense { min-width: 0; }
+.tenses { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px 28px; }
+.tense h4 { margin-bottom: 2px; }
+.tense .stem { font-size: var(--s-xs); color: var(--muted); margin: 0 0 4px; }
+.tense .stem .gk { font-size: 16px; color: var(--ink); }
+table.rv.vocab td.f { white-space: normal; min-width: 9em; }
+table.rv.vocab td.t { min-width: 12em; }
+.review-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.review h2 { font-size: var(--s-xl); font-weight: 400; margin: 0; font-family: var(--f-greek); }
+.review h3 { font-size: var(--s-lg); font-weight: 500; margin: 0 0 2px; }
+.review h4 { font-size: var(--s-md); font-weight: 500; margin: 0; color: var(--lapis); letter-spacing: .02em; }
+.review .src { font-size: var(--s-xs); color: var(--muted); margin: 0 0 8px; }
+.review .sheet { background: var(--slab); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; }
+.review .tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: var(--s-sm); color: var(--muted); }
+.legend { display: inline-flex; gap: 12px; flex-wrap: wrap; }
+.scroll { overflow-x: auto; max-width: 100%; }
+table.rv { border-collapse: collapse; }
+table.rv th, table.rv td { padding: 5px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+table.rv tr:last-child td, table.rv tr:last-child th { border-bottom: 0; }
+table.rv thead th { font-weight: 500; vertical-align: bottom; white-space: nowrap; }
+table.rv thead th .gk { font-size: 22px; font-weight: 400; }
+table.rv thead small { display: block; font-weight: 400; color: var(--muted); font-size: var(--s-xs); }
+table.rv tbody th { font-weight: 400; font-style: italic; color: var(--muted); font-size: var(--s-sm); white-space: nowrap; }
+table.rv td.f { font-family: var(--f-greek); font-size: 22px; white-space: nowrap; }
+table.rv td.f small { display: block; font-family: var(--f-ui); font-size: var(--s-xs); color: var(--muted); white-space: normal; max-width: 22ch; }
+table.rv td.e { font-family: var(--f-greek); font-size: 18px; color: var(--muted); }
+table.rv td.t { font-size: var(--s-sm); }
+.say { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-align: left; border-radius: 3px; }
+.say:hover { background: var(--lapis-soft); }
+.play { border: 1px solid var(--rule); background: transparent; border-radius: 999px; font-size: 11px; padding: 0 7px; color: var(--lapis); margin-left: 4px; vertical-align: middle; }
+.end { color: var(--lapis); background: var(--lapis-soft); border-radius: 3px; padding: 0 1px; }
+.mk { color: var(--ochre); text-decoration: underline; text-underline-offset: 3px; }
+.quiz table.rv td.f .say { filter: blur(7px); }
+.quiz table.rv td.f .say.shown { filter: none; }
+.extras { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: var(--s-sm); }
+.extras .gk { font-size: 20px; }
 @media (max-width: 520px) {
   .week { grid-template-columns: 1fr; gap: 6px; }
   .week .ord { display: flex; align-items: baseline; gap: 10px; }
@@ -144,7 +182,7 @@ audio { width: min(320px, 100%); height: 36px; }
   </header>
   <main id="view"></main>
   <footer class="foot">
-    <span>Audio: espeak-ng “grc” voice, reconstructed Attic pronunciation (synthetic; check against your instructor).</span>
+    <span>Audio is synthetic. “Ancient” speaks the reconstructed Attic pronunciation (espeak-ng phonemes, Piper voice); “Modern Greek” is macOS Melina reading the modern pronunciation. Check against your instructor.</span>
     <span>Scheduling: Again / Hard / Good / Easy, spaced like Anki. A card counts as mastered once its interval reaches 21 days.</span>
   </footer>
 </div>
@@ -155,7 +193,10 @@ audio { width: min(320px, 100%); height: 36px; }
 <script>
 (() => {
 const DATA = JSON.parse(document.getElementById("data").textContent);
-const AUDIO = JSON.parse(document.getElementById("audio").textContent);
+const AUDIO = JSON.parse(document.getElementById("audio").textContent);   // {voice: {key: base64}} when embedded
+const AUDIO_BASE = "__AUDIOBASE__";   // else clips are served as <AUDIO_BASE><voice>_<key>.mp3
+const REVIEW = DATA.review || {};
+const VOICES = [["lessac", "Ancient (reconstructed)"], ["melina", "Modern Greek"]].filter(v => (DATA.voices || []).includes(v[0]));
 const DECKS = DATA.decks;
 const DECK_BASE = "__DECKBASE__";   // set for the GitHub Pages build, where the .apkg files are served
 const WEEKS = DATA.weeks;
@@ -171,7 +212,8 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 // ---------- local prefs (per browser convenience) ----------
 function lsGet(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
-const prefs = Object.assign({ newPerSession: 20, types: TYPES.map(t => t[0]) }, lsGet("melete.prefs", {}));
+const prefs = Object.assign({ newPerSession: 20, types: TYPES.map(t => t[0]), voice: VOICES[0]?.[0] }, lsGet("melete.prefs", {}));
+if (!VOICES.some(v => v[0] === prefs.voice)) prefs.voice = VOICES[0]?.[0];
 
 // ---------- progress store: db per-viewer subtree when available, else localStorage ----------
 const progress = {};   // deckKey -> { cardId: state }
@@ -274,6 +316,8 @@ function renderHome() {
       ${TYPES.map(([k, l]) => `<button class="chip" data-type="${k}" aria-pressed="${prefs.types.includes(k)}">${l}</button>`).join("")}
       <label class="label" for="npc" style="margin-left:auto">New per session</label>
       <select id="npc" class="chip">${[10, 20, 40, 80, 999].map(n => `<option value="${n}" ${prefs.newPerSession == n ? "selected" : ""}>${n === 999 ? "all" : n}</option>`).join("")}</select>
+      ${VOICES.length > 1 ? `<label class="label" for="voice">Voice</label>
+      <select id="voice" class="chip">${VOICES.map(([k, l]) => `<option value="${k}" ${prefs.voice === k ? "selected" : ""}>${l}</option>`).join("")}</select>` : ""}
     </section>
     <section class="weeks">${WEEKS.map(weekHtml).join("")}</section>`;
   $("#studyAll").onclick = () => startSession(DECKS.map(d => d.key));
@@ -283,6 +327,8 @@ function renderHome() {
     lsSet("melete.prefs", prefs); renderHome();
   });
   $("#npc").onchange = e => { prefs.newPerSession = +e.target.value; lsSet("melete.prefs", prefs); };
+  $("#voice")?.addEventListener("change", e => { prefs.voice = e.target.value; lsSet("melete.prefs", prefs); play(sampleClip()); });
+  v.querySelectorAll("[data-review]").forEach(b => b.onclick = () => renderReview(b.dataset.review));
   v.querySelectorAll("[data-study]").forEach(b => b.onclick = () => startSession(b.dataset.study.split(",")));
   v.querySelectorAll("[data-reset]").forEach(b => b.onclick = () => armReset(b));
 }
@@ -299,6 +345,7 @@ function weekHtml(w, i) {
       <h2>${esc(w.topic)}</h2>
       ${tasks ? `<details><summary>Assignments</summary><ul>${tasks}</ul></details>` : ""}
       ${w.notes ? `<p class="note">${esc(w.notes)}</p>` : ""}
+      ${hasReview(w.id) ? `<p style="margin:10px 0 0"><button class="btn small" data-review="${w.id}">Review sheet: ${w.id === "w1" ? "alphabet" : "tables" + (REVIEW[w.id].vocab.length ? " &amp; vocab" : "")}</button></p>` : ""}
       <div class="decks">
         ${decks.map(deckHtml).join("")}
         ${reuse.length ? `<div class="deck"><div class="t">Review the Week 5 decks</div><div class="acts"><button class="btn small primary" data-study="${reuse.map(d => d.key).join(",")}">Study</button></div><div class="sub">No new decks this week.</div></div>` : ""}
@@ -333,6 +380,67 @@ function armReset(b) {
 }
 
 function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 3500); }
+
+// ---------- review sheets ----------
+const hasReview = id => { const r = REVIEW[id]; return r && (r.tables.length || r.vocab.length); };
+const sayBtn = (key, inner) => key ? `<button class="say" data-say="${key}">${inner}</button>` : inner;
+const playBtn = (key, label) => key ? `<button class="play" data-play="${key}" aria-label="${esc(label)}">▶</button>` : "";
+function formHtml(c) {
+  const inner = (c.aug ? `<span class="mk">${esc(c.aug)}</span>` : "") + esc(c.stem)
+    + (c.sign ? `<span class="mk">${esc(c.sign)}</span>` : "") + (c.end ? `<span class="end">${esc(c.end)}</span>` : "");
+  return sayBtn(c.audio, inner);
+}
+function tableHtml(t) {
+  const head = (title, src) => `<h3>${esc(title)}</h3>${src ? `<p class="src">${esc(src)}</p>` : ""}`;
+  if (t.type === "noun") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv">
+    <thead><tr><th></th>${t.words.map(w => `<th><span class="gk">${esc(w.lemma)}</span>${playBtn(w.recite, "Recite " + w.lemma)}<small>${esc(w.gloss)} (${esc(w.gender)})</small></th>`).join("")}<th>ending</th></tr></thead>
+    <tbody>${t.slots.map((s, i) => `<tr><th>${esc(s)}</th>${t.words.map(w => `<td class="f">${formHtml(w.forms[i])}</td>`).join("")}<td class="e">${esc(t.endings[i])}</td></tr>`).join("")}</tbody>
+    </table></div></div>`;
+  if (t.type === "article") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv">
+    <thead><tr><th></th>${t.genders.map((g, i) => `<th>${esc(g)}${playBtn(t.recite[i], "Recite " + g)}</th>`).join("")}</tr></thead>
+    <tbody>${t.slots.map((s, i) => `<tr><th>${esc(s)}</th>${t.rows[i].map(c => `<td class="f">${formHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table></div></div>`;
+  if (t.type === "verb") return `<div class="sheet">${head(t.title, t.tenses.map(x => x.source).join(" · "))}<div class="tenses">
+    ${t.tenses.map(x => `<div class="tense"><h4>${esc(x.tense)}${playBtn(x.recite, "Recite " + x.tense)}</h4><p class="stem">stem <span class="gk">${esc(x.stem)}</span></p>
+      <table class="rv"><tbody>${t.slots.map((s, i) => `<tr><th>${esc(s)}</th><td class="f">${formHtml(x.forms[i])}<small>${esc(x.trans[i])}</small></td></tr>`).join("")}</tbody></table></div>`).join("")}
+    </div>
+    ${t.extras.length ? `<ul class="extras">${t.extras.map(e => `<li><b>${esc(e.label)}:</b> ${sayBtn(e.audio, `<span class="gk">${esc(e.greek)}</span>`)}<br><span style="color:var(--muted)">${esc(e.note)}</span></li>`).join("")}</ul>` : ""}</div>`;
+  if (t.type === "alphabet") return `<div class="sheet">${head(t.title, "")}<div class="scroll"><table class="rv">
+    <thead><tr><th>letter</th><th>name</th><th>transliteration</th><th>sound</th></tr></thead>
+    <tbody>${t.letters.map(l => `<tr><td class="f">${esc(l.cap)} ${esc(l.low)}</td><td class="f">${sayBtn(l.audio, esc(l.name))}</td><td class="t">${esc(l.tr)}</td><td class="t">${esc(l.sound)}</td></tr>`).join("")}</tbody>
+    </table></div>
+    <h3 style="margin-top:16px">Diphthongs, breathings, accents</h3><div class="scroll"><table class="rv"><tbody>
+    ${t.marks.map(m => `<tr><td class="f">${esc(m.sym)}</td><td class="t">${esc(m.sound)}</td></tr>`).join("")}</tbody></table></div></div>`;
+  return "";
+}
+function vocabHtml(v) {
+  return `<div class="sheet"><h3>Vocabulary</h3><p class="src">${esc(v.title)}</p><div class="scroll"><table class="rv vocab">
+    <tbody>${v.entries.map(e => `<tr><td class="f">${sayBtn(e.audio, esc(e.head))}</td><td class="t">${esc(e.eng)}</td><td class="t" style="color:var(--muted)">${esc(e.pos)}</td></tr>`).join("")}</tbody>
+    </table></div></div>`;
+}
+function renderReview(id) {
+  session = null;
+  const w = WEEKS.find(x => x.id === id), r = REVIEW[id];
+  const forms = r.tables.some(t => t.type !== "alphabet");
+  const v = $("#view");
+  v.innerHTML = `<section class="review${prefs.quiz && forms ? " quiz" : ""}">
+    <div class="review-head"><button class="btn small" id="back">← All weeks</button>
+      ${forms ? `<button class="chip" id="quiz" aria-pressed="${!!prefs.quiz}">Hide forms (tap to reveal)</button>` : ""}</div>
+    <div><div class="label">${esc(w.label)} · review sheet</div><h2>${esc(w.topic)}</h2></div>
+    <div class="tools">${forms ? `<span class="legend"><span><span class="end gk">ending</span></span><span><span class="mk">augment / tense sign σ</span></span></span>` : ""}
+      <span>Tap a form to hear it · ▶ recites a whole column</span></div>
+    ${r.tables.map(tableHtml).join("")}
+    ${r.vocab.map(vocabHtml).join("")}
+    </section>`;
+  $("#back").onclick = renderHome;
+  $("#quiz")?.addEventListener("click", () => { prefs.quiz = !prefs.quiz; lsSet("melete.prefs", prefs); renderReview(id); });
+  v.querySelectorAll("[data-say]").forEach(b => b.onclick = () => {
+    if (b.closest(".quiz td.f") && !b.classList.contains("shown")) b.classList.add("shown");
+    play(b.dataset.say);
+  });
+  v.querySelectorAll("[data-play]").forEach(b => b.onclick = () => play(b.dataset.play));
+  window.scrollTo(0, 0);
+}
 
 // ---------- study session ----------
 let session = null;
@@ -378,10 +486,19 @@ function next() {
   renderCard();
 }
 
-function audioEl(fn, autoplay) {
-  if (!fn || !AUDIO[fn]) return "";
-  return `<audio controls preload="auto" ${autoplay ? "data-auto" : ""} src="data:audio/mpeg;base64,${AUDIO[fn]}"></audio>`;
+function clipSrc(key) {
+  if (!key) return null;
+  if (AUDIO_BASE) return `${AUDIO_BASE}${prefs.voice}_${key}.mp3`;
+  const b = AUDIO[prefs.voice]?.[key];
+  return b ? "data:audio/mpeg;base64," + b : null;
 }
+function audioEl(key, autoplay) {
+  const src = clipSrc(key);
+  return src ? `<audio controls preload="auto" ${autoplay ? "data-auto" : ""} src="${src}"></audio>` : "";
+}
+const player = new Audio();
+function play(key) { const src = clipSrc(key); if (!src) return; player.src = src; player.play().catch(() => {}); }
+function sampleClip() { return REVIEW.w5?.tables[0]?.tenses?.[0]?.forms[0]?.audio || DECKS[0]?.cards.find(c => c.backAudio)?.backAudio; }
 
 function renderCard() {
   const { d, c } = session.cur, st = stateOf(d.key, c), now = Date.now();

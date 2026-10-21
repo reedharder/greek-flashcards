@@ -9,6 +9,7 @@ Voices:
 """
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -36,9 +37,14 @@ def load_piper(path):
     return PiperVoice.load(base + ".onnx")
 
 
+VOWEL_START = re.compile(r"(^|[\s,])([aeiouyɛɔæɑʏ])")
+
+
 def grc_phonemes(text):
     ipa = subprocess.run(["espeak-ng", "-q", "-v", "grc", "--ipa", text], capture_output=True, text=True, check=True).stdout
-    return ", ".join(l.strip() for l in ipa.splitlines() if l.strip()) + "."
+    ph = ", ".join(l.strip() for l in ipa.splitlines() if l.strip()) + "."
+    # Piper all but drops an unstressed word-initial vowel (the augment of ἐπαίδευον): give it secondary stress
+    return VOWEL_START.sub(r"\1ˌ\2", ph)
 
 
 def monotonic(text):

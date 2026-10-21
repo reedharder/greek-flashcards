@@ -1,0 +1,10 @@
+.DS_Store
+# course materials stay local: copyrighted textbooks and private emails
+textbooks/
+emails/
+__pycache__/
+.claude/
+# private course details and the builds that include them
+build/course.py
+app/index.html
+app/artifact.html

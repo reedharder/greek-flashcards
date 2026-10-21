@@ -1,0 +1,447 @@
+<title>Μελέτη</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single study column; home = week ledger (one row per class meeting), study = one card on a marble slab. */
+:root {
+  --marble: #eef0ee;      /* page */
+  --slab: #fbfcfb;        /* card surface */
+  --ink: #18202c;         /* text */
+  --muted: #5d6673;
+  --rule: #d5d9dc;
+  --lapis: #2d4c9b;       /* accent */
+  --lapis-soft: #dfe5f4;
+  --ochre: #a85a1c;       /* again / lapse */
+  --olive: #4f7a3a;       /* mastered */
+  --gold: #a07a12;        /* learning */
+  --f-greek: "GFS Didot", "Gentium Plus", "Palatino Linotype", "Palatino", serif;
+  --f-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --s-xs: 12px; --s-sm: 14px; --s-md: 16px; --s-lg: 20px; --s-xl: 28px; --s-xxl: 40px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --marble: #12161d; --slab: #1a2029; --ink: #e6e9ee; --muted: #9aa3b0; --rule: #2c3440;
+    --lapis: #8fa8ec; --lapis-soft: #233056; --ochre: #e0935a; --olive: #8cbf6f; --gold: #d8b450;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --marble: #12161d; --slab: #1a2029; --ink: #e6e9ee; --muted: #9aa3b0; --rule: #2c3440;
+  --lapis: #8fa8ec; --lapis-soft: #233056; --ochre: #e0935a; --olive: #8cbf6f; --gold: #d8b450;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--marble); color: var(--ink); }
+body { font-family: var(--f-ui); font-size: var(--s-md); line-height: 1.5; margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 780px; margin: 0 auto; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 28px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid var(--lapis); outline-offset: 2px; }
+.gk { font-family: var(--f-greek); }
+header.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+header.top h1 { font-family: var(--f-greek); font-weight: 400; font-size: var(--s-xxl); line-height: 1; margin: 0; }
+header.top p { margin: 4px 0 0; color: var(--muted); font-size: var(--s-sm); }
+.label { font-size: var(--s-xs); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+/* summary strip */
+.summary { display: flex; gap: 12px; flex-wrap: wrap; align-items: stretch; }
+.stat { display: flex; flex-direction: column; gap: 2px; padding-right: 20px; border-right: 1px solid var(--rule); }
+.stat:last-of-type { border-right: 0; }
+.stat .num { font-size: var(--s-xl); line-height: 1.1; }
+.summary .go { margin-left: auto; align-self: center; }
+.btn { border: 1px solid var(--rule); background: var(--slab); border-radius: 6px; padding: 9px 16px; font-weight: 500; }
+.btn.primary { background: var(--lapis); color: var(--slab); border-color: var(--lapis); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn.small { padding: 5px 10px; font-size: var(--s-sm); }
+
+/* filters */
+.filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.chip { border: 1px solid var(--rule); border-radius: 999px; padding: 4px 12px; font-size: var(--s-sm); background: transparent; color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--lapis-soft); color: var(--ink); border-color: var(--lapis); }
+
+/* week ledger */
+.weeks { display: flex; flex-direction: column; }
+.week { display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding-block: 20px; border-top: 1px solid var(--rule); }
+.week .ord { font-family: var(--f-greek); font-size: var(--s-xl); line-height: 1; color: var(--lapis); }
+.week .ord small { display: block; font-family: var(--f-ui); font-size: var(--s-xs); color: var(--muted); margin-top: 6px; letter-spacing: .04em; }
+.week h2 { font-size: var(--s-lg); font-weight: 500; margin: 0; text-wrap: balance; }
+.week details { margin-top: 6px; font-size: var(--s-sm); color: var(--muted); }
+.week details summary { cursor: pointer; }
+.week details ul { margin: 6px 0 0; padding-left: 18px; }
+.week details li { margin: 2px 0; }
+.week .note { margin: 6px 0 0; font-size: var(--s-sm); color: var(--muted); max-width: 65ch; }
+.decks { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.deck { display: grid; grid-template-columns: 1fr auto; gap: 6px 14px; align-items: center; background: var(--slab); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+.deck .t { font-weight: 500; }
+.deck .t .kind { font-size: var(--s-xs); letter-spacing: .08em; text-transform: uppercase; color: var(--lapis); margin-right: 8px; }
+.deck .sub { grid-column: 1 / -1; display: flex; gap: 14px; flex-wrap: wrap; font-size: var(--s-xs); color: var(--muted); }
+.bar { grid-column: 1 / -1; display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--rule); }
+.bar i { display: block; height: 100%; }
+.bar .m { background: var(--olive); } .bar .r { background: var(--lapis); } .bar .l { background: var(--gold); }
+.key { display: inline-flex; align-items: center; gap: 5px; }
+.key::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--c); }
+.deck .acts { display: flex; gap: 6px; }
+.anki { font-family: var(--f-mono); }
+a { color: var(--lapis); }
+
+/* study */
+.study { display: flex; flex-direction: column; gap: 16px; }
+.study-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: space-between; }
+.study-head .counts { display: flex; gap: 14px; font-size: var(--s-sm); }
+.c-new { color: var(--lapis); } .c-learn { color: var(--gold); } .c-rev { color: var(--olive); }
+.slab { background: var(--slab); border: 1px solid var(--rule); border-radius: 10px; padding: 36px 24px; min-height: 300px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; }
+.slab .deckname { font-size: var(--s-xs); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.slab hr { width: 60%; border: 0; border-top: 1px solid var(--rule); margin: 10px 0; }
+.slab .prompt { font-size: 24px; }
+.slab .prompt .gk { font-size: 30px; }
+.slab .ask { font-size: var(--s-xs); color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+.slab .answer { font-family: var(--f-greek); font-size: 44px; line-height: 1.2; }
+.slab .answer.small { font-size: 26px; font-family: var(--f-ui); }
+.slab .answer.small .gk { font-size: 30px; }
+.slab .meta { font-size: var(--s-sm); color: var(--muted); max-width: 60ch; }
+.slab .meta .gk { font-size: 18px; color: var(--ink); }
+.tablebox { max-width: 100%; overflow-x: auto; }
+table.para { border-collapse: collapse; margin: 6px auto; }
+table.para caption { font-size: var(--s-sm); color: var(--muted); padding-bottom: 6px; }
+table.para th { font-weight: 400; font-style: italic; color: var(--muted); text-align: right; padding: 3px 14px 3px 0; font-size: var(--s-sm); white-space: nowrap; }
+table.para td { font-family: var(--f-greek); font-size: 24px; padding: 2px 12px; text-align: left; }
+table.para td.end { color: var(--muted); font-size: 20px; }
+audio { width: min(320px, 100%); height: 36px; }
+.grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.grade { border: 1px solid var(--rule); background: var(--slab); border-radius: 8px; padding: 10px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px; font-weight: 500; }
+.grade small { font-family: var(--f-mono); font-size: var(--s-xs); color: var(--muted); font-weight: 400; }
+.grade.again { color: var(--ochre); } .grade.good { color: var(--lapis); } .grade.easy { color: var(--olive); }
+.reveal { width: 100%; }
+.hint { font-size: var(--s-xs); color: var(--muted); text-align: center; }
+.done { text-align: center; padding: 48px 16px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.done .gk { font-size: 34px; }
+.foot { font-size: var(--s-xs); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--marble); padding: 8px 14px; border-radius: 6px; font-size: var(--s-sm); }
+@media (max-width: 520px) {
+  .week { grid-template-columns: 1fr; gap: 6px; }
+  .week .ord { display: flex; align-items: baseline; gap: 10px; }
+  .week .ord small { margin: 0; }
+  .slab { padding: 28px 14px; }
+  .slab .answer { font-size: 36px; }
+  table.para td { font-size: 20px; }
+  .summary .go { margin-left: 0; width: 100%; }
+  .summary .go .btn { width: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) { .slab { transition: border-color .2s; } }
+</style>
+
+<div class="wrap" id="app">
+  <header class="top">
+    <div>
+      <h1>Μελέτη</h1>
+      <p>__SUBTITLE__</p>
+    </div>
+    <div class="label" id="syncstate">Progress saved in this browser</div>
+  </header>
+  <main id="view"></main>
+  <footer class="foot">
+    <span>Audio: espeak-ng “grc” voice, reconstructed Attic pronunciation (synthetic; check against your instructor).</span>
+    <span>Scheduling: Again / Hard / Good / Easy, spaced like Anki. A card counts as mastered once its interval reaches 21 days.</span>
+  </footer>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script id="audio" type="application/json">__AUDIO__</script>
+<script>
+(() => {
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const AUDIO = JSON.parse(document.getElementById("audio").textContent);
+const DECKS = DATA.decks;
+const DECK_BASE = "__DECKBASE__";   // set for the GitHub Pages build, where the .apkg files are served
+const WEEKS = DATA.weeks;
+const MIN = 60e3, DAY = 864e5;
+const GREEK_ORD = ["α′", "β′", "γ′", "δ′", "ε′", "ϛ′", "ζ′", "η′", "θ′", "ι′"];
+const TYPES = [
+  ["produce", "Produce forms"], ["parse", "Parse forms"], ["recite", "Recite tables"],
+  ["greek-to-english", "Greek → English"], ["english-to-greek", "English → Greek"],
+];
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+// ---------- local prefs (per browser convenience) ----------
+function lsGet(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } }
+function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+const prefs = Object.assign({ newPerSession: 20, types: TYPES.map(t => t[0]) }, lsGet("melete.prefs", {}));
+
+// ---------- progress store: db per-viewer subtree when available, else localStorage ----------
+const progress = {};   // deckKey -> { cardId: state }
+for (const d of DECKS) progress[d.key] = lsGet("melete.p." + d.key, {});
+let dbRef = null;      // per-viewer collection
+const writing = {}, pending = {};
+
+async function connectDb() {
+  if (!window.claude?.use) return;
+  try {
+    const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+    if (!db || !user) return;
+    const uid = await user.id();
+    if (!uid) return;
+    dbRef = db.collection("data/users/" + uid);
+    const snaps = await Promise.all(DECKS.map(d => dbRef.doc(d.key).get().catch(() => null)));
+    snaps.forEach((s, i) => {
+      if (!s?.exists) return;
+      const remote = s.data().cards || {}, local = progress[DECKS[i].key];
+      for (const [id, st] of Object.entries(remote))
+        if (!local[id] || (st.last || 0) > (local[id].last || 0)) local[id] = st;
+    });
+    $("#syncstate").textContent = "Progress synced to your account";
+    if (!session) renderHome();
+  } catch { /* stay on local storage */ }
+}
+
+async function saveDeck(key) {
+  lsSet("melete.p." + key, progress[key]);
+  if (!dbRef) return;
+  if (writing[key]) { pending[key] = true; return; }
+  writing[key] = true;
+  try { await dbRef.doc(key).set({ cards: progress[key], updated: Date.now() }); }
+  catch (e) { if (e?.code === "invalid_argument") dbRef = null, $("#syncstate").textContent = "Progress saved in this browser"; }
+  writing[key] = false;
+  if (pending[key]) { pending[key] = false; saveDeck(key); }
+}
+
+// ---------- scheduling ----------
+const cardType = c => TYPES.find(t => c.tags.includes(t[0]))?.[0] || "other";
+const enabled = c => { const t = cardType(c); return t === "other" || prefs.types.includes(t); };
+const stateOf = (dk, c) => progress[dk][c.id];
+function bucket(st, now) {
+  if (!st) return "new";
+  if (st.s === "learn") return "learn";
+  if (st.ivl >= 21) return st.due <= now ? "due" : "mastered";
+  return st.due <= now ? "due" : "review";
+}
+function schedule(st, g, now) {
+  st = st ? { ...st } : { s: "new", step: 0, ivl: 0, ease: 2.5, reps: 0, lapses: 0 };
+  st.reps++; st.last = now;
+  if (st.s !== "review") {
+    if (g === 1) { st.s = "learn"; st.step = 0; st.due = now + MIN; }
+    else if (g === 2) { st.s = "learn"; st.due = now + 6 * MIN; }
+    else if (g === 3 && st.step < 1) { st.s = "learn"; st.step = 1; st.due = now + 10 * MIN; }
+    else { st.s = "review"; st.ivl = g === 4 ? 4 : (st.lapses ? Math.max(1, st.ivl) : 1); st.due = now + st.ivl * DAY; }
+  } else {
+    if (g === 1) { st.lapses++; st.ease = Math.max(1.3, st.ease - .2); st.s = "learn"; st.step = 0; st.ivl = Math.max(1, Math.round(st.ivl * .3)); st.due = now + 10 * MIN; }
+    else {
+      const mult = g === 2 ? 1.2 : g === 3 ? st.ease : st.ease * 1.3;
+      if (g === 2) st.ease = Math.max(1.3, st.ease - .15);
+      if (g === 4) st.ease += .15;
+      st.ivl = Math.max(st.ivl + 1, Math.round(st.ivl * mult));
+      st.due = now + st.ivl * DAY;
+    }
+  }
+  return st;
+}
+function preview(st, g) {
+  const n = schedule(st, g, 0), ms = n.due;
+  if (ms < 60 * MIN) return Math.round(ms / MIN) + "m";
+  const d = Math.round(ms / DAY); return d < 31 ? d + "d" : Math.round(d / 30) + "mo";
+}
+function deckStats(d, now = Date.now()) {
+  const s = { new: 0, learn: 0, due: 0, review: 0, mastered: 0, total: 0 };
+  for (const c of d.cards) { if (!enabled(c)) continue; s.total++; s[bucket(stateOf(d.key, c), now)]++; }
+  return s;
+}
+
+// ---------- home ----------
+function renderHome() {
+  session = null;
+  const now = Date.now();
+  let due = 0, learn = 0, fresh = 0, mastered = 0, total = 0, seen = 0;
+  for (const d of DECKS) { const s = deckStats(d, now); due += s.due; learn += s.learn; fresh += s.new; mastered += s.mastered; total += s.total; seen += s.total - s.new; }
+  const today = lsGet("melete.today", { day: "", n: 0 });
+  const doneToday = today.day === new Date().toDateString() ? today.n : 0;
+  const v = $("#view");
+  v.innerHTML = `
+    <section class="summary" aria-label="Overview">
+      <div class="stat"><span class="label">Due now</span><span class="num">${due + learn}</span></div>
+      <div class="stat"><span class="label">Reviewed today</span><span class="num">${doneToday}</span></div>
+      <div class="stat"><span class="label">Started</span><span class="num">${seen}<small style="font-size:14px;color:var(--muted)">/${total}</small></span></div>
+      <div class="stat"><span class="label">Mastered</span><span class="num">${mastered}</span></div>
+      ${DECK_BASE ? `<div class="stat"><span class="label">Anki</span><a href="${DECK_BASE}Greek_All_Weeks.apkg" download>All decks (.apkg)</a></div>` : ""}
+      <div class="go"><button class="btn primary" id="studyAll" ${due + learn + fresh ? "" : "disabled"}>Study all due${fresh ? " + new" : ""}</button></div>
+    </section>
+    <section class="filters" aria-label="Card types">
+      <span class="label">Card types</span>
+      ${TYPES.map(([k, l]) => `<button class="chip" data-type="${k}" aria-pressed="${prefs.types.includes(k)}">${l}</button>`).join("")}
+      <label class="label" for="npc" style="margin-left:auto">New per session</label>
+      <select id="npc" class="chip">${[10, 20, 40, 80, 999].map(n => `<option value="${n}" ${prefs.newPerSession == n ? "selected" : ""}>${n === 999 ? "all" : n}</option>`).join("")}</select>
+    </section>
+    <section class="weeks">${WEEKS.map(weekHtml).join("")}</section>`;
+  $("#studyAll").onclick = () => startSession(DECKS.map(d => d.key));
+  v.querySelectorAll("[data-type]").forEach(b => b.onclick = () => {
+    const k = b.dataset.type, on = prefs.types.includes(k);
+    prefs.types = on ? prefs.types.filter(x => x !== k) : [...prefs.types, k];
+    lsSet("melete.prefs", prefs); renderHome();
+  });
+  $("#npc").onchange = e => { prefs.newPerSession = +e.target.value; lsSet("melete.prefs", prefs); };
+  v.querySelectorAll("[data-study]").forEach(b => b.onclick = () => startSession(b.dataset.study.split(",")));
+  v.querySelectorAll("[data-reset]").forEach(b => b.onclick = () => armReset(b));
+}
+
+function weekHtml(w, i) {
+  const decks = DECKS.filter(d => d.week === w.id);
+  const reuse = w.id === "w6" ? DECKS.filter(d => d.week === "w5") : [];
+  const list = (h, xs) => xs.length ? `<li><b>${h}:</b><ul>${xs.map(x => `<li>${esc(x)}</li>`).join("")}</ul></li>` : "";
+  const date = w.date ? "Wed " + new Date(w.date + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "Week " + w.num;
+  const tasks = list("Read", w.read || []) + list("Memorize", w.memorize || []) + list("Complete", w.complete || []);
+  return `<article class="week">
+    <div class="ord" aria-label="Week ${w.num}">${GREEK_ORD[i]}<small>${date}</small></div>
+    <div>
+      <h2>${esc(w.topic)}</h2>
+      ${tasks ? `<details><summary>Assignments</summary><ul>${tasks}</ul></details>` : ""}
+      ${w.notes ? `<p class="note">${esc(w.notes)}</p>` : ""}
+      <div class="decks">
+        ${decks.map(deckHtml).join("")}
+        ${reuse.length ? `<div class="deck"><div class="t">Review the Week 5 decks</div><div class="acts"><button class="btn small primary" data-study="${reuse.map(d => d.key).join(",")}">Study</button></div><div class="sub">No new decks this week.</div></div>` : ""}
+        ${!decks.length && !reuse.length ? `<p class="note">No deck.</p>` : ""}
+      </div>
+    </div></article>`;
+}
+
+function deckHtml(d) {
+  const s = deckStats(d), t = s.total || 1;
+  const pct = x => (100 * x / t).toFixed(2) + "%";
+  const avail = s.due + s.learn + s.new;
+  return `<div class="deck">
+    <div class="t"><span class="kind">${d.kind === "memorize" ? "Memorize" : "Vocab"}</span><span class="gkmix">${esc(d.title)}</span></div>
+    <div class="acts"><button class="btn small primary" data-study="${d.key}" ${avail ? "" : "disabled"}>Study</button></div>
+    <div class="bar" role="img" aria-label="${s.mastered} mastered, ${s.review + s.due} in review, ${s.learn} learning, ${s.new} new of ${s.total}">
+      <i class="m" style="width:${pct(s.mastered)}"></i><i class="r" style="width:${pct(s.review + s.due)}"></i><i class="l" style="width:${pct(s.learn)}"></i></div>
+    <div class="sub">
+      <span class="key" style="--c:var(--olive)"><span class="num">${s.mastered}</span> mastered</span>
+      <span class="key" style="--c:var(--lapis)"><span class="num">${s.review + s.due}</span> review (${s.due} due)</span>
+      <span class="key" style="--c:var(--gold)"><span class="num">${s.learn}</span> learning</span>
+      <span class="key" style="--c:var(--rule)"><span class="num">${s.new}</span> new</span>
+      ${DECK_BASE ? `<a href="${DECK_BASE}${esc(d.apkg)}" download>Download for Anki (.apkg)</a>` : `<span>Anki file: <span class="anki">anki/${esc(d.apkg)}</span></span>`}
+      <button class="btn small" data-reset="${d.key}" style="padding:1px 8px">Reset</button>
+    </div></div>`;
+}
+
+function armReset(b) {
+  if (b.dataset.armed) { progress[b.dataset.reset] = {}; saveDeck(b.dataset.reset); toast("Deck progress reset"); renderHome(); return; }
+  b.dataset.armed = "1"; b.textContent = "Confirm reset"; b.style.color = "var(--ochre)";
+  setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = "Reset"; b.style.color = ""; } }, 4000);
+}
+
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 3500); }
+
+// ---------- study session ----------
+let session = null;
+function startSession(keys) {
+  const now = Date.now(), items = [];
+  let newLeft = prefs.newPerSession;
+  for (const k of keys) {
+    const d = DECKS.find(x => x.key === k);
+    for (const c of d.cards) {
+      if (!enabled(c)) continue;
+      const b = bucket(stateOf(k, c), now);
+      if (b === "learn" || b === "due") items.push({ d, c });
+    }
+  }
+  for (const k of keys) {
+    const d = DECKS.find(x => x.key === k);
+    for (const c of d.cards) {
+      if (newLeft <= 0) break;
+      if (enabled(c) && !stateOf(k, c)) { items.push({ d, c, isNew: true }); newLeft--; }
+    }
+  }
+  if (!items.length) { toast("Nothing due in this selection"); return; }
+  // reviews first (shuffled), then new cards in book order
+  const rev = items.filter(x => !x.isNew).sort(() => Math.random() - .5);
+  session = { queue: [...rev, ...items.filter(x => x.isNew)], cur: null, shown: false, reviewed: 0 };
+  next();
+}
+
+function pick() {
+  const now = Date.now(), q = session.queue;
+  // learning cards whose step has elapsed come first
+  let i = q.findIndex(x => { const st = stateOf(x.d.key, x.c); return st && st.s === "learn" && st.due <= now; });
+  if (i < 0) i = q.findIndex(x => { const st = stateOf(x.d.key, x.c); return !st || st.due <= now; });
+  if (i < 0 && q.length) { // only future learning steps remain: study the soonest one ahead
+    i = 0; q.forEach((x, j) => { if (stateOf(x.d.key, x.c).due < stateOf(q[i].d.key, q[i].c).due) i = j; });
+  }
+  return i < 0 ? null : q.splice(i, 1)[0];
+}
+
+function next() {
+  session.cur = pick(); session.shown = false;
+  if (!session.cur) return renderDone();
+  renderCard();
+}
+
+function audioEl(fn, autoplay) {
+  if (!fn || !AUDIO[fn]) return "";
+  return `<audio controls preload="auto" ${autoplay ? "data-auto" : ""} src="data:audio/mpeg;base64,${AUDIO[fn]}"></audio>`;
+}
+
+function renderCard() {
+  const { d, c } = session.cur, st = stateOf(d.key, c), now = Date.now();
+  const q = session.queue;
+  const nNew = q.filter(x => !stateOf(x.d.key, x.c)).length + (st ? 0 : 1);
+  const nLearn = q.filter(x => stateOf(x.d.key, x.c)?.s === "learn").length + (st?.s === "learn" ? 1 : 0);
+  const nRev = q.length + 1 - nNew - nLearn;
+  const front = `${c.front}${audioEl(c.frontAudio, true)}`;
+  const back = session.shown ? `<hr>${c.back.replace(/<table/g, "<div class='tablebox'><table").replace(/<\/table>/g, "</table></div>")}${audioEl(c.backAudio, true)}` : "";
+  $("#view").innerHTML = `
+    <section class="study">
+      <div class="study-head">
+        <button class="btn small" id="back">← All weeks</button>
+        <div class="counts num" aria-label="Remaining"><span class="c-new">${nNew} new</span><span class="c-learn">${nLearn} learning</span><span class="c-rev">${nRev} review</span></div>
+      </div>
+      <div class="slab" aria-live="polite">
+        <div class="deckname">${esc(WEEKS.find(w => w.id === d.week).label)} · ${d.kind === "memorize" ? "Memorize" : "Vocab"}</div>
+        ${front}${back}
+      </div>
+      ${session.shown ? `<div class="grades">
+          ${[["again", 1, "Again"], ["hard", 2, "Hard"], ["good", 3, "Good"], ["easy", 4, "Easy"]].map(([cls, g, l]) =>
+            `<button class="grade ${cls}" data-g="${g}">${l}<small>${preview(st, g)}</small></button>`).join("")}
+        </div><div class="hint">Keys: 1 Again · 2 Hard · 3 Good · 4 Easy · R replay audio</div>`
+      : `<button class="btn primary reveal" id="show">Show answer</button><div class="hint">Space shows the answer · R replays audio</div>`}
+    </section>`;
+  $("#back").onclick = renderHome;
+  $("#show")?.addEventListener("click", reveal);
+  document.querySelectorAll("[data-g]").forEach(b => b.onclick = () => grade(+b.dataset.g));
+  const auto = [...document.querySelectorAll("audio[data-auto]")].pop();
+  if (auto) auto.play().catch(() => {});
+}
+function reveal() { session.shown = true; renderCard(); }
+function grade(g) {
+  const { d, c } = session.cur, now = Date.now();
+  const st = schedule(stateOf(d.key, c), g, now);
+  progress[d.key][c.id] = st;
+  saveDeck(d.key);
+  session.reviewed++;
+  const today = lsGet("melete.today", { day: "", n: 0 }), day = new Date().toDateString();
+  lsSet("melete.today", { day, n: (today.day === day ? today.n : 0) + 1 });
+  if (st.s === "learn") session.queue.push(session.cur);
+  next();
+}
+function renderDone() {
+  const n = session.reviewed;
+  $("#view").innerHTML = `<section class="done">
+    <span class="gk">εὖ γε.</span>
+    <p>${n} card${n === 1 ? "" : "s"} reviewed. Nothing else is due in this selection.</p>
+    <button class="btn primary" id="back">Back to all weeks</button></section>`;
+  $("#back").onclick = renderHome;
+  session = null;
+}
+document.addEventListener("keydown", e => {
+  if (!session?.cur || e.metaKey || e.ctrlKey || e.target.matches("select, input")) return;
+  if (e.key === " " && !session.shown) { e.preventDefault(); reveal(); }
+  else if (session.shown && "1234".includes(e.key)) grade(+e.key);
+  else if (e.key.toLowerCase() === "r") { const a = [...document.querySelectorAll("audio")].pop(); if (a) { a.currentTime = 0; a.play().catch(() => {}); } }
+});
+
+renderHome();
+connectDb();
+})();
+</script>

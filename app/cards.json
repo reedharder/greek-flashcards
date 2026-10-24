@@ -35,6 +35,12 @@
    "num": 6,
    "label": "Week 6",
    "topic": "Review"
+  },
+  {
+   "id": "w7",
+   "num": 7,
+   "label": "Week 7",
+   "topic": "Perfect and pluperfect; subjunctive and optative; purpose clauses"
   }
  ],
  "decks": [
@@ -7731,6 +7737,1360 @@
    ],
    "apkg": "Greek_W5_Vocab.apkg",
    "ankiName": "Ancient Greek::Week 5::Vocab — Vocabulary: Hansen & Quinn Unit 2"
+  },
+  {
+   "key": "w7-paideuo",
+   "week": "w7",
+   "kind": "memorize",
+   "title": "παιδεύω: perfect, pluperfect; subjunctive and optative active",
+   "description": "H&Q Unit 3 §§28–34, plus the perfect infinitive (§30)",
+   "cards": [
+    {
+     "id": "w7-paideuo-perfect-1st sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · perfect indicative active</div><div class='ask'>1st sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαίδευκα</span></div><div class='meta'>“I have educated” · ending <span class=\"gk\">-α</span></div>",
+     "frontAudio": null,
+     "backAudio": "cb376c78438b",
+     "tags": [
+      "produce",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-perfect-2nd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · perfect indicative active</div><div class='ask'>2nd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαίδευκας</span></div><div class='meta'>“you (sg.) have educated” · ending <span class=\"gk\">-ας</span></div>",
+     "frontAudio": null,
+     "backAudio": "b00f88f5f4b5",
+     "tags": [
+      "produce",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-perfect-3rd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · perfect indicative active</div><div class='ask'>3rd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαίδευκε(ν)</span></div><div class='meta'>“he/she/it has educated” · ending <span class=\"gk\">-ε(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "de18eaa1ff1b",
+     "tags": [
+      "produce",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-perfect-1st pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · perfect indicative active</div><div class='ask'>1st pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαιδεύκαμεν</span></div><div class='meta'>“we have educated” · ending <span class=\"gk\">-αμεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "e4bb50601466",
+     "tags": [
+      "produce",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-perfect-2nd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · perfect indicative active</div><div class='ask'>2nd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαιδεύκατε</span></div><div class='meta'>“you (pl.) have educated” · ending <span class=\"gk\">-ατε</span></div>",
+     "frontAudio": null,
+     "backAudio": "d42c394557c3",
+     "tags": [
+      "produce",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-perfect-3rd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · perfect indicative active</div><div class='ask'>3rd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαιδεύκᾱσι(ν)</span></div><div class='meta'>“they have educated” · ending <span class=\"gk\">-ᾱσι(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "5c911b7d429d",
+     "tags": [
+      "produce",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-pluperfect-1st sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · pluperfect indicative active</div><div class='ask'>1st sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκη</span></div><div class='meta'>“I had educated” · ending <span class=\"gk\">-η</span></div>",
+     "frontAudio": null,
+     "backAudio": "73b698525738",
+     "tags": [
+      "produce",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-pluperfect-2nd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · pluperfect indicative active</div><div class='ask'>2nd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκης</span></div><div class='meta'>“you (sg.) had educated” · ending <span class=\"gk\">-ης</span></div>",
+     "frontAudio": null,
+     "backAudio": "19b27d74079c",
+     "tags": [
+      "produce",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-pluperfect-3rd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · pluperfect indicative active</div><div class='ask'>3rd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκει(ν)</span></div><div class='meta'>“he/she/it had educated” · ending <span class=\"gk\">-ει(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "e1f75978c66e",
+     "tags": [
+      "produce",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-pluperfect-1st pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · pluperfect indicative active</div><div class='ask'>1st pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκεμεν</span></div><div class='meta'>“we had educated” · ending <span class=\"gk\">-εμεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "579b8d6ac0df",
+     "tags": [
+      "produce",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-pluperfect-2nd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · pluperfect indicative active</div><div class='ask'>2nd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκετε</span></div><div class='meta'>“you (pl.) had educated” · ending <span class=\"gk\">-ετε</span></div>",
+     "frontAudio": null,
+     "backAudio": "9b31d008054a",
+     "tags": [
+      "produce",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-pluperfect-3rd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · pluperfect indicative active</div><div class='ask'>3rd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκεσαν</span></div><div class='meta'>“they had educated” · ending <span class=\"gk\">-εσαν</span></div>",
+     "frontAudio": null,
+     "backAudio": "b92c09361bd4",
+     "tags": [
+      "produce",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present subjunctive-1st sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present subjunctive active</div><div class='ask'>1st sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύω</span></div><div class='meta'>ending <span class=\"gk\">-ω</span></div>",
+     "frontAudio": null,
+     "backAudio": "2055fdbf4fb6",
+     "tags": [
+      "produce",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present subjunctive-2nd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present subjunctive active</div><div class='ask'>2nd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύῃς</span></div><div class='meta'>ending <span class=\"gk\">-ῃς</span></div>",
+     "frontAudio": null,
+     "backAudio": "0dbc142fc75b",
+     "tags": [
+      "produce",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present subjunctive-3rd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present subjunctive active</div><div class='ask'>3rd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύῃ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span></div>",
+     "frontAudio": null,
+     "backAudio": "258878e1c1fd",
+     "tags": [
+      "produce",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present subjunctive-1st pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present subjunctive active</div><div class='ask'>1st pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύωμεν</span></div><div class='meta'>ending <span class=\"gk\">-ωμεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "3b44533129e5",
+     "tags": [
+      "produce",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present subjunctive-2nd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present subjunctive active</div><div class='ask'>2nd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύητε</span></div><div class='meta'>ending <span class=\"gk\">-ητε</span></div>",
+     "frontAudio": null,
+     "backAudio": "2d1c753bef39",
+     "tags": [
+      "produce",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present subjunctive-3rd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present subjunctive active</div><div class='ask'>3rd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύωσι(ν)</span></div><div class='meta'>ending <span class=\"gk\">-ωσι(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "7ae8f56988b5",
+     "tags": [
+      "produce",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist subjunctive-1st sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist subjunctive active</div><div class='ask'>1st sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσω</span></div><div class='meta'>ending <span class=\"gk\">-ω</span></div>",
+     "frontAudio": null,
+     "backAudio": "fd936e984939",
+     "tags": [
+      "produce",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist subjunctive-2nd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist subjunctive active</div><div class='ask'>2nd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσῃς</span></div><div class='meta'>ending <span class=\"gk\">-ῃς</span></div>",
+     "frontAudio": null,
+     "backAudio": "6ba27f51bd3b",
+     "tags": [
+      "produce",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist subjunctive-3rd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist subjunctive active</div><div class='ask'>3rd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσῃ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span></div>",
+     "frontAudio": null,
+     "backAudio": "0df0a5a2ce77",
+     "tags": [
+      "produce",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist subjunctive-1st pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist subjunctive active</div><div class='ask'>1st pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσωμεν</span></div><div class='meta'>ending <span class=\"gk\">-ωμεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "8617f2963819",
+     "tags": [
+      "produce",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist subjunctive-2nd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist subjunctive active</div><div class='ask'>2nd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσητε</span></div><div class='meta'>ending <span class=\"gk\">-ητε</span></div>",
+     "frontAudio": null,
+     "backAudio": "7c454f3d6418",
+     "tags": [
+      "produce",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist subjunctive-3rd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist subjunctive active</div><div class='ask'>3rd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσωσι(ν)</span></div><div class='meta'>ending <span class=\"gk\">-ωσι(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "41a35f30e4e2",
+     "tags": [
+      "produce",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present optative-1st sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present optative active</div><div class='ask'>1st sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύοιμι</span></div><div class='meta'>ending <span class=\"gk\">-οιμι</span></div>",
+     "frontAudio": null,
+     "backAudio": "52c5953197c0",
+     "tags": [
+      "produce",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present optative-2nd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present optative active</div><div class='ask'>2nd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύοις</span></div><div class='meta'>ending <span class=\"gk\">-οις</span></div>",
+     "frontAudio": null,
+     "backAudio": "7f2149f0b518",
+     "tags": [
+      "produce",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present optative-3rd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present optative active</div><div class='ask'>3rd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύοι</span></div><div class='meta'>ending <span class=\"gk\">-οι</span></div>",
+     "frontAudio": null,
+     "backAudio": "fd840910762a",
+     "tags": [
+      "produce",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present optative-1st pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present optative active</div><div class='ask'>1st pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύοιμεν</span></div><div class='meta'>ending <span class=\"gk\">-οιμεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "be3cb3ffb0ef",
+     "tags": [
+      "produce",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present optative-2nd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present optative active</div><div class='ask'>2nd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύοιτε</span></div><div class='meta'>ending <span class=\"gk\">-οιτε</span></div>",
+     "frontAudio": null,
+     "backAudio": "af78922cbd40",
+     "tags": [
+      "produce",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-present optative-3rd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · present optative active</div><div class='ask'>3rd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύοιεν</span></div><div class='meta'>ending <span class=\"gk\">-οιεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "eeaa2d8b2b25",
+     "tags": [
+      "produce",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist optative-1st sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist optative active</div><div class='ask'>1st sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσαιμι</span></div><div class='meta'>ending <span class=\"gk\">-αιμι</span></div>",
+     "frontAudio": null,
+     "backAudio": "483436b94738",
+     "tags": [
+      "produce",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist optative-2nd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist optative active</div><div class='ask'>2nd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσαις / παιδεύσειας</span></div><div class='meta'>ending <span class=\"gk\">-αις / -ειας</span></div>",
+     "frontAudio": null,
+     "backAudio": "5ac4831be92f",
+     "tags": [
+      "produce",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist optative-3rd sg.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist optative active</div><div class='ask'>3rd sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσαι / παιδεύσειε(ν)</span></div><div class='meta'>ending <span class=\"gk\">-αι / -ειε(ν)</span><br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "7c1e2eae1598",
+     "tags": [
+      "produce",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist optative-1st pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist optative active</div><div class='ask'>1st pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσαιμεν</span></div><div class='meta'>ending <span class=\"gk\">-αιμεν</span></div>",
+     "frontAudio": null,
+     "backAudio": "31d7985806b3",
+     "tags": [
+      "produce",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist optative-2nd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist optative active</div><div class='ask'>2nd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσαιτε</span></div><div class='meta'>ending <span class=\"gk\">-αιτε</span></div>",
+     "frontAudio": null,
+     "backAudio": "9e4c683ac9ea",
+     "tags": [
+      "produce",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-aorist optative-3rd pl.",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω</span> · aorist optative active</div><div class='ask'>3rd pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">παιδεύσαιεν / παιδεύσειαν</span></div><div class='meta'>ending <span class=\"gk\">-αιεν / -ειαν</span></div>",
+     "frontAudio": null,
+     "backAudio": "6f8b5e5b806b",
+     "tags": [
+      "produce",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-πεπαίδευκα",
+     "front": "<div class='answer'><span class=\"gk\">πεπαίδευκα</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>1st sg. perfect indicative active — “I have educated”</div>",
+     "frontAudio": "cb376c78438b",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-πεπαίδευκας",
+     "front": "<div class='answer'><span class=\"gk\">πεπαίδευκας</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>2nd sg. perfect indicative active — “you (sg.) have educated”</div>",
+     "frontAudio": "b00f88f5f4b5",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-πεπαίδευκε(ν)",
+     "front": "<div class='answer'><span class=\"gk\">πεπαίδευκε(ν)</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>3rd sg. perfect indicative active — “he/she/it has educated”</div>",
+     "frontAudio": "de18eaa1ff1b",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-πεπαιδεύκαμεν",
+     "front": "<div class='answer'><span class=\"gk\">πεπαιδεύκαμεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>1st pl. perfect indicative active — “we have educated”</div>",
+     "frontAudio": "e4bb50601466",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-πεπαιδεύκατε",
+     "front": "<div class='answer'><span class=\"gk\">πεπαιδεύκατε</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>2nd pl. perfect indicative active — “you (pl.) have educated”</div>",
+     "frontAudio": "d42c394557c3",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-πεπαιδεύκᾱσι(ν)",
+     "front": "<div class='answer'><span class=\"gk\">πεπαιδεύκᾱσι(ν)</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>3rd pl. perfect indicative active — “they have educated”</div>",
+     "frontAudio": "5c911b7d429d",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-ἐπεπαιδεύκη",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκη</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>1st sg. pluperfect indicative active — “I had educated”</div>",
+     "frontAudio": "73b698525738",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-ἐπεπαιδεύκης",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκης</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>2nd sg. pluperfect indicative active — “you (sg.) had educated”</div>",
+     "frontAudio": "19b27d74079c",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-ἐπεπαιδεύκει(ν)",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκει(ν)</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>3rd sg. pluperfect indicative active — “he/she/it had educated”</div>",
+     "frontAudio": "e1f75978c66e",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-ἐπεπαιδεύκεμεν",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκεμεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>1st pl. pluperfect indicative active — “we had educated”</div>",
+     "frontAudio": "579b8d6ac0df",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-ἐπεπαιδεύκετε",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκετε</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>2nd pl. pluperfect indicative active — “you (pl.) had educated”</div>",
+     "frontAudio": "9b31d008054a",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-ἐπεπαιδεύκεσαν",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεπαιδεύκεσαν</span></div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
+     "back": "<div class='answer small'>3rd pl. pluperfect indicative active — “they had educated”</div>",
+     "frontAudio": "b92c09361bd4",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύω",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύω</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st sg. present subjunctive active</div>",
+     "frontAudio": "2055fdbf4fb6",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύῃς",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύῃς</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd sg. present subjunctive active</div>",
+     "frontAudio": "0dbc142fc75b",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύῃ",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύῃ</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd sg. present subjunctive active</div>",
+     "frontAudio": "258878e1c1fd",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύωμεν",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύωμεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st pl. present subjunctive active</div>",
+     "frontAudio": "3b44533129e5",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύητε",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύητε</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd pl. present subjunctive active</div>",
+     "frontAudio": "2d1c753bef39",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύωσι(ν)",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύωσι(ν)</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd pl. present subjunctive active</div>",
+     "frontAudio": "7ae8f56988b5",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσω",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσω</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st sg. aorist subjunctive active</div>",
+     "frontAudio": "fd936e984939",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσῃς",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσῃς</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd sg. aorist subjunctive active</div>",
+     "frontAudio": "6ba27f51bd3b",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσῃ",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσῃ</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd sg. aorist subjunctive active</div>",
+     "frontAudio": "0df0a5a2ce77",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσωμεν",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσωμεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st pl. aorist subjunctive active</div>",
+     "frontAudio": "8617f2963819",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσητε",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσητε</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd pl. aorist subjunctive active</div>",
+     "frontAudio": "7c454f3d6418",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσωσι(ν)",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσωσι(ν)</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd pl. aorist subjunctive active</div>",
+     "frontAudio": "41a35f30e4e2",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύοιμι",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύοιμι</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st sg. present optative active</div>",
+     "frontAudio": "52c5953197c0",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύοις",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύοις</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd sg. present optative active</div>",
+     "frontAudio": "7f2149f0b518",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύοι",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύοι</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd sg. present optative active</div>",
+     "frontAudio": "fd840910762a",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύοιμεν",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύοιμεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st pl. present optative active</div>",
+     "frontAudio": "be3cb3ffb0ef",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύοιτε",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύοιτε</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd pl. present optative active</div>",
+     "frontAudio": "af78922cbd40",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύοιεν",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύοιεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd pl. present optative active</div>",
+     "frontAudio": "eeaa2d8b2b25",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσαιμι",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσαιμι</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st sg. aorist optative active</div>",
+     "frontAudio": "483436b94738",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσαις / παιδεύσειας",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσαις / παιδεύσειας</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd sg. aorist optative active</div>",
+     "frontAudio": "5ac4831be92f",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσαι / παιδεύσειε(ν)",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσαι / παιδεύσειε(ν)</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd sg. aorist optative active</div>",
+     "frontAudio": "7c1e2eae1598",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσαιμεν",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσαιμεν</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>1st pl. aorist optative active</div>",
+     "frontAudio": "31d7985806b3",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσαιτε",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσαιτε</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>2nd pl. aorist optative active</div>",
+     "frontAudio": "9e4c683ac9ea",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-parse-παιδεύσαιεν / παιδεύσειαν",
+     "front": "<div class='answer'><span class=\"gk\">παιδεύσαιεν / παιδεύσειαν</span></div><div class='ask'>Parse: person, number, tense, mood, voice</div>",
+     "back": "<div class='answer small'>3rd pl. aorist optative active</div>",
+     "frontAudio": "6f8b5e5b806b",
+     "backAudio": null,
+     "tags": [
+      "parse"
+     ]
+    },
+    {
+     "id": "w7-paideuo-recite-perfect",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: perfect indicative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
+     "back": "<table class='para'><caption>perfect indicative active · stem <span class=\"gk\">πεπαιδευκ- (from Principal Part IV)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">πεπαίδευκα</span></td><td class='end'><span class=\"gk\">-α</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">πεπαίδευκας</span></td><td class='end'><span class=\"gk\">-ας</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">πεπαίδευκε(ν)</span></td><td class='end'><span class=\"gk\">-ε(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">πεπαιδεύκαμεν</span></td><td class='end'><span class=\"gk\">-αμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">πεπαιδεύκατε</span></td><td class='end'><span class=\"gk\">-ατε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">πεπαιδεύκᾱσι(ν)</span></td><td class='end'><span class=\"gk\">-ᾱσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §28<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "c959c232c7ee",
+     "tags": [
+      "recite",
+      "perfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-recite-pluperfect",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: pluperfect indicative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
+     "back": "<table class='para'><caption>pluperfect indicative active · stem <span class=\"gk\">ἐπεπαιδευκ- (augment + perfect active stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">ἐπεπαιδεύκη</span></td><td class='end'><span class=\"gk\">-η</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">ἐπεπαιδεύκης</span></td><td class='end'><span class=\"gk\">-ης</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">ἐπεπαιδεύκει(ν)</span></td><td class='end'><span class=\"gk\">-ει(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">ἐπεπαιδεύκεμεν</span></td><td class='end'><span class=\"gk\">-εμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">ἐπεπαιδεύκετε</span></td><td class='end'><span class=\"gk\">-ετε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">ἐπεπαιδεύκεσαν</span></td><td class='end'><span class=\"gk\">-εσαν</span></td></tr></table><div class='meta'>Hansen & Quinn, §29<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "671d0f602625",
+     "tags": [
+      "recite",
+      "pluperfect"
+     ]
+    },
+    {
+     "id": "w7-paideuo-recite-present subjunctive",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: present subjunctive active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
+     "back": "<table class='para'><caption>present subjunctive active · stem <span class=\"gk\">παιδευ- (present tense stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύω</span></td><td class='end'><span class=\"gk\">-ω</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύῃς</span></td><td class='end'><span class=\"gk\">-ῃς</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύῃ</span></td><td class='end'><span class=\"gk\">-ῃ</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύωμεν</span></td><td class='end'><span class=\"gk\">-ωμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύητε</span></td><td class='end'><span class=\"gk\">-ητε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύωσι(ν)</span></td><td class='end'><span class=\"gk\">-ωσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §31<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "97eadb36dd5b",
+     "tags": [
+      "recite",
+      "present subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-recite-aorist subjunctive",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: aorist subjunctive active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
+     "back": "<table class='para'><caption>aorist subjunctive active · stem <span class=\"gk\">παιδευσ- (unaugmented aorist stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύσω</span></td><td class='end'><span class=\"gk\">-ω</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύσῃς</span></td><td class='end'><span class=\"gk\">-ῃς</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύσῃ</span></td><td class='end'><span class=\"gk\">-ῃ</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύσωμεν</span></td><td class='end'><span class=\"gk\">-ωμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύσητε</span></td><td class='end'><span class=\"gk\">-ητε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύσωσι(ν)</span></td><td class='end'><span class=\"gk\">-ωσι(ν)</span></td></tr></table><div class='meta'>Hansen & Quinn, §32<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "ea3a3a061b9a",
+     "tags": [
+      "recite",
+      "aorist subjunctive"
+     ]
+    },
+    {
+     "id": "w7-paideuo-recite-present optative",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: present optative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
+     "back": "<table class='para'><caption>present optative active · stem <span class=\"gk\">παιδευ- (present tense stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύοιμι</span></td><td class='end'><span class=\"gk\">-οιμι</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύοις</span></td><td class='end'><span class=\"gk\">-οις</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύοι</span></td><td class='end'><span class=\"gk\">-οι</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύοιμεν</span></td><td class='end'><span class=\"gk\">-οιμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύοιτε</span></td><td class='end'><span class=\"gk\">-οιτε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύοιεν</span></td><td class='end'><span class=\"gk\">-οιεν</span></td></tr></table><div class='meta'>Hansen & Quinn, §33</div>",
+     "frontAudio": null,
+     "backAudio": "4af1a9f211b2",
+     "tags": [
+      "recite",
+      "present optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-recite-aorist optative",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">παιδεύω</span>: aorist optative active</div><div class='ask'>1 2 3 singular → 1 2 3 plural</div>",
+     "back": "<table class='para'><caption>aorist optative active · stem <span class=\"gk\">παιδευσ- (unaugmented aorist stem)</span></caption><tr><th>1st sg.</th><td><span class=\"gk\">παιδεύσαιμι</span></td><td class='end'><span class=\"gk\">-αιμι</span></td></tr><tr><th>2nd sg.</th><td><span class=\"gk\">παιδεύσαις / παιδεύσειας</span></td><td class='end'><span class=\"gk\">-αις / -ειας</span></td></tr><tr><th>3rd sg.</th><td><span class=\"gk\">παιδεύσαι / παιδεύσειε(ν)</span></td><td class='end'><span class=\"gk\">-αι / -ειε(ν)</span></td></tr><tr><th>1st pl.</th><td><span class=\"gk\">παιδεύσαιμεν</span></td><td class='end'><span class=\"gk\">-αιμεν</span></td></tr><tr><th>2nd pl.</th><td><span class=\"gk\">παιδεύσαιτε</span></td><td class='end'><span class=\"gk\">-αιτε</span></td></tr><tr><th>3rd pl.</th><td><span class=\"gk\">παιδεύσαιεν / παιδεύσειαν</span></td><td class='end'><span class=\"gk\">-αιεν / -ειαν</span></td></tr></table><div class='meta'>Hansen & Quinn, §34<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant</div>",
+     "frontAudio": null,
+     "backAudio": "91ae69c24a45",
+     "tags": [
+      "recite",
+      "aorist optative"
+     ]
+    },
+    {
+     "id": "w7-paideuo-extra-0",
+     "front": "<div class='prompt'><span class=\"gk\">παιδεύω: perfect infinitive active</span></div>",
+     "back": "<div class='answer'><span class=\"gk\">πεπαιδευκέναι</span></div><div class='meta'>to have educated (completed aspect); always accented on the penult — H&Q §30</div>",
+     "frontAudio": null,
+     "backAudio": "5c4735234120",
+     "tags": [
+      "infinitive"
+     ]
+    }
+   ],
+   "apkg": "Greek_W7_Memorize.apkg",
+   "ankiName": "Ancient Greek::Week 7::Memorize — παιδεύω: perfect, pluperfect; subjunctive and optative active"
+  },
+  {
+   "key": "w7-vocab",
+   "week": "w7",
+   "kind": "vocab",
+   "title": "Vocabulary: Hansen & Quinn Unit 3",
+   "description": "Hansen & Quinn pp. 71–73",
+   "cards": [
+    {
+     "id": "w7-vocab-ἆθλον, ἄθλου, τό-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἆθλον, ἄθλου, τό</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>prize</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "a00179f53205",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἆθλον, ἄθλου, τό-eg",
+     "front": "<div class='prompt'>prize</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἆθλον, ἄθλου, τό</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "a00179f53205",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἀλλά-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἀλλά</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>but (stronger contrast than δέ; begins its clause)</div><div class='meta'>conjunction · H&Q U3</div>",
+     "frontAudio": "944312787a3d",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἀλλά-eg",
+     "front": "<div class='prompt'>but (stronger contrast than δέ; begins its clause)</div><div class='ask'>Greek? (conjunction)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀλλά</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "944312787a3d",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἀντί-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἀντί</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>(+ gen.) instead of</div><div class='meta'>preposition · H&Q U3</div>",
+     "frontAudio": "2e73bdc8e487",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἀντί-eg",
+     "front": "<div class='prompt'>(+ gen.) instead of</div><div class='ask'>Greek? (preposition)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀντί</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "2e73bdc8e487",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἀρετή, ἀρετῆς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἀρετή, ἀρετῆς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>excellence, virtue</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "d93f5ceb6036",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἀρετή, ἀρετῆς, ἡ-eg",
+     "front": "<div class='prompt'>excellence, virtue</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀρετή, ἀρετῆς, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "d93f5ceb6036",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-βουλή, βουλῆς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">βουλή, βουλῆς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>will; council</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "b486219341b7",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-βουλή, βουλῆς, ἡ-eg",
+     "front": "<div class='prompt'>will; council</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">βουλή, βουλῆς, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "b486219341b7",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην-ge",
+     "front": "<div class='answer'><span class=\"gk\">γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>write, draw</div><div class='meta'>verb; PP VI has no -θ- · H&Q U3</div>",
+     "frontAudio": "f432b02fa7d8",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην-eg",
+     "front": "<div class='prompt'>write, draw</div><div class='ask'>Greek? (verb; PP VI has no -θ-)</div>",
+     "back": "<div class='answer'><span class=\"gk\">γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "f432b02fa7d8",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-δή-ge",
+     "front": "<div class='answer'><span class=\"gk\">δή</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>in fact, of course</div><div class='meta'>postpositive particle · H&Q U3</div>",
+     "frontAudio": "0fbe77601285",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-δή-eg",
+     "front": "<div class='prompt'>in fact, of course</div><div class='ask'>Greek? (postpositive particle)</div>",
+     "back": "<div class='answer'><span class=\"gk\">δή</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "0fbe77601285",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-δῆμος, δήμου, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">δῆμος, δήμου, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>the people</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "15201018c13f",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-δῆμος, δήμου, ὁ-eg",
+     "front": "<div class='prompt'>the people</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">δῆμος, δήμου, ὁ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "15201018c13f",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-δημοκρατίᾱ, δημοκρατίᾱς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">δημοκρατίᾱ, δημοκρατίᾱς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>democracy</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "b5e22e6bd00b",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-δημοκρατίᾱ, δημοκρατίᾱς, ἡ-eg",
+     "front": "<div class='prompt'>democracy</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">δημοκρατίᾱ, δημοκρατίᾱς, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "b5e22e6bd00b",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-διά-ge",
+     "front": "<div class='answer'><span class=\"gk\">διά</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>(+ gen.) through; (+ acc.) on account of</div><div class='meta'>preposition · H&Q U3</div>",
+     "frontAudio": "9dd6521da2e0",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-διά-eg",
+     "front": "<div class='prompt'>(+ gen.) through; (+ acc.) on account of</div><div class='ask'>Greek? (preposition)</div>",
+     "back": "<div class='answer'><span class=\"gk\">διά</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "9dd6521da2e0",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-εἰρήνη, εἰρήνης, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">εἰρήνη, εἰρήνης, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>peace</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "b023c54d8049",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-εἰρήνη, εἰρήνης, ἡ-eg",
+     "front": "<div class='prompt'>peace</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">εἰρήνη, εἰρήνης, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "b023c54d8049",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>assembly</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "5790ac19fde8",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ-eg",
+     "front": "<div class='prompt'>assembly</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "5790ac19fde8",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἐπεί-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἐπεί</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>after, when, since</div><div class='meta'>conjunction (temporal or causal) · H&Q U3</div>",
+     "frontAudio": "fc44fe7f056d",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἐπεί-eg",
+     "front": "<div class='prompt'>after, when, since</div><div class='ask'>Greek? (conjunction (temporal or causal))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπεί</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "fc44fe7f056d",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἐπειδή-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἐπειδή</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>after, when, since</div><div class='meta'>conjunction (ἐπεί + δή) · H&Q U3</div>",
+     "frontAudio": "5c7489fcda06",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἐπειδή-eg",
+     "front": "<div class='prompt'>after, when, since</div><div class='ask'>Greek? (conjunction (ἐπεί + δή))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐπειδή</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "5c7489fcda06",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην-ge",
+     "front": "<div class='answer'><span class=\"gk\">θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>sacrifice</div><div class='meta'>verb · H&Q U3</div>",
+     "frontAudio": "056b8fcfb543",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην-eg",
+     "front": "<div class='prompt'>sacrifice</div><div class='ask'>Greek? (verb)</div>",
+     "back": "<div class='answer'><span class=\"gk\">θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "056b8fcfb543",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-θυσίᾱ, θυσίᾱς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">θυσίᾱ, θυσίᾱς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>sacrifice</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "3b2b0820e92d",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-θυσίᾱ, θυσίᾱς, ἡ-eg",
+     "front": "<div class='prompt'>sacrifice</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">θυσίᾱ, θυσίᾱς, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "3b2b0820e92d",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἵνα-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἵνα</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>in order that</div><div class='meta'>conjunction (purpose clauses) · H&Q U3</div>",
+     "frontAudio": "b17adbb065df",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ἵνα-eg",
+     "front": "<div class='prompt'>in order that</div><div class='ask'>Greek? (conjunction (purpose clauses))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἵνα</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "b17adbb065df",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-μή-ge",
+     "front": "<div class='answer'><span class=\"gk\">μή</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>not (negates purpose clauses)</div><div class='meta'>adverb · H&Q U3</div>",
+     "frontAudio": "52998c370fe2",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-μή-eg",
+     "front": "<div class='prompt'>not (negates purpose clauses)</div><div class='ask'>Greek? (adverb)</div>",
+     "back": "<div class='answer'><span class=\"gk\">μή</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "52998c370fe2",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-νῑ́κη, νῑ́κης, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">νῑ́κη, νῑ́κης, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>victory</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "3bb6f438862e",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-νῑ́κη, νῑ́κης, ἡ-eg",
+     "front": "<div class='prompt'>victory</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">νῑ́κη, νῑ́κης, ἡ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "3bb6f438862e",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ὅπως-ge",
+     "front": "<div class='answer'><span class=\"gk\">ὅπως</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>in order that</div><div class='meta'>conjunction (purpose clauses) · H&Q U3</div>",
+     "frontAudio": "7784bd341fd9",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ὅπως-eg",
+     "front": "<div class='prompt'>in order that</div><div class='ask'>Greek? (conjunction (purpose clauses))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ὅπως</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "7784bd341fd9",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ὀφθαλμός, ὀφθαλμοῦ, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ὀφθαλμός, ὀφθαλμοῦ, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>eye</div><div class='meta'>noun · H&Q U3</div>",
+     "frontAudio": "f137e06af6df",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ὀφθαλμός, ὀφθαλμοῦ, ὁ-eg",
+     "front": "<div class='prompt'>eye</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ὀφθαλμός, ὀφθαλμοῦ, ὁ</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "f137e06af6df",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην-ge",
+     "front": "<div class='answer'><span class=\"gk\">παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>make stop, stop</div><div class='meta'>verb · H&Q U3</div>",
+     "frontAudio": "e0efb17d64c9",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην-eg",
+     "front": "<div class='prompt'>make stop, stop</div><div class='ask'>Greek? (verb)</div>",
+     "back": "<div class='answer'><span class=\"gk\">παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "e0efb17d64c9",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-περί-ge",
+     "front": "<div class='answer'><span class=\"gk\">περί</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>(+ gen.) concerning, about; (+ dat.) around; (+ acc.) around, concerning</div><div class='meta'>preposition · H&Q U3</div>",
+     "frontAudio": "8ed5fb16de53",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-περί-eg",
+     "front": "<div class='prompt'>(+ gen.) concerning, about; (+ dat.) around; (+ acc.) around, concerning</div><div class='ask'>Greek? (preposition)</div>",
+     "back": "<div class='answer'><span class=\"gk\">περί</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "8ed5fb16de53",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην-ge",
+     "front": "<div class='answer'><span class=\"gk\">φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>guard</div><div class='meta'>verb; aspirated perfect · H&Q U3</div>",
+     "frontAudio": "b65e2a379535",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην-eg",
+     "front": "<div class='prompt'>guard</div><div class='ask'>Greek? (verb; aspirated perfect)</div>",
+     "back": "<div class='answer'><span class=\"gk\">φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "b65e2a379535",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w7-vocab-ὡς-ge",
+     "front": "<div class='answer'><span class=\"gk\">ὡς</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>in order that</div><div class='meta'>conjunction (purpose clauses) · H&Q U3</div>",
+     "frontAudio": "ed10ab8590ec",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w7-vocab-ὡς-eg",
+     "front": "<div class='prompt'>in order that</div><div class='ask'>Greek? (conjunction (purpose clauses))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ὡς</span></div><div class='meta'>H&Q U3</div>",
+     "frontAudio": null,
+     "backAudio": "ed10ab8590ec",
+     "tags": [
+      "english-to-greek"
+     ]
+    }
+   ],
+   "apkg": "Greek_W7_Vocab.apkg",
+   "ankiName": "Ancient Greek::Week 7::Vocab — Vocabulary: Hansen & Quinn Unit 3"
   }
  ],
  "review": {
@@ -10448,6 +11808,555 @@
        "pos": "noun",
        "src": "H&Q U2",
        "audio": "64683d5b0f4f"
+      }
+     ]
+    }
+   ]
+  },
+  "w7": {
+   "tables": [
+    {
+     "type": "verb",
+     "title": "παιδεύω: indicative",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "perfect",
+       "label": "perfect indicative active",
+       "stem": "πεπαιδευκ- (from Principal Part IV)",
+       "source": "Hansen & Quinn, §28",
+       "recite": "c959c232c7ee",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "cb376c78438b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ας",
+         "audio": "b00f88f5f4b5",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "de18eaa1ff1b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αμεν",
+         "audio": "e4bb50601466",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ατε",
+         "audio": "d42c394557c3",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ᾱσι(ν)",
+         "audio": "5c911b7d429d",
+         "aug": "πε",
+         "sign": "κ"
+        }
+       ],
+       "trans": [
+        "I have educated",
+        "you (sg.) have educated",
+        "he/she/it has educated",
+        "we have educated",
+        "you (pl.) have educated",
+        "they have educated"
+       ]
+      },
+      {
+       "tense": "pluperfect",
+       "label": "pluperfect indicative active",
+       "stem": "ἐπεπαιδευκ- (augment + perfect active stem)",
+       "source": "Hansen & Quinn, §29",
+       "recite": "671d0f602625",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "η",
+         "audio": "73b698525738",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ης",
+         "audio": "19b27d74079c",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει(ν)",
+         "audio": "e1f75978c66e",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εμεν",
+         "audio": "579b8d6ac0df",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "9b31d008054a",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εσαν",
+         "audio": "b92c09361bd4",
+         "aug": "ἐπε",
+         "sign": "κ"
+        }
+       ],
+       "trans": [
+        "I had educated",
+        "you (sg.) had educated",
+        "he/she/it had educated",
+        "we had educated",
+        "you (pl.) had educated",
+        "they had educated"
+       ]
+      }
+     ],
+     "extras": [
+      {
+       "label": "παιδεύω: perfect infinitive active",
+       "greek": "πεπαιδευκέναι",
+       "note": "to have educated (completed aspect); always accented on the penult — H&Q §30",
+       "audio": "5c4735234120"
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "παιδεύω: subjunctive & optative",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "present subjunctive",
+       "label": "present subjunctive active",
+       "stem": "παιδευ- (present tense stem)",
+       "source": "Hansen & Quinn, §31",
+       "recite": "97eadb36dd5b",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃς",
+         "audio": "0dbc142fc75b"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃ",
+         "audio": "258878e1c1fd"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωμεν",
+         "audio": "3b44533129e5"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ητε",
+         "audio": "2d1c753bef39"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωσι(ν)",
+         "audio": "7ae8f56988b5"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "aorist subjunctive",
+       "label": "aorist subjunctive active",
+       "stem": "παιδευσ- (unaugmented aorist stem)",
+       "source": "Hansen & Quinn, §32",
+       "recite": "ea3a3a061b9a",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃς",
+         "audio": "6ba27f51bd3b",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃ",
+         "audio": "0df0a5a2ce77",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωμεν",
+         "audio": "8617f2963819",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ητε",
+         "audio": "7c454f3d6418",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωσι(ν)",
+         "audio": "41a35f30e4e2",
+         "sign": "σ"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "present optative",
+       "label": "present optative active",
+       "stem": "παιδευ- (present tense stem)",
+       "source": "Hansen & Quinn, §33",
+       "recite": "4af1a9f211b2",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "οιμι",
+         "audio": "52c5953197c0"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οις",
+         "audio": "7f2149f0b518"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οι",
+         "audio": "fd840910762a"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιμεν",
+         "audio": "be3cb3ffb0ef"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιτε",
+         "audio": "af78922cbd40"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιεν",
+         "audio": "eeaa2d8b2b25"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "aorist optative",
+       "label": "aorist optative active",
+       "stem": "παιδευσ- (unaugmented aorist stem)",
+       "source": "Hansen & Quinn, §34",
+       "recite": "91ae69c24a45",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "αιμι",
+         "audio": "483436b94738",
+         "sign": "σ"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αις",
+           "audio": "476ba3f94a18",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειας",
+           "audio": "8a5af1ae2b13",
+           "sign": "σ"
+          }
+         ],
+         "audio": "5ac4831be92f"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αι",
+           "audio": "0dd6c0855e22",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειε(ν)",
+           "audio": "c8d762ae5808",
+           "sign": "σ"
+          }
+         ],
+         "audio": "7c1e2eae1598"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιμεν",
+         "audio": "31d7985806b3",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιτε",
+         "audio": "9e4c683ac9ea",
+         "sign": "σ"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αιεν",
+           "audio": "8c8c825727e7",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειαν",
+           "audio": "249503885d15",
+           "sign": "σ"
+          }
+         ],
+         "audio": "6f8b5e5b806b"
+        }
+       ],
+       "trans": null
+      }
+     ],
+     "extras": []
+    }
+   ],
+   "vocab": [
+    {
+     "type": "vocab",
+     "title": "Hansen & Quinn Unit 3",
+     "entries": [
+      {
+       "head": "ἆθλον, ἄθλου, τό",
+       "eng": "prize",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "a00179f53205"
+      },
+      {
+       "head": "ἀλλά",
+       "eng": "but (stronger contrast than δέ; begins its clause)",
+       "pos": "conjunction",
+       "src": "H&Q U3",
+       "audio": "944312787a3d"
+      },
+      {
+       "head": "ἀντί",
+       "eng": "(+ gen.) instead of",
+       "pos": "preposition",
+       "src": "H&Q U3",
+       "audio": "2e73bdc8e487"
+      },
+      {
+       "head": "ἀρετή, ἀρετῆς, ἡ",
+       "eng": "excellence, virtue",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "d93f5ceb6036"
+      },
+      {
+       "head": "βουλή, βουλῆς, ἡ",
+       "eng": "will; council",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "b486219341b7"
+      },
+      {
+       "head": "γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην",
+       "eng": "write, draw",
+       "pos": "verb; PP VI has no -θ-",
+       "src": "H&Q U3",
+       "audio": "f432b02fa7d8"
+      },
+      {
+       "head": "δή",
+       "eng": "in fact, of course",
+       "pos": "postpositive particle",
+       "src": "H&Q U3",
+       "audio": "0fbe77601285"
+      },
+      {
+       "head": "δῆμος, δήμου, ὁ",
+       "eng": "the people",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "15201018c13f"
+      },
+      {
+       "head": "δημοκρατίᾱ, δημοκρατίᾱς, ἡ",
+       "eng": "democracy",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "b5e22e6bd00b"
+      },
+      {
+       "head": "διά",
+       "eng": "(+ gen.) through; (+ acc.) on account of",
+       "pos": "preposition",
+       "src": "H&Q U3",
+       "audio": "9dd6521da2e0"
+      },
+      {
+       "head": "εἰρήνη, εἰρήνης, ἡ",
+       "eng": "peace",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "b023c54d8049"
+      },
+      {
+       "head": "ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ",
+       "eng": "assembly",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "5790ac19fde8"
+      },
+      {
+       "head": "ἐπεί",
+       "eng": "after, when, since",
+       "pos": "conjunction (temporal or causal)",
+       "src": "H&Q U3",
+       "audio": "fc44fe7f056d"
+      },
+      {
+       "head": "ἐπειδή",
+       "eng": "after, when, since",
+       "pos": "conjunction (ἐπεί + δή)",
+       "src": "H&Q U3",
+       "audio": "5c7489fcda06"
+      },
+      {
+       "head": "θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην",
+       "eng": "sacrifice",
+       "pos": "verb",
+       "src": "H&Q U3",
+       "audio": "056b8fcfb543"
+      },
+      {
+       "head": "θυσίᾱ, θυσίᾱς, ἡ",
+       "eng": "sacrifice",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "3b2b0820e92d"
+      },
+      {
+       "head": "ἵνα",
+       "eng": "in order that",
+       "pos": "conjunction (purpose clauses)",
+       "src": "H&Q U3",
+       "audio": "b17adbb065df"
+      },
+      {
+       "head": "μή",
+       "eng": "not (negates purpose clauses)",
+       "pos": "adverb",
+       "src": "H&Q U3",
+       "audio": "52998c370fe2"
+      },
+      {
+       "head": "νῑ́κη, νῑ́κης, ἡ",
+       "eng": "victory",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "3bb6f438862e"
+      },
+      {
+       "head": "ὅπως",
+       "eng": "in order that",
+       "pos": "conjunction (purpose clauses)",
+       "src": "H&Q U3",
+       "audio": "7784bd341fd9"
+      },
+      {
+       "head": "ὀφθαλμός, ὀφθαλμοῦ, ὁ",
+       "eng": "eye",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "f137e06af6df"
+      },
+      {
+       "head": "παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην",
+       "eng": "make stop, stop",
+       "pos": "verb",
+       "src": "H&Q U3",
+       "audio": "e0efb17d64c9"
+      },
+      {
+       "head": "περί",
+       "eng": "(+ gen.) concerning, about; (+ dat.) around; (+ acc.) around, concerning",
+       "pos": "preposition",
+       "src": "H&Q U3",
+       "audio": "8ed5fb16de53"
+      },
+      {
+       "head": "φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην",
+       "eng": "guard",
+       "pos": "verb; aspirated perfect",
+       "src": "H&Q U3",
+       "audio": "b65e2a379535"
+      },
+      {
+       "head": "ὡς",
+       "eng": "in order that",
+       "pos": "conjunction (purpose clauses)",
+       "src": "H&Q U3",
+       "audio": "ed10ab8590ec"
       }
      ]
     }

@@ -158,16 +158,18 @@ NU_NOTE = "<br>(ν) = movable ν: added before a vowel or at a pause, often drop
 def build_verb_deck(key, verbs, extras):
     seen = {}
     for v in verbs:
-        for slot, form, end, tr in zip(VERB_SLOTS, v["forms"], v["endings"], v["trans"]):
+        trans = v.get("trans") or [""] * len(VERB_SLOTS)   # subjunctive/optative: no paradigm translation
+        for slot, form, end, tr in zip(VERB_SLOTS, v["forms"], v["endings"], trans):
             add(key, f"{key}-{v['tense']}-{slot}",
                 f"<div class='prompt'>{g(v['lemma'])} · {v['label']}</div><div class='ask'>{slot}</div>",
-                f"<div class='answer'>{g(form)}</div><div class='meta'>“{tr}” · ending {g(end)}{NU_NOTE if '(ν)' in form else ''}</div>",
+                f"<div class='answer'>{g(form)}</div><div class='meta'>{f'“{tr}” · ' if tr else ''}ending {g(end)}{NU_NOTE if '(ν)' in form else ''}</div>",
                 back_audio=audio(form), tags=["produce", v["tense"]])
             seen.setdefault(form, []).append((f"{slot} {v['label']}", tr))
     for form, labels in seen.items():
+        translate = " — and translate" if any(t for _, t in labels) else ""
         add(key, f"{key}-parse-{form}",
-            f"<div class='answer'>{g(form)}</div><div class='ask'>Parse: person, number, tense, mood, voice — and translate</div>",
-            "<div class='answer small'>" + " <i>or</i><br>".join(f"{l} — “{t}”" for l, t in labels) + "</div>",
+            f"<div class='answer'>{g(form)}</div><div class='ask'>Parse: person, number, tense, mood, voice{translate}</div>",
+            "<div class='answer small'>" + " <i>or</i><br>".join(f"{l} — “{t}”" if t else l for l, t in labels) + "</div>",
             front_audio=audio(form), tags=["parse"])
     for v in verbs:
         rows = "".join(f"<tr><th>{s}</th><td>{g(f)}</td><td class='end'>{g(e)}</td></tr>"
@@ -241,6 +243,12 @@ build_verb_deck("w5-paideuo", PARADIGMS["w5"], EXTRAS["w5"])
 add_deck("w5-vocab", "w5", "vocab", "Vocabulary: Hansen & Quinn Unit 2", "Hansen & Quinn p. 53")
 build_vocab_deck("w5-vocab", VOCAB["w5"])
 
+add_deck("w7-paideuo", "w7", "memorize", "παιδεύω: perfect, pluperfect; subjunctive and optative active",
+         "H&Q Unit 3 §§28–34, plus the perfect infinitive (§30)")
+build_verb_deck("w7-paideuo", PARADIGMS["w7"], EXTRAS["w7"])
+add_deck("w7-vocab", "w7", "vocab", "Vocabulary: Hansen & Quinn Unit 3", "Hansen & Quinn pp. 71–73")
+build_vocab_deck("w7-vocab", VOCAB["w7"])
+
 
 # ---------------------------------------------------------------------------
 # Review sheets: the week's tables (forms split stem | ending) and vocab lists
@@ -266,8 +274,21 @@ def split_form(form, ending):
 
 
 def form_cell(form, ending=""):
+    if " / " in form:   # alternative forms, e.g. παιδεύσαις / παιδεύσειας
+        ends = ending.split(" / ") if ending else [""] * len(form.split(" / "))
+        return {"alts": [form_cell(f, e) for f, e in zip(form.split(" / "), ends)], "audio": audio(form)}
     stem, end = split_form(form, ending) if ending else (nfc(form), "")
     return {"stem": stem, "end": end, "audio": audio(form)}
+
+
+def mark_stem(c, prefix, sign):
+    """Pull the augment/reduplication prefix and the tense sign out of the stem so the sheet can colour them."""
+    for cell in c.get("alts", [c]):
+        if prefix and cell["stem"].startswith(prefix):
+            cell["aug"], cell["stem"] = prefix, cell["stem"][len(prefix):]
+        if sign and cell["stem"].endswith(sign):
+            cell["sign"], cell["stem"] = sign, cell["stem"][:-len(sign)]
+    return c
 
 
 def noun_review(nouns):
@@ -295,23 +316,24 @@ def article_review(a):
              "rows": [[form_cell(f) for f in r] for r in a["forms"]]}]
 
 
-def verb_review(verbs, extras):
-    tenses = []
+def verb_review(verbs, extras, title="indicative active"):
+    groups = {}   # one table per group (e.g. indicative vs. subjunctive & optative)
     for v in verbs:
-        cells = []
-        for f, e in zip(v["forms"], v["endings"]):
-            c = form_cell(f, e)
-            # mark the augment and the tense sign σ inside the stem
-            if v["tense"] in ("imperfect", "aorist") and c["stem"].startswith("ἐ"):
-                c["aug"], c["stem"] = "ἐ", c["stem"][1:]
-            if v["tense"] in ("future", "aorist") and c["stem"].endswith("σ"):
-                c["sign"], c["stem"] = "σ", c["stem"][:-1]
-            cells.append(c)
-        tenses.append({"tense": v["tense"], "label": v["label"], "stem": v["stem"], "source": v["source"],
-                       "recite": audio(", ".join(v["forms"]), slow=True), "forms": cells, "trans": v["trans"]})
-    return [{"type": "verb", "title": verbs[0]["lemma"] + ": indicative active", "lemma": verbs[0]["lemma"],
-             "slots": VERB_SLOTS, "tenses": tenses,
-             "extras": [{"label": p, "greek": a, "note": n, "audio": audio(a)} for p, a, n in extras]}]
+        groups.setdefault(v.get("group", title), []).append(v)
+    tables = []
+    for group, vs in groups.items():
+        tenses = []
+        for v in vs:
+            # Week 5 tenses imply their marks; later tables name them explicitly
+            prefix = v.get("prefix", "ἐ" if v["tense"] in ("imperfect", "aorist") else None)
+            sign = v.get("sign", "σ" if v["tense"] in ("future", "aorist") else None)
+            cells = [mark_stem(form_cell(f, e), prefix, sign) for f, e in zip(v["forms"], v["endings"])]
+            tenses.append({"tense": v["tense"], "label": v["label"], "stem": v["stem"], "source": v["source"],
+                           "recite": audio(", ".join(v["forms"]), slow=True), "forms": cells, "trans": v.get("trans")})
+        tables.append({"type": "verb", "title": f"{vs[0]['lemma']}: {group}", "lemma": vs[0]["lemma"],
+                       "slots": VERB_SLOTS, "tenses": tenses, "extras": []})
+    tables[0]["extras"] = [{"label": p, "greek": a, "note": n, "audio": audio(a)} for p, a, n in extras]
+    return tables
 
 
 def alphabet_review():
@@ -336,6 +358,8 @@ REVIEW = {
            "vocab": [vocab_review(VOCAB["w5"], "Hansen & Quinn Unit 2")]},
 }
 # Week 6 is review: everything from Weeks 2–5
+REVIEW["w7"] = {"tables": verb_review(PARADIGMS["w7"], EXTRAS["w7"]),
+                "vocab": [vocab_review(VOCAB["w7"], "Hansen & Quinn Unit 3")]}
 REVIEW["w6"] = {"tables": [t for w in ("w2", "w3", "w4", "w5") for t in REVIEW[w]["tables"]],
                 "vocab": [v for w in ("w2", "w4", "w5") for v in REVIEW[w]["vocab"]]}
 

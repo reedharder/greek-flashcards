@@ -14,6 +14,8 @@ WEEKS = [
     {"id": "w4", "num": 4, "label": "Week 4", "topic": "First (a-) declension"},
     {"id": "w5", "num": 5, "label": "Week 5", "topic": "Indicative active: present, imperfect, future, aorist"},
     {"id": "w6", "num": 6, "label": "Week 6", "topic": "Review"},
+    {"id": "w7", "num": 7, "label": "Week 7",
+     "topic": "Perfect and pluperfect; subjunctive and optative; purpose clauses"},
 ]
 
 # ---------------------------------------------------------------------------
@@ -149,6 +151,41 @@ PARADIGMS = {
                    "we educated", "you (pl.) educated", "they educated"]},
     ],
 }
+# Week 7: Hansen & Quinn Unit 3. "prefix"/"sign" name what the review sheet marks inside the stem
+# (augment, reduplication; tense sign). Alternative forms are separated by " / ".
+# Subjunctives and optatives have no "trans": H&Q gives no paradigm translation (§31).
+PARADIGMS["w7"] = [
+    {"kind": "verb", "lemma": "παιδεύω", "tense": "perfect", "label": "perfect indicative active", "group": "indicative",
+     "source": "Hansen & Quinn, §28", "stem": "πεπαιδευκ- (from Principal Part IV)", "prefix": "πε", "sign": "κ",
+     "forms": ["πεπαίδευκα", "πεπαίδευκας", "πεπαίδευκε(ν)", "πεπαιδεύκαμεν", "πεπαιδεύκατε", "πεπαιδεύκᾱσι(ν)"],
+     "endings": ["-α", "-ας", "-ε(ν)", "-αμεν", "-ατε", "-ᾱσι(ν)"],
+     "trans": ["I have educated", "you (sg.) have educated", "he/she/it has educated",
+               "we have educated", "you (pl.) have educated", "they have educated"]},
+    {"kind": "verb", "lemma": "παιδεύω", "tense": "pluperfect", "label": "pluperfect indicative active", "group": "indicative",
+     "source": "Hansen & Quinn, §29", "stem": "ἐπεπαιδευκ- (augment + perfect active stem)", "prefix": "ἐπε", "sign": "κ",
+     "forms": ["ἐπεπαιδεύκη", "ἐπεπαιδεύκης", "ἐπεπαιδεύκει(ν)", "ἐπεπαιδεύκεμεν", "ἐπεπαιδεύκετε", "ἐπεπαιδεύκεσαν"],
+     "endings": ["-η", "-ης", "-ει(ν)", "-εμεν", "-ετε", "-εσαν"],
+     "trans": ["I had educated", "you (sg.) had educated", "he/she/it had educated",
+               "we had educated", "you (pl.) had educated", "they had educated"]},
+    {"kind": "verb", "lemma": "παιδεύω", "tense": "present subjunctive", "label": "present subjunctive active",
+     "group": "subjunctive & optative", "source": "Hansen & Quinn, §31", "stem": "παιδευ- (present tense stem)",
+     "forms": ["παιδεύω", "παιδεύῃς", "παιδεύῃ", "παιδεύωμεν", "παιδεύητε", "παιδεύωσι(ν)"],
+     "endings": ["-ω", "-ῃς", "-ῃ", "-ωμεν", "-ητε", "-ωσι(ν)"]},
+    {"kind": "verb", "lemma": "παιδεύω", "tense": "aorist subjunctive", "label": "aorist subjunctive active",
+     "group": "subjunctive & optative", "source": "Hansen & Quinn, §32", "stem": "παιδευσ- (unaugmented aorist stem)", "sign": "σ",
+     "forms": ["παιδεύσω", "παιδεύσῃς", "παιδεύσῃ", "παιδεύσωμεν", "παιδεύσητε", "παιδεύσωσι(ν)"],
+     "endings": ["-ω", "-ῃς", "-ῃ", "-ωμεν", "-ητε", "-ωσι(ν)"]},
+    {"kind": "verb", "lemma": "παιδεύω", "tense": "present optative", "label": "present optative active",
+     "group": "subjunctive & optative", "source": "Hansen & Quinn, §33", "stem": "παιδευ- (present tense stem)",
+     "forms": ["παιδεύοιμι", "παιδεύοις", "παιδεύοι", "παιδεύοιμεν", "παιδεύοιτε", "παιδεύοιεν"],
+     "endings": ["-οιμι", "-οις", "-οι", "-οιμεν", "-οιτε", "-οιεν"]},
+    {"kind": "verb", "lemma": "παιδεύω", "tense": "aorist optative", "label": "aorist optative active",
+     "group": "subjunctive & optative", "source": "Hansen & Quinn, §34", "stem": "παιδευσ- (unaugmented aorist stem)", "sign": "σ",
+     "forms": ["παιδεύσαιμι", "παιδεύσαις / παιδεύσειας", "παιδεύσαι / παιδεύσειε(ν)", "παιδεύσαιμεν", "παιδεύσαιτε",
+               "παιδεύσαιεν / παιδεύσειαν"],
+     "endings": ["-αιμι", "-αις / -ειας", "-αι / -ειε(ν)", "-αιμεν", "-αιτε", "-αιεν / -ειαν"]},
+]
+
 VERB_SLOTS = ["1st sg.", "2nd sg.", "3rd sg.", "1st pl.", "2nd pl.", "3rd pl."]
 
 # Extra single cards for week 5 (infinitives, principal parts).
@@ -158,6 +195,10 @@ EXTRAS = {
         ("παιδεύω: aorist infinitive active", "παιδεῦσαι", "to educate (simple aspect) — H&Q §26"),
         ("παιδεύω: the six principal parts", "παιδεύω, παιδεύσω, ἐπαίδευσα, πεπαίδευκα, πεπαίδευμαι, ἐπαιδεύθην",
          "I present · II future · III aorist · IV perfect act. · V perfect mid./pass. · VI aorist passive — H&Q §19"),
+    ],
+    "w7": [
+        ("παιδεύω: perfect infinitive active", "πεπαιδευκέναι",
+         "to have educated (completed aspect); always accented on the penult — H&Q §30"),
     ],
 }
 
@@ -304,5 +345,33 @@ VOCAB = {
         ("φίλος, φίλου, ὁ", "friend", "noun", "H&Q U2"),
         ("φιλίᾱ, φιλίᾱς, ἡ", "friendship", "noun", "H&Q U2"),
         ("χρῡσός, χρῡσοῦ, ὁ", "gold", "noun", "H&Q U2"),
+    ],
+    "w7": [
+        # Hansen & Quinn, Unit 3 Vocabulary, p. 71 (notes pp. 72–73)
+        ("ἆθλον, ἄθλου, τό", "prize", "noun", "H&Q U3"),
+        ("ἀλλά", "but (stronger contrast than δέ; begins its clause)", "conjunction", "H&Q U3"),
+        ("ἀντί", "(+ gen.) instead of", "preposition", "H&Q U3"),
+        ("ἀρετή, ἀρετῆς, ἡ", "excellence, virtue", "noun", "H&Q U3"),
+        ("βουλή, βουλῆς, ἡ", "will; council", "noun", "H&Q U3"),
+        ("γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην", "write, draw", "verb; PP VI has no -θ-", "H&Q U3"),
+        ("δή", "in fact, of course", "postpositive particle", "H&Q U3"),
+        ("δῆμος, δήμου, ὁ", "the people", "noun", "H&Q U3"),
+        ("δημοκρατίᾱ, δημοκρατίᾱς, ἡ", "democracy", "noun", "H&Q U3"),
+        ("διά", "(+ gen.) through; (+ acc.) on account of", "preposition", "H&Q U3"),
+        ("εἰρήνη, εἰρήνης, ἡ", "peace", "noun", "H&Q U3"),
+        ("ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ", "assembly", "noun", "H&Q U3"),
+        ("ἐπεί", "after, when, since", "conjunction (temporal or causal)", "H&Q U3"),
+        ("ἐπειδή", "after, when, since", "conjunction (ἐπεί + δή)", "H&Q U3"),
+        ("θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην", "sacrifice", "verb", "H&Q U3"),
+        ("θυσίᾱ, θυσίᾱς, ἡ", "sacrifice", "noun", "H&Q U3"),
+        ("ἵνα", "in order that", "conjunction (purpose clauses)", "H&Q U3"),
+        ("μή", "not (negates purpose clauses)", "adverb", "H&Q U3"),
+        ("νῑ́κη, νῑ́κης, ἡ", "victory", "noun", "H&Q U3"),
+        ("ὅπως", "in order that", "conjunction (purpose clauses)", "H&Q U3"),
+        ("ὀφθαλμός, ὀφθαλμοῦ, ὁ", "eye", "noun", "H&Q U3"),
+        ("παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην", "make stop, stop", "verb", "H&Q U3"),
+        ("περί", "(+ gen.) concerning, about; (+ dat.) around; (+ acc.) around, concerning", "preposition", "H&Q U3"),
+        ("φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην", "guard", "verb; aspirated perfect", "H&Q U3"),
+        ("ὡς", "in order that", "conjunction (purpose clauses)", "H&Q U3"),
     ],
 }

@@ -399,7 +399,9 @@ const NOTATION = [
   ["case", /\+ ?(gen|dat|acc)/, "+ gen. / + dat. / + acc.", "The case the word takes: ἐν + dat. means ἐν is followed by a dative."],
   ["slots", /\/(acc|voc|dat)\./, "nom./acc./voc. du.", "One form serves all the cases listed. du. = dual (two of something); sg. singular, pl. plural."],
   ["subscript", /[ᾳῃῳ]/, "ᾳ ῃ ῳ", "Iota subscript: a long vowel + ι, written under the vowel; usually not pronounced."],
-  ["marks", /"aug"|"sign"/, "ἐ- · σ", "Highlighting: the ending is blue; the augment ἐ- (past tenses) and the tense sign σ (future, aorist) are orange."],
+  ["alts", /"alts"/, "παιδεύσαις / παιδεύσειας", "A slash separates alternative forms: both are used, with no difference in meaning, so learn both."],
+  ["notrans", /"trans":null/, "no translation", "Subjunctive and optative forms carry no fixed translation: their meaning depends on the kind of clause they appear in (e.g. a purpose clause)."],
+  ["marks", /"aug"|"sign"/, "ἐ- · πε- · σ · κ", "Highlighting: the ending is blue. Orange marks the augment ἐ- (past indicative tenses), the perfect's reduplication πε-, and the tense signs σ (future, aorist) and κ (perfect active)."],
 ];
 const notesFor = obj => {
   const t = JSON.stringify(obj);   // macrons/breves are matched as combining marks, everything else precomposed
@@ -413,12 +415,13 @@ const hasReview = id => { const r = REVIEW[id]; return r && (r.tables.length || 
 const sayBtn = (key, inner) => key ? `<button class="say" data-say="${key}">${inner}</button>` : inner;
 const playBtn = (key, label) => key ? `<button class="play" data-play="${key}" aria-label="${esc(label)}">▶</button>` : "";
 function formHtml(c) {
+  if (c.alts) return c.alts.map(formHtml).join(" / ");
   const inner = (c.aug ? `<span class="mk">${esc(c.aug)}</span>` : "") + esc(c.stem)
     + (c.sign ? `<span class="mk">${esc(c.sign)}</span>` : "") + (c.end ? `<span class="end">${esc(c.end)}</span>` : "");
   return sayBtn(c.audio, inner);
 }
 function tableHtml(t) {
-  return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu"]) + "</div>");
+  return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu", "alts", "notrans"]) + "</div>");
 }
 function tableBody(t) {
   const head = (title, src) => `<h3>${esc(title)}</h3>${src ? `<p class="src">${esc(src)}</p>` : ""}`;
@@ -432,7 +435,7 @@ function tableBody(t) {
     </table></div></div>`;
   if (t.type === "verb") return `<div class="sheet">${head(t.title, t.tenses.map(x => x.source).join(" · "))}<div class="tenses">
     ${t.tenses.map(x => `<div class="tense"><h4>${esc(x.tense)}${playBtn(x.recite, "Recite " + x.tense)}</h4><p class="stem">stem <span class="gk">${esc(x.stem)}</span></p>
-      <table class="rv"><tbody>${t.slots.map((s, i) => `<tr><th>${esc(s)}</th><td class="f">${formHtml(x.forms[i])}<small>${esc(x.trans[i])}</small></td></tr>`).join("")}</tbody></table></div>`).join("")}
+      <table class="rv"><tbody>${t.slots.map((s, i) => `<tr><th>${esc(s)}</th><td class="f">${formHtml(x.forms[i])}${x.trans ? `<small>${esc(x.trans[i])}</small>` : ""}</td></tr>`).join("")}</tbody></table></div>`).join("")}
     </div>
     ${t.extras.length ? `<ul class="extras">${t.extras.map(e => `<li><b>${esc(e.label)}:</b> ${sayBtn(e.audio, `<span class="gk">${esc(e.greek)}</span>`)}<br><span style="color:var(--muted)">${esc(e.note)}</span></li>`).join("")}</ul>` : ""}</div>`;
   if (t.type === "alphabet") return `<div class="sheet">${head(t.title, "")}<div class="scroll"><table class="rv">
@@ -457,7 +460,7 @@ function renderReview(id) {
     <div class="review-head"><button class="btn small" id="back">← All weeks</button>
       ${forms ? `<button class="chip" id="quiz" aria-pressed="${!!prefs.quiz}">Hide forms (tap to reveal)</button>` : ""}</div>
     <div><div class="label">${esc(w.label)} · review sheet</div><h2>${esc(w.topic)}</h2></div>
-    <div class="tools">${forms ? `<span class="legend"><span><span class="end gk">ending</span></span><span><span class="mk">augment / tense sign σ</span></span></span>` : ""}
+    <div class="tools">${forms ? `<span class="legend"><span><span class="end gk">ending</span></span><span><span class="mk">augment, reduplication, tense sign (σ, κ)</span></span></span>` : ""}
       <span>Tap a form to hear it · ▶ recites a whole column</span></div>
     ${r.tables.map(tableHtml).join("")}
     ${r.vocab.map(vocabHtml).join("")}

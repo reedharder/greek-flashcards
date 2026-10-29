@@ -65,7 +65,8 @@ def to_mp3(wav, out):
 
 def piper_clip(voice, text, slow, out):
     ids = voice.phonemes_to_ids(list(grc_phonemes(text)))
-    a = voice.phoneme_ids_to_audio(ids, SynthesisConfig(length_scale=1.45 if slow else 1.1))
+    # lower noise than Piper's defaults (0.667 / 0.8): fewer slipped consonants (παιδεύσαιτε came out as καιδ-)
+    a = voice.phoneme_ids_to_audio(ids, SynthesisConfig(length_scale=1.45 if slow else 1.1, noise_scale=0.33, noise_w_scale=0.4))
     a = (np.clip(a, -1, 1) * 32767).astype("int16")
     with tempfile.NamedTemporaryFile(suffix=".wav") as tmp:
         with wave.open(tmp.name, "wb") as w:

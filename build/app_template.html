@@ -164,6 +164,19 @@ table.rv td.t { font-size: var(--s-sm); }
 .key-notes dt { font-family: var(--f-greek); font-size: 17px; white-space: nowrap; }
 .key-notes dd { margin: 0; color: var(--muted); }
 @media (max-width: 520px) { .key-notes dl { grid-template-columns: 1fr; gap: 0 0; } .key-notes dd { margin-bottom: 8px; } }
+table.rv.syn td { vertical-align: middle; }
+table.rv.syn td.none { font-size: var(--s-xs); color: var(--muted); font-style: italic; }
+table.rv.syn tbody th small { display: block; font-style: normal; font-size: var(--s-xs); }
+.pill { display: inline-block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; padding: 0 7px; border: 1px solid var(--rule); color: var(--muted); }
+.pill.secondary { color: var(--ochre); border-color: var(--ochre); }
+.ov h4 { margin: 18px 0 6px; }
+.ov h4:first-of-type { margin-top: 4px; }
+.ov ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: var(--s-sm); }
+.ov .gk { font-size: 19px; }
+table.rv.mx td { text-align: center; color: var(--lapis); font-weight: 600; }
+table.rv.mx thead th { white-space: normal; font-size: var(--s-xs); text-align: center; }
+.across { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 14px 16px; background: var(--slab); border: 1px solid var(--rule); border-radius: 8px; }
+.across .t { font-weight: 500; }
 .extras { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: var(--s-sm); }
 .extras .gk { font-size: 20px; }
 @media (max-width: 520px) {
@@ -326,6 +339,7 @@ function renderHome() {
       ${VOICES.length > 1 ? `<label class="label" for="voice">Voice</label>
       <select id="voice" class="chip">${VOICES.map(([k, l]) => `<option value="${k}" ${prefs.voice === k ? "selected" : ""}>${l}</option>`).join("")}</select>` : ""}
     </section>
+    ${REVIEW.verbs ? `<section class="across"><span class="label">Across weeks</span><span class="t">All verb forms so far, with overlaps in formation</span><button class="btn small" data-review="verbs" style="margin-left:auto">Review sheet</button></section>` : ""}
     <section class="weeks">${WEEKS.map(weekHtml).join("")}</section>`;
   $("#studyAll").onclick = () => startSession(DECKS.map(d => d.key));
   v.querySelectorAll("[data-type]").forEach(b => b.onclick = () => {
@@ -421,6 +435,7 @@ function formHtml(c) {
   return sayBtn(c.audio, inner);
 }
 function tableHtml(t) {
+  if (t.type === "overlaps") return tableBody(t);
   return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu", "alts", "notrans"]) + "</div>");
 }
 function tableBody(t) {
@@ -444,6 +459,20 @@ function tableBody(t) {
     </table></div>
     <h3 style="margin-top:16px">Diphthongs, breathings, accents</h3><div class="scroll"><table class="rv"><tbody>
     ${t.marks.map(m => `<tr><td class="f">${esc(m.sym)}</td><td class="t">${esc(m.sound)}</td></tr>`).join("")}</tbody></table></div></div>`;
+  if (t.type === "synopsis") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv syn">
+    <thead><tr><th></th>${t.moods.map(m => `<th>${esc(m)}</th>`).join("")}</tr></thead>
+    <tbody>${t.rows.map(r => `<tr><th>${esc(r.tense)}<small>PP ${r.pp} · <span class="pill ${r.seq}">${r.seq}</span></small></th>${r.cells.map(c => c.none ? `<td class="none">${esc(c.none)}</td>` : `<td class="f">${formHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table></div><div class="fn"><span><span class="pill">primary</span> / <span class="pill secondary">secondary</span> tells which mood a purpose clause takes after it: subjunctive after primary, optative after secondary. “later” = exists but not covered yet.</span></div></div>`;
+  if (t.type === "overlaps") {
+    const parse = ps => ps.map(esc).join(" · ");
+    return `<div class="sheet ov"><h3>${esc(t.title)}</h3>
+    <h4>Same form, different parse</h4><ul>${t.same.map(x => `<li>${sayBtn(x.audio, `<span class="gk">${esc(x.form)}</span>`)}: ${parse(x.parses)}</li>`).join("")}</ul>
+    ${t.accent.length ? `<h4>Same letters, different accent</h4><ul>${t.accent.map(a => `<li>${a.forms.map(f => `${sayBtn(f.audio, `<span class="gk">${esc(f.form)}</span>`)} (${parse(f.parses)})`).join(" vs. ")}</li>`).join("")}</ul>` : ""}
+    <h4>Shared endings</h4><ul>${t.shared.map(x => `<li><b>${x.tenses.map(esc).join(" = ")}</b>${x.except ? `, except ${esc(x.except)}` : ""}: <span class="gk">${x.endings.map(esc).join(", ")}</span></li>`).join("")}</ul>
+    <h4>What marks each form</h4><div class="scroll"><table class="rv mx"><thead><tr><th></th>${t.matrix.cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead>
+    <tbody>${t.matrix.rows.map(r => `<tr><th>${esc(r.label)}</th>${r.marks.map(m => `<td>${m ? "●" : ""}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+    <h4>Rules of thumb</h4><ul>${t.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>`;
+  }
   return "";
 }
 function vocabHtml(v) {
@@ -453,7 +482,7 @@ function vocabHtml(v) {
 }
 function renderReview(id) {
   session = null;
-  const w = WEEKS.find(x => x.id === id), r = REVIEW[id];
+  const r = REVIEW[id], w = WEEKS.find(x => x.id === id) || { label: r.label, topic: r.topic };
   const forms = r.tables.some(t => t.type !== "alphabet");
   const v = $("#view");
   v.innerHTML = `<section class="review${prefs.quiz && forms ? " quiz" : ""}">

@@ -375,3 +375,22 @@ VOCAB = {
         ("ὡς", "in order that", "conjunction (purpose clauses)", "H&Q U3"),
     ],
 }
+
+
+# ---------------------------------------------------------------------------
+# Formation rules for the all-verbs review sheet (in our words; patterns from H&Q Units 2–3).
+# The sheet also computes overlaps from the paradigms above: identical forms, accent-only pairs, shared endings.
+# ---------------------------------------------------------------------------
+VERB_NOTES = [
+    "The augment ἐ- appears only in the indicative of the past (secondary) tenses: imperfect, aorist, pluperfect. "
+    "Subjunctive, optative and infinitive never take it, so the aorist subjunctive παιδεύσω has no ἐ- although ἐπαίδευσα does.",
+    "σ marks the future and the whole aorist system; κ (with reduplication πε-) marks the perfect active system: "
+    "perfect, pluperfect, perfect infinitive.",
+    "Subjunctive = the indicative's thematic vowel lengthened (ο → ω, ε → η, ει → ῃ): παιδεύομεν → παιδεύωμεν, "
+    "παιδεύει → παιδεύῃ. Present and aorist subjunctive share every ending; only the σ of the stem tells them apart.",
+    "Optative = a vowel + ι before the endings -μι, -ς, (none), -μεν, -τε, -εν: οι in the present, αι in the aorist.",
+    "There is no future subjunctive: παιδεύσω is future indicative or aorist subjunctive, and context decides.",
+    "One letter apart: παιδεύει / παιδεύῃ, παιδεύσει / παιδεύσῃ, παιδεύετε / παιδεύητε (indicative / subjunctive).",
+    "Sequence of moods: after a primary main verb (present, future, perfect) a purpose clause takes the subjunctive; "
+    "after a secondary one (imperfect, aorist, pluperfect) it takes the optative.",
+]

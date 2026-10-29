@@ -16,7 +16,7 @@ import unicodedata
 
 import genanki
 
-from data import WEEKS, PARADIGMS, EXTRAS, ALPHABET, DIPHTHONGS, VOCAB, VERB_SLOTS
+from data import WEEKS, PARADIGMS, EXTRAS, ALPHABET, DIPHTHONGS, VOCAB, VERB_SLOTS, VERB_NOTES
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANKI = os.path.join(ROOT, "anki")
@@ -362,6 +362,145 @@ REVIEW["w7"] = {"tables": verb_review(PARADIGMS["w7"], EXTRAS["w7"]),
                 "vocab": [vocab_review(VOCAB["w7"], "Hansen & Quinn Unit 3")]}
 REVIEW["w6"] = {"tables": [t for w in ("w2", "w3", "w4", "w5") for t in REVIEW[w]["tables"]],
                 "vocab": [v for w in ("w2", "w4", "w5") for v in REVIEW[w]["vocab"]]}
+
+
+# ---------------------------------------------------------------------------
+# All verb forms so far: synopsis, paradigms by principal part, and overlaps in formation
+# ---------------------------------------------------------------------------
+PP_OF = {"present": "I", "imperfect": "I", "future": "II", "aorist": "III", "perfect": "IV", "pluperfect": "IV"}
+PP_INFO = {"I": ("παιδεύω", "present stem παιδευ-"), "II": ("παιδεύσω", "future stem παιδευσ-"),
+           "III": ("ἐπαίδευσα", "aorist stem παιδευσ- (augmented ἐπαιδευσ- in the indicative)"),
+           "IV": ("πεπαίδευκα", "perfect active stem πεπαιδευκ-")}
+MOODS = ["indicative", "subjunctive", "optative", "infinitive"]
+SECONDARY = {"imperfect", "aorist", "pluperfect"}
+# how each infinitive splits, like the finite forms: ending, then augment/reduplication prefix and tense sign
+INF_PARTS = {"present": ("-ειν", None, None), "aorist": ("-αι", None, "σ"), "perfect": ("-έναι", "πε", "κ")}
+
+
+def bare_text(s):
+    return "".join(c for c in unicodedata.normalize("NFD", s) if not unicodedata.combining(c))
+
+
+def all_verbs():
+    """Every finite verb table so far, with tense and mood split out."""
+    out = []
+    for wid in ("w5", "w7"):
+        for v in PARADIGMS.get(wid, []):
+            if v.get("kind") != "verb":
+                continue
+            tense, *mood = v["tense"].split()
+            out.append(dict(v, t=tense, mood=mood[0] if mood else "indicative"))
+    return out
+
+
+def all_infinitives():
+    out = []
+    for wid in ("w5", "w7"):
+        for label, form, note in EXTRAS.get(wid, []):
+            if "infinitive" in label:
+                tense = label.split(":")[1].split()[0]
+                end, prefix, sign = INF_PARTS[tense]
+                out.append({"t": tense, "form": form, "label": f"{tense} infinitive active", "note": note,
+                            "cell": mark_stem(form_cell(form, end), prefix, sign)})
+    return out
+
+
+def verb_cells(v):
+    prefix = v.get("prefix", "ἐ" if v["tense"] in ("imperfect", "aorist") else None)
+    sign = v.get("sign", "σ" if v["tense"] in ("future", "aorist") else None)
+    return [mark_stem(form_cell(f, e), prefix, sign) for f, e in zip(v["forms"], v["endings"])]
+
+
+def verbs_review():
+    verbs, infs = all_verbs(), all_infinitives()
+    order = ["present", "imperfect", "future", "aorist", "perfect", "pluperfect"]
+    # 1. synopsis: first singular of every tense x mood, infinitives in their own column
+    rows = []
+    for t in order:
+        cells = []
+        for m in MOODS:
+            if m == "infinitive":
+                inf = next((i for i in infs if i["t"] == t), None)
+                cells.append(inf["cell"] if inf else {"none": "indicative only" if t in ("imperfect", "pluperfect") else "later"})
+                continue
+            v = next((v for v in verbs if v["t"] == t and v["mood"] == m), None)
+            if v:
+                cells.append(verb_cells(v)[0])
+            elif t in ("imperfect", "pluperfect"):
+                cells.append({"none": "indicative only"})
+            elif t == "future" and m == "subjunctive":
+                cells.append({"none": "does not exist"})
+            elif t == "perfect":
+                cells.append({"none": "rare (H&Q appendix)"})
+            else:
+                cells.append({"none": "later"})
+        if any("none" not in c for c in cells):
+            rows.append({"tense": t, "pp": PP_OF[t], "seq": "secondary" if t in SECONDARY else "primary", "cells": cells})
+    synopsis = {"type": "synopsis", "title": "Synopsis: first person singular (infinitive in the last column)",
+                "source": "Hansen & Quinn, Units 2–3; cf. the synopses on pp. 78 and 82", "moods": MOODS, "rows": rows}
+
+    # 2. full paradigms grouped by principal part
+    tables = [synopsis]
+    for pp in ("I", "II", "III", "IV"):
+        vs = sorted((v for v in verbs if PP_OF[v["t"]] == pp), key=lambda v: (MOODS.index(v["mood"]), order.index(v["t"])))
+        if not vs:
+            continue
+        head, stem = PP_INFO[pp]
+        tenses = [{"tense": v["label"].replace(" active", ""), "label": v["label"], "stem": v["stem"], "source": v["source"],
+                   "recite": audio(", ".join(v["forms"]), slow=True), "forms": verb_cells(v), "trans": v.get("trans")}
+                  for v in vs]
+        extras = [{"label": i["label"], "greek": i["form"], "note": i["note"], "audio": audio(i["form"])}
+                  for i in infs if PP_OF[i["t"]] == pp]
+        tables.append({"type": "verb", "title": f"Principal Part {pp}: {head} · {stem}", "lemma": "παιδεύω",
+                       "slots": VERB_SLOTS, "tenses": tenses, "extras": extras})
+
+    # 3. overlaps, computed from the paradigms
+    parses = {}   # exact form -> its parses
+    for v in verbs:
+        for slot, f in zip(VERB_SLOTS, v["forms"]):
+            for alt in f.split(" / "):
+                parses.setdefault(nfc(alt), []).append(f"{slot} {v['label'].replace(' active', '')}")
+    for i in infs:
+        parses.setdefault(nfc(i["form"]), []).append(i["label"].replace(" active", ""))
+    same = [{"form": f, "audio": audio(f), "parses": ps} for f, ps in parses.items() if len(ps) > 1]
+    by_letters = {}
+    for f in parses:
+        by_letters.setdefault(bare_text(f), []).append(f)
+    accent = [{"forms": [{"form": f, "audio": audio(f), "parses": parses[f]} for f in fs]}
+              for fs in by_letters.values() if len(fs) > 1]
+    norm = lambda ends: tuple(bare_text(e).lstrip("-") for e in ends)
+    groups = {}
+    for v in verbs:
+        groups.setdefault(norm(v["endings"]), []).append(v)
+    shared = [{"endings": vs[0]["endings"], "tenses": [v["label"].replace(" active", "") for v in vs]}
+              for vs in groups.values() if len(vs) > 1]
+    keys = list(groups)
+    for a in range(len(keys)):
+        for b in range(a + 1, len(keys)):
+            diff = [i for i in range(len(VERB_SLOTS)) if keys[a][i] != keys[b][i]]
+            if len(diff) == 1:
+                i = diff[0]
+                va, vb = groups[keys[a]][0], groups[keys[b]][0]
+                shared.append({"endings": va["endings"], "tenses": [va["label"].replace(" active", ""), vb["label"].replace(" active", "")],
+                               "except": f"{VERB_SLOTS[i]}: {va['endings'][i]} vs. {vb['endings'][i]}"})
+    marks = []
+    for v in sorted(verbs, key=lambda v: (MOODS.index(v["mood"]), order.index(v["t"]))):
+        c = verb_cells(v)[0]
+        c = c.get("alts", [c])[0]
+        marks.append((v["label"].replace(" active", ""), c))
+    for i in infs:
+        c = i["cell"].get("alts", [i["cell"]])[0]
+        marks.append((i["label"].replace(" active", ""), c))
+    matrix = {"cols": ["augment ἐ-", "reduplication πε-", "tense sign σ", "tense sign κ"],
+              "rows": [{"label": lab, "marks": ["ἐ" in c.get("aug", ""), "πε" in c.get("aug", ""),
+                                                c.get("sign") == "σ", c.get("sign") == "κ"]} for lab, c in marks]}
+    overlaps = {"type": "overlaps", "title": "Overlaps in formation", "same": same, "accent": accent,
+                "shared": shared, "matrix": matrix, "notes": VERB_NOTES}
+    tables.append(overlaps)
+    return {"tables": tables, "vocab": [], "label": "All weeks", "topic": "All verb forms so far: παιδεύω"}
+
+
+REVIEW["verbs"] = verbs_review()
 
 # ---------------------------------------------------------------------------
 # Anki packaging

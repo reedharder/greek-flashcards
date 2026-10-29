@@ -14810,6 +14810,1030 @@
      ]
     }
    ]
+  },
+  "verbs": {
+   "tables": [
+    {
+     "type": "synopsis",
+     "title": "Synopsis: first person singular (infinitive in the last column)",
+     "source": "Hansen & Quinn, Units 2–3; cf. the synopses on pp. 78 and 82",
+     "moods": [
+      "indicative",
+      "subjunctive",
+      "optative",
+      "infinitive"
+     ],
+     "rows": [
+      {
+       "tense": "present",
+       "pp": "I",
+       "seq": "primary",
+       "cells": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιμι",
+         "audio": "52c5953197c0"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ειν",
+         "audio": "eb9e79b829c1"
+        }
+       ]
+      },
+      {
+       "tense": "imperfect",
+       "pp": "I",
+       "seq": "secondary",
+       "cells": [
+        {
+         "stem": "παίδευ",
+         "end": "ον",
+         "audio": "67df99770b2f",
+         "aug": "ἐ"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        }
+       ]
+      },
+      {
+       "tense": "future",
+       "pp": "II",
+       "seq": "primary",
+       "cells": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "none": "does not exist"
+        },
+        {
+         "none": "later"
+        },
+        {
+         "none": "later"
+        }
+       ]
+      },
+      {
+       "tense": "aorist",
+       "pp": "III",
+       "seq": "secondary",
+       "cells": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "836ee0f39793",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιμι",
+         "audio": "483436b94738",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεῦ",
+         "end": "αι",
+         "audio": "e369eb3b5bec",
+         "sign": "σ"
+        }
+       ]
+      },
+      {
+       "tense": "perfect",
+       "pp": "IV",
+       "seq": "primary",
+       "cells": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "cb376c78438b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "none": "rare (H&Q appendix)"
+        },
+        {
+         "none": "rare (H&Q appendix)"
+        },
+        {
+         "stem": "παιδευ",
+         "end": "έναι",
+         "audio": "5c4735234120",
+         "aug": "πε",
+         "sign": "κ"
+        }
+       ]
+      },
+      {
+       "tense": "pluperfect",
+       "pp": "IV",
+       "seq": "secondary",
+       "cells": [
+        {
+         "stem": "παιδεύ",
+         "end": "η",
+         "audio": "73b698525738",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part I: παιδεύω · present stem παιδευ-",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "present indicative",
+       "label": "present indicative active",
+       "stem": "παιδευ- (from Principal Part I)",
+       "source": "Hansen & Quinn, §20",
+       "recite": "f543058c3db9",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εις",
+         "audio": "bab6692c659c"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει",
+         "audio": "135dc393e244"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ομεν",
+         "audio": "2e3bbdff8514"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "f257e819404b"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ουσι(ν)",
+         "audio": "b7fd9269f4fb"
+        }
+       ],
+       "trans": [
+        "I am educating, I educate",
+        "you (sg.) are educating, you educate",
+        "he/she/it is educating, educates",
+        "we are educating, we educate",
+        "you (pl.) are educating, you educate",
+        "they are educating, they educate"
+       ]
+      },
+      {
+       "tense": "imperfect indicative",
+       "label": "imperfect indicative active",
+       "stem": "ἐπαιδευ- (augment + present stem)",
+       "source": "Hansen & Quinn, §21",
+       "recite": "8706187640f3",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "ον",
+         "audio": "67df99770b2f",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ες",
+         "audio": "9c67e6d6519d",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "cd905eabff58",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ομεν",
+         "audio": "4eaa3442909a",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "37874af39c56",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ον",
+         "audio": "67df99770b2f",
+         "aug": "ἐ"
+        }
+       ],
+       "trans": [
+        "I was educating, used to educate",
+        "you (sg.) were educating, used to educate",
+        "he/she/it was educating, used to educate",
+        "we were educating, used to educate",
+        "you (pl.) were educating, used to educate",
+        "they were educating, used to educate"
+       ]
+      },
+      {
+       "tense": "present subjunctive",
+       "label": "present subjunctive active",
+       "stem": "παιδευ- (present tense stem)",
+       "source": "Hansen & Quinn, §31",
+       "recite": "97eadb36dd5b",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃς",
+         "audio": "0dbc142fc75b"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃ",
+         "audio": "258878e1c1fd"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωμεν",
+         "audio": "3b44533129e5"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ητε",
+         "audio": "2d1c753bef39"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωσι(ν)",
+         "audio": "7ae8f56988b5"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "present optative",
+       "label": "present optative active",
+       "stem": "παιδευ- (present tense stem)",
+       "source": "Hansen & Quinn, §33",
+       "recite": "4af1a9f211b2",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "οιμι",
+         "audio": "52c5953197c0"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οις",
+         "audio": "7f2149f0b518"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οι",
+         "audio": "fd840910762a"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιμεν",
+         "audio": "be3cb3ffb0ef"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιτε",
+         "audio": "af78922cbd40"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιεν",
+         "audio": "eeaa2d8b2b25"
+        }
+       ],
+       "trans": null
+      }
+     ],
+     "extras": [
+      {
+       "label": "present infinitive active",
+       "greek": "παιδεύειν",
+       "note": "to educate, to be educating (progressive/repeated aspect) — H&Q §26",
+       "audio": "eb9e79b829c1"
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part II: παιδεύσω · future stem παιδευσ-",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "future indicative",
+       "label": "future indicative active",
+       "stem": "παιδευσ- (from Principal Part II)",
+       "source": "Hansen & Quinn, §22",
+       "recite": "09dcf5a57c92",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εις",
+         "audio": "6b72907dbb25",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει",
+         "audio": "f90b9a78c7fe",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ομεν",
+         "audio": "0ccad4800b20",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "2d5b3cd074f6",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ουσι(ν)",
+         "audio": "6d099bdd3ae8",
+         "sign": "σ"
+        }
+       ],
+       "trans": [
+        "I shall educate / be educating",
+        "you (sg.) will educate",
+        "he/she/it will educate",
+        "we shall educate",
+        "you (pl.) will educate",
+        "they will educate"
+       ]
+      }
+     ],
+     "extras": []
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part III: ἐπαίδευσα · aorist stem παιδευσ- (augmented ἐπαιδευσ- in the indicative)",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "aorist indicative",
+       "label": "aorist indicative active",
+       "stem": "ἐπαιδευσ- (from Principal Part III)",
+       "source": "Hansen & Quinn, §23",
+       "recite": "ac412cb9b82a",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "836ee0f39793",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ας",
+         "audio": "b8a37347df81",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "6f41adf8924c",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αμεν",
+         "audio": "387d61fc3542",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ατε",
+         "audio": "4e12ee3d6e3a",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "αν",
+         "audio": "548e5f22181c",
+         "aug": "ἐ",
+         "sign": "σ"
+        }
+       ],
+       "trans": [
+        "I educated",
+        "you (sg.) educated",
+        "he/she/it educated",
+        "we educated",
+        "you (pl.) educated",
+        "they educated"
+       ]
+      },
+      {
+       "tense": "aorist subjunctive",
+       "label": "aorist subjunctive active",
+       "stem": "παιδευσ- (unaugmented aorist stem)",
+       "source": "Hansen & Quinn, §32",
+       "recite": "ea3a3a061b9a",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃς",
+         "audio": "6ba27f51bd3b",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃ",
+         "audio": "0df0a5a2ce77",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωμεν",
+         "audio": "8617f2963819",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ητε",
+         "audio": "7c454f3d6418",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωσι(ν)",
+         "audio": "41a35f30e4e2",
+         "sign": "σ"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "aorist optative",
+       "label": "aorist optative active",
+       "stem": "παιδευσ- (unaugmented aorist stem)",
+       "source": "Hansen & Quinn, §34",
+       "recite": "91ae69c24a45",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "αιμι",
+         "audio": "483436b94738",
+         "sign": "σ"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αις",
+           "audio": "476ba3f94a18",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειας",
+           "audio": "8a5af1ae2b13",
+           "sign": "σ"
+          }
+         ],
+         "audio": "5ac4831be92f"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αι",
+           "audio": "0dd6c0855e22",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειε(ν)",
+           "audio": "c8d762ae5808",
+           "sign": "σ"
+          }
+         ],
+         "audio": "7c1e2eae1598"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιμεν",
+         "audio": "31d7985806b3",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιτε",
+         "audio": "9e4c683ac9ea",
+         "sign": "σ"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αιεν",
+           "audio": "8c8c825727e7",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειαν",
+           "audio": "249503885d15",
+           "sign": "σ"
+          }
+         ],
+         "audio": "6f8b5e5b806b"
+        }
+       ],
+       "trans": null
+      }
+     ],
+     "extras": [
+      {
+       "label": "aorist infinitive active",
+       "greek": "παιδεῦσαι",
+       "note": "to educate (simple aspect) — H&Q §26",
+       "audio": "e369eb3b5bec"
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part IV: πεπαίδευκα · perfect active stem πεπαιδευκ-",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "perfect indicative",
+       "label": "perfect indicative active",
+       "stem": "πεπαιδευκ- (from Principal Part IV)",
+       "source": "Hansen & Quinn, §28",
+       "recite": "c959c232c7ee",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "cb376c78438b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ας",
+         "audio": "b00f88f5f4b5",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "de18eaa1ff1b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αμεν",
+         "audio": "e4bb50601466",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ατε",
+         "audio": "d42c394557c3",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ᾱσι(ν)",
+         "audio": "5c911b7d429d",
+         "aug": "πε",
+         "sign": "κ"
+        }
+       ],
+       "trans": [
+        "I have educated",
+        "you (sg.) have educated",
+        "he/she/it has educated",
+        "we have educated",
+        "you (pl.) have educated",
+        "they have educated"
+       ]
+      },
+      {
+       "tense": "pluperfect indicative",
+       "label": "pluperfect indicative active",
+       "stem": "ἐπεπαιδευκ- (augment + perfect active stem)",
+       "source": "Hansen & Quinn, §29",
+       "recite": "671d0f602625",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "η",
+         "audio": "73b698525738",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ης",
+         "audio": "19b27d74079c",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει(ν)",
+         "audio": "e1f75978c66e",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εμεν",
+         "audio": "579b8d6ac0df",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "9b31d008054a",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εσαν",
+         "audio": "b92c09361bd4",
+         "aug": "ἐπε",
+         "sign": "κ"
+        }
+       ],
+       "trans": [
+        "I had educated",
+        "you (sg.) had educated",
+        "he/she/it had educated",
+        "we had educated",
+        "you (pl.) had educated",
+        "they had educated"
+       ]
+      }
+     ],
+     "extras": [
+      {
+       "label": "perfect infinitive active",
+       "greek": "πεπαιδευκέναι",
+       "note": "to have educated (completed aspect); always accented on the penult — H&Q §30",
+       "audio": "5c4735234120"
+      }
+     ]
+    },
+    {
+     "type": "overlaps",
+     "title": "Overlaps in formation",
+     "same": [
+      {
+       "form": "παιδεύω",
+       "audio": "2055fdbf4fb6",
+       "parses": [
+        "1st sg. present indicative",
+        "1st sg. present subjunctive"
+       ]
+      },
+      {
+       "form": "ἐπαίδευον",
+       "audio": "67df99770b2f",
+       "parses": [
+        "1st sg. imperfect indicative",
+        "3rd pl. imperfect indicative"
+       ]
+      },
+      {
+       "form": "παιδεύσω",
+       "audio": "fd936e984939",
+       "parses": [
+        "1st sg. future indicative",
+        "1st sg. aorist subjunctive"
+       ]
+      }
+     ],
+     "accent": [
+      {
+       "forms": [
+        {
+         "form": "παιδεύσαι",
+         "audio": "0dd6c0855e22",
+         "parses": [
+          "3rd sg. aorist optative"
+         ]
+        },
+        {
+         "form": "παιδεῦσαι",
+         "audio": "e369eb3b5bec",
+         "parses": [
+          "aorist infinitive"
+         ]
+        }
+       ]
+      }
+     ],
+     "shared": [
+      {
+       "endings": [
+        "-ω",
+        "-εις",
+        "-ει",
+        "-ομεν",
+        "-ετε",
+        "-ουσι(ν)"
+       ],
+       "tenses": [
+        "present indicative",
+        "future indicative"
+       ]
+      },
+      {
+       "endings": [
+        "-ω",
+        "-ῃς",
+        "-ῃ",
+        "-ωμεν",
+        "-ητε",
+        "-ωσι(ν)"
+       ],
+       "tenses": [
+        "present subjunctive",
+        "aorist subjunctive"
+       ]
+      },
+      {
+       "endings": [
+        "-α",
+        "-ας",
+        "-ε(ν)",
+        "-αμεν",
+        "-ατε",
+        "-αν"
+       ],
+       "tenses": [
+        "aorist indicative",
+        "perfect indicative"
+       ],
+       "except": "3rd pl.: -αν vs. -ᾱσι(ν)"
+      }
+     ],
+     "matrix": {
+      "cols": [
+       "augment ἐ-",
+       "reduplication πε-",
+       "tense sign σ",
+       "tense sign κ"
+      ],
+      "rows": [
+       {
+        "label": "present indicative",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "imperfect indicative",
+        "marks": [
+         true,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "future indicative",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "aorist indicative",
+        "marks": [
+         true,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "perfect indicative",
+        "marks": [
+         false,
+         true,
+         false,
+         true
+        ]
+       },
+       {
+        "label": "pluperfect indicative",
+        "marks": [
+         true,
+         true,
+         false,
+         true
+        ]
+       },
+       {
+        "label": "present subjunctive",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "aorist subjunctive",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "present optative",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "aorist optative",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "present infinitive",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "aorist infinitive",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "perfect infinitive",
+        "marks": [
+         false,
+         true,
+         false,
+         true
+        ]
+       }
+      ]
+     },
+     "notes": [
+      "The augment ἐ- appears only in the indicative of the past (secondary) tenses: imperfect, aorist, pluperfect. Subjunctive, optative and infinitive never take it, so the aorist subjunctive παιδεύσω has no ἐ- although ἐπαίδευσα does.",
+      "σ marks the future and the whole aorist system; κ (with reduplication πε-) marks the perfect active system: perfect, pluperfect, perfect infinitive.",
+      "Subjunctive = the indicative's thematic vowel lengthened (ο → ω, ε → η, ει → ῃ): παιδεύομεν → παιδεύωμεν, παιδεύει → παιδεύῃ. Present and aorist subjunctive share every ending; only the σ of the stem tells them apart.",
+      "Optative = a vowel + ι before the endings -μι, -ς, (none), -μεν, -τε, -εν: οι in the present, αι in the aorist.",
+      "There is no future subjunctive: παιδεύσω is future indicative or aorist subjunctive, and context decides.",
+      "One letter apart: παιδεύει / παιδεύῃ, παιδεύσει / παιδεύσῃ, παιδεύετε / παιδεύητε (indicative / subjunctive).",
+      "Sequence of moods: after a primary main verb (present, future, perfect) a purpose clause takes the subjunctive; after a secondary one (imperfect, aorist, pluperfect) it takes the optative."
+     ]
+    }
+   ],
+   "vocab": [],
+   "label": "All weeks",
+   "topic": "All verb forms so far: παιδεύω"
   }
  },
  "voices": [

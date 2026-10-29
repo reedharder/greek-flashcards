@@ -38,13 +38,16 @@ def load_piper(path):
 
 
 VOWEL_START = re.compile(r"(^|[\s,])([aeiouyɛɔæɑʏ])")
+EU_BEFORE_CONSONANT = re.compile(r"eʊ(?=[ˈˌ]?[^aeiouyɛɔæɑʏɪʊːˈˌ\s,.])")
 
 
 def grc_phonemes(text):
     ipa = subprocess.run(["espeak-ng", "-q", "-v", "grc", "--ipa", text], capture_output=True, text=True, check=True).stdout
     ph = ", ".join(l.strip() for l in ipa.splitlines() if l.strip()) + "."
     # Piper all but drops an unstressed word-initial vowel (the augment of ἐπαίδευον): give it secondary stress
-    return VOWEL_START.sub(r"\1ˌ\2", ph)
+    ph = VOWEL_START.sub(r"\1ˌ\2", ph)
+    # ευ before a consonant: Piper's ʊ smears into the next stop (-ευκ- sounded like -ευβ-); a w glide stays clean
+    return EU_BEFORE_CONSONANT.sub("ew", ph)
 
 
 def monotonic(text):

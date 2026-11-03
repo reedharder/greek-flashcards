@@ -34,13 +34,33 @@
    "id": "w6",
    "num": 6,
    "label": "Week 6",
-   "topic": "Review"
+   "topic": "Review",
+   "reuse": [
+    "w5-paideuo",
+    "w5-vocab"
+   ]
   },
   {
    "id": "w7",
    "num": 7,
    "label": "Week 7",
    "topic": "Perfect and pluperfect; subjunctive and optative; purpose clauses"
+  },
+  {
+   "id": "w8",
+   "num": 8,
+   "label": "Week 8",
+   "topic": "Review: Hansen & Quinn Units 1–3",
+   "reuse": [
+    "w2-paradigms",
+    "w3-article",
+    "w4-paradigms",
+    "w5-paideuo",
+    "w7-paideuo",
+    "w4-vocab",
+    "w5-vocab",
+    "w7-vocab"
+   ]
   }
  ],
  "decks": [
@@ -15834,6 +15854,3232 @@
    "vocab": [],
    "label": "All weeks",
    "topic": "All verb forms so far: παιδεύω"
+  },
+  "w8": {
+   "tables": [
+    {
+     "type": "heading",
+     "title": "Verbs: every form of παιδεύω so far"
+    },
+    {
+     "type": "synopsis",
+     "title": "Synopsis: first person singular (infinitive in the last column)",
+     "source": "Hansen & Quinn, Units 2–3; cf. the synopses on pp. 78 and 82",
+     "moods": [
+      "indicative",
+      "subjunctive",
+      "optative",
+      "infinitive"
+     ],
+     "rows": [
+      {
+       "tense": "present",
+       "pp": "I",
+       "seq": "primary",
+       "cells": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιμι",
+         "audio": "52c5953197c0"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ειν",
+         "audio": "eb9e79b829c1"
+        }
+       ]
+      },
+      {
+       "tense": "imperfect",
+       "pp": "I",
+       "seq": "secondary",
+       "cells": [
+        {
+         "stem": "παίδευ",
+         "end": "ον",
+         "audio": "67df99770b2f",
+         "aug": "ἐ"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        }
+       ]
+      },
+      {
+       "tense": "future",
+       "pp": "II",
+       "seq": "primary",
+       "cells": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "none": "does not exist"
+        },
+        {
+         "none": "later"
+        },
+        {
+         "none": "later"
+        }
+       ]
+      },
+      {
+       "tense": "aorist",
+       "pp": "III",
+       "seq": "secondary",
+       "cells": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "836ee0f39793",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιμι",
+         "audio": "483436b94738",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεῦ",
+         "end": "αι",
+         "audio": "e369eb3b5bec",
+         "sign": "σ"
+        }
+       ]
+      },
+      {
+       "tense": "perfect",
+       "pp": "IV",
+       "seq": "primary",
+       "cells": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "cb376c78438b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "none": "rare (H&Q appendix)"
+        },
+        {
+         "none": "rare (H&Q appendix)"
+        },
+        {
+         "stem": "παιδευ",
+         "end": "έναι",
+         "audio": "5c4735234120",
+         "aug": "πε",
+         "sign": "κ"
+        }
+       ]
+      },
+      {
+       "tense": "pluperfect",
+       "pp": "IV",
+       "seq": "secondary",
+       "cells": [
+        {
+         "stem": "παιδεύ",
+         "end": "η",
+         "audio": "73b698525738",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        },
+        {
+         "none": "indicative only"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part I: παιδεύω · present stem παιδευ-",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "present indicative",
+       "label": "present indicative active",
+       "stem": "παιδευ- (from Principal Part I)",
+       "source": "Hansen & Quinn, §20",
+       "recite": "f543058c3db9",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εις",
+         "audio": "bab6692c659c"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει",
+         "audio": "135dc393e244"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ομεν",
+         "audio": "2e3bbdff8514"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "f257e819404b"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ουσι(ν)",
+         "audio": "b7fd9269f4fb"
+        }
+       ],
+       "trans": [
+        "I am educating, I educate",
+        "you (sg.) are educating, you educate",
+        "he/she/it is educating, educates",
+        "we are educating, we educate",
+        "you (pl.) are educating, you educate",
+        "they are educating, they educate"
+       ]
+      },
+      {
+       "tense": "imperfect indicative",
+       "label": "imperfect indicative active",
+       "stem": "ἐπαιδευ- (augment + present stem)",
+       "source": "Hansen & Quinn, §21",
+       "recite": "8706187640f3",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "ον",
+         "audio": "67df99770b2f",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ες",
+         "audio": "9c67e6d6519d",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "cd905eabff58",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ομεν",
+         "audio": "4eaa3442909a",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "37874af39c56",
+         "aug": "ἐ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ον",
+         "audio": "67df99770b2f",
+         "aug": "ἐ"
+        }
+       ],
+       "trans": [
+        "I was educating, used to educate",
+        "you (sg.) were educating, used to educate",
+        "he/she/it was educating, used to educate",
+        "we were educating, used to educate",
+        "you (pl.) were educating, used to educate",
+        "they were educating, used to educate"
+       ]
+      },
+      {
+       "tense": "present subjunctive",
+       "label": "present subjunctive active",
+       "stem": "παιδευ- (present tense stem)",
+       "source": "Hansen & Quinn, §31",
+       "recite": "97eadb36dd5b",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "2055fdbf4fb6"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃς",
+         "audio": "0dbc142fc75b"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃ",
+         "audio": "258878e1c1fd"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωμεν",
+         "audio": "3b44533129e5"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ητε",
+         "audio": "2d1c753bef39"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωσι(ν)",
+         "audio": "7ae8f56988b5"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "present optative",
+       "label": "present optative active",
+       "stem": "παιδευ- (present tense stem)",
+       "source": "Hansen & Quinn, §33",
+       "recite": "4af1a9f211b2",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "οιμι",
+         "audio": "52c5953197c0"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οις",
+         "audio": "7f2149f0b518"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οι",
+         "audio": "fd840910762a"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιμεν",
+         "audio": "be3cb3ffb0ef"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιτε",
+         "audio": "af78922cbd40"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "οιεν",
+         "audio": "eeaa2d8b2b25"
+        }
+       ],
+       "trans": null
+      }
+     ],
+     "extras": [
+      {
+       "label": "present infinitive active",
+       "greek": "παιδεύειν",
+       "note": "to educate, to be educating (progressive/repeated aspect) — H&Q §26",
+       "audio": "eb9e79b829c1"
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part II: παιδεύσω · future stem παιδευσ-",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "future indicative",
+       "label": "future indicative active",
+       "stem": "παιδευσ- (from Principal Part II)",
+       "source": "Hansen & Quinn, §22",
+       "recite": "09dcf5a57c92",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εις",
+         "audio": "6b72907dbb25",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει",
+         "audio": "f90b9a78c7fe",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ομεν",
+         "audio": "0ccad4800b20",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "2d5b3cd074f6",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ουσι(ν)",
+         "audio": "6d099bdd3ae8",
+         "sign": "σ"
+        }
+       ],
+       "trans": [
+        "I shall educate / be educating",
+        "you (sg.) will educate",
+        "he/she/it will educate",
+        "we shall educate",
+        "you (pl.) will educate",
+        "they will educate"
+       ]
+      }
+     ],
+     "extras": []
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part III: ἐπαίδευσα · aorist stem παιδευσ- (augmented ἐπαιδευσ- in the indicative)",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "aorist indicative",
+       "label": "aorist indicative active",
+       "stem": "ἐπαιδευσ- (from Principal Part III)",
+       "source": "Hansen & Quinn, §23",
+       "recite": "ac412cb9b82a",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "836ee0f39793",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ας",
+         "audio": "b8a37347df81",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "6f41adf8924c",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αμεν",
+         "audio": "387d61fc3542",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ατε",
+         "audio": "4e12ee3d6e3a",
+         "aug": "ἐ",
+         "sign": "σ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "αν",
+         "audio": "548e5f22181c",
+         "aug": "ἐ",
+         "sign": "σ"
+        }
+       ],
+       "trans": [
+        "I educated",
+        "you (sg.) educated",
+        "he/she/it educated",
+        "we educated",
+        "you (pl.) educated",
+        "they educated"
+       ]
+      },
+      {
+       "tense": "aorist subjunctive",
+       "label": "aorist subjunctive active",
+       "stem": "παιδευσ- (unaugmented aorist stem)",
+       "source": "Hansen & Quinn, §32",
+       "recite": "ea3a3a061b9a",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "ω",
+         "audio": "fd936e984939",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃς",
+         "audio": "6ba27f51bd3b",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ῃ",
+         "audio": "0df0a5a2ce77",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωμεν",
+         "audio": "8617f2963819",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ητε",
+         "audio": "7c454f3d6418",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ωσι(ν)",
+         "audio": "41a35f30e4e2",
+         "sign": "σ"
+        }
+       ],
+       "trans": null
+      },
+      {
+       "tense": "aorist optative",
+       "label": "aorist optative active",
+       "stem": "παιδευσ- (unaugmented aorist stem)",
+       "source": "Hansen & Quinn, §34",
+       "recite": "91ae69c24a45",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "αιμι",
+         "audio": "483436b94738",
+         "sign": "σ"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αις",
+           "audio": "476ba3f94a18",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειας",
+           "audio": "8a5af1ae2b13",
+           "sign": "σ"
+          }
+         ],
+         "audio": "5ac4831be92f"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αι",
+           "audio": "0dd6c0855e22",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειε(ν)",
+           "audio": "c8d762ae5808",
+           "sign": "σ"
+          }
+         ],
+         "audio": "7c1e2eae1598"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιμεν",
+         "audio": "31d7985806b3",
+         "sign": "σ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αιτε",
+         "audio": "9e4c683ac9ea",
+         "sign": "σ"
+        },
+        {
+         "alts": [
+          {
+           "stem": "παιδεύ",
+           "end": "αιεν",
+           "audio": "8c8c825727e7",
+           "sign": "σ"
+          },
+          {
+           "stem": "παιδεύ",
+           "end": "ειαν",
+           "audio": "249503885d15",
+           "sign": "σ"
+          }
+         ],
+         "audio": "6f8b5e5b806b"
+        }
+       ],
+       "trans": null
+      }
+     ],
+     "extras": [
+      {
+       "label": "aorist infinitive active",
+       "greek": "παιδεῦσαι",
+       "note": "to educate (simple aspect) — H&Q §26",
+       "audio": "e369eb3b5bec"
+      }
+     ]
+    },
+    {
+     "type": "verb",
+     "title": "Principal Part IV: πεπαίδευκα · perfect active stem πεπαιδευκ-",
+     "lemma": "παιδεύω",
+     "slots": [
+      "1st sg.",
+      "2nd sg.",
+      "3rd sg.",
+      "1st pl.",
+      "2nd pl.",
+      "3rd pl."
+     ],
+     "tenses": [
+      {
+       "tense": "perfect indicative",
+       "label": "perfect indicative active",
+       "stem": "πεπαιδευκ- (from Principal Part IV)",
+       "source": "Hansen & Quinn, §28",
+       "recite": "c959c232c7ee",
+       "forms": [
+        {
+         "stem": "παίδευ",
+         "end": "α",
+         "audio": "cb376c78438b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ας",
+         "audio": "b00f88f5f4b5",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παίδευ",
+         "end": "ε(ν)",
+         "audio": "de18eaa1ff1b",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "αμεν",
+         "audio": "e4bb50601466",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ατε",
+         "audio": "d42c394557c3",
+         "aug": "πε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ᾱσι(ν)",
+         "audio": "5c911b7d429d",
+         "aug": "πε",
+         "sign": "κ"
+        }
+       ],
+       "trans": [
+        "I have educated",
+        "you (sg.) have educated",
+        "he/she/it has educated",
+        "we have educated",
+        "you (pl.) have educated",
+        "they have educated"
+       ]
+      },
+      {
+       "tense": "pluperfect indicative",
+       "label": "pluperfect indicative active",
+       "stem": "ἐπεπαιδευκ- (augment + perfect active stem)",
+       "source": "Hansen & Quinn, §29",
+       "recite": "671d0f602625",
+       "forms": [
+        {
+         "stem": "παιδεύ",
+         "end": "η",
+         "audio": "73b698525738",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ης",
+         "audio": "19b27d74079c",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ει(ν)",
+         "audio": "e1f75978c66e",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εμεν",
+         "audio": "579b8d6ac0df",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "ετε",
+         "audio": "9b31d008054a",
+         "aug": "ἐπε",
+         "sign": "κ"
+        },
+        {
+         "stem": "παιδεύ",
+         "end": "εσαν",
+         "audio": "b92c09361bd4",
+         "aug": "ἐπε",
+         "sign": "κ"
+        }
+       ],
+       "trans": [
+        "I had educated",
+        "you (sg.) had educated",
+        "he/she/it had educated",
+        "we had educated",
+        "you (pl.) had educated",
+        "they had educated"
+       ]
+      }
+     ],
+     "extras": [
+      {
+       "label": "perfect infinitive active",
+       "greek": "πεπαιδευκέναι",
+       "note": "to have educated (completed aspect); always accented on the penult — H&Q §30",
+       "audio": "5c4735234120"
+      }
+     ]
+    },
+    {
+     "type": "overlaps",
+     "title": "Overlaps in formation",
+     "same": [
+      {
+       "form": "παιδεύω",
+       "audio": "2055fdbf4fb6",
+       "parses": [
+        "1st sg. present indicative",
+        "1st sg. present subjunctive"
+       ]
+      },
+      {
+       "form": "ἐπαίδευον",
+       "audio": "67df99770b2f",
+       "parses": [
+        "1st sg. imperfect indicative",
+        "3rd pl. imperfect indicative"
+       ]
+      },
+      {
+       "form": "παιδεύσω",
+       "audio": "fd936e984939",
+       "parses": [
+        "1st sg. future indicative",
+        "1st sg. aorist subjunctive"
+       ]
+      }
+     ],
+     "accent": [
+      {
+       "forms": [
+        {
+         "form": "παιδεύσαι",
+         "audio": "0dd6c0855e22",
+         "parses": [
+          "3rd sg. aorist optative"
+         ]
+        },
+        {
+         "form": "παιδεῦσαι",
+         "audio": "e369eb3b5bec",
+         "parses": [
+          "aorist infinitive"
+         ]
+        }
+       ]
+      }
+     ],
+     "shared": [
+      {
+       "endings": [
+        "-ω",
+        "-εις",
+        "-ει",
+        "-ομεν",
+        "-ετε",
+        "-ουσι(ν)"
+       ],
+       "tenses": [
+        "present indicative",
+        "future indicative"
+       ]
+      },
+      {
+       "endings": [
+        "-ω",
+        "-ῃς",
+        "-ῃ",
+        "-ωμεν",
+        "-ητε",
+        "-ωσι(ν)"
+       ],
+       "tenses": [
+        "present subjunctive",
+        "aorist subjunctive"
+       ]
+      },
+      {
+       "endings": [
+        "-α",
+        "-ας",
+        "-ε(ν)",
+        "-αμεν",
+        "-ατε",
+        "-αν"
+       ],
+       "tenses": [
+        "aorist indicative",
+        "perfect indicative"
+       ],
+       "except": "3rd pl.: -αν vs. -ᾱσι(ν)"
+      }
+     ],
+     "matrix": {
+      "cols": [
+       "augment ἐ-",
+       "reduplication πε-",
+       "tense sign σ",
+       "tense sign κ"
+      ],
+      "rows": [
+       {
+        "label": "present indicative",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "imperfect indicative",
+        "marks": [
+         true,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "future indicative",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "aorist indicative",
+        "marks": [
+         true,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "perfect indicative",
+        "marks": [
+         false,
+         true,
+         false,
+         true
+        ]
+       },
+       {
+        "label": "pluperfect indicative",
+        "marks": [
+         true,
+         true,
+         false,
+         true
+        ]
+       },
+       {
+        "label": "present subjunctive",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "aorist subjunctive",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "present optative",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "aorist optative",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "present infinitive",
+        "marks": [
+         false,
+         false,
+         false,
+         false
+        ]
+       },
+       {
+        "label": "aorist infinitive",
+        "marks": [
+         false,
+         false,
+         true,
+         false
+        ]
+       },
+       {
+        "label": "perfect infinitive",
+        "marks": [
+         false,
+         true,
+         false,
+         true
+        ]
+       }
+      ]
+     },
+     "notes": [
+      "The augment ἐ- appears only in the indicative of the past (secondary) tenses: imperfect, aorist, pluperfect. Subjunctive, optative and infinitive never take it, so the aorist subjunctive παιδεύσω has no ἐ- although ἐπαίδευσα does.",
+      "σ marks the future and the whole aorist system; κ (with reduplication πε-) marks the perfect active system: perfect, pluperfect, perfect infinitive.",
+      "Subjunctive = the indicative's thematic vowel lengthened (ο → ω, ε → η, ει → ῃ): παιδεύομεν → παιδεύωμεν, παιδεύει → παιδεύῃ. Present and aorist subjunctive share every ending; only the σ of the stem tells them apart.",
+      "Optative = a vowel + ι before the endings -μι, -ς, (none), -μεν, -τε, -εν: οι in the present, αι in the aorist.",
+      "There is no future subjunctive: παιδεύσω is future indicative or aorist subjunctive, and context decides.",
+      "One letter apart: παιδεύει / παιδεύῃ, παιδεύσει / παιδεύσῃ, παιδεύετε / παιδεύητε (indicative / subjunctive).",
+      "Sequence of moods: after a primary main verb (present, future, perfect) a purpose clause takes the subjunctive; after a secondary one (imperfect, aorist, pluperfect) it takes the optative."
+     ]
+    },
+    {
+     "type": "pparts",
+     "title": "Principal parts of every verb in the vocabulary",
+     "source": "I present · II future · III aorist · IV perfect active · V perfect middle/passive · VI aorist passive",
+     "rows": [
+      {
+       "parts": [
+        "κελεύω",
+        "κελεύσω",
+        "ἐκέλευσα",
+        "κεκέλευκα",
+        "κεκέλευσμαι",
+        "ἐκελεύσθην"
+       ],
+       "eng": "order, command",
+       "src": "H&Q U2",
+       "audio": "cd7ab129a51e"
+      },
+      {
+       "parts": [
+        "λῡ́ω",
+        "λῡ́σω",
+        "ἔλῡσα",
+        "λέλυκα",
+        "λέλυμαι",
+        "ἐλύθην"
+       ],
+       "eng": "unbind, free, release; dissolve; destroy",
+       "src": "H&Q U2",
+       "audio": "8f06895a5077"
+      },
+      {
+       "parts": [
+        "παιδεύω",
+        "παιδεύσω",
+        "ἐπαίδευσα",
+        "πεπαίδευκα",
+        "πεπαίδευμαι",
+        "ἐπαιδεύθην"
+       ],
+       "eng": "educate, teach",
+       "src": "H&Q U2",
+       "audio": "52bd0ac11bbf"
+      },
+      {
+       "parts": [
+        "πέμπω",
+        "πέμψω",
+        "ἔπεμψα",
+        "πέπομφα",
+        "πέπεμμαι",
+        "ἐπέμφθην"
+       ],
+       "eng": "send",
+       "src": "H&Q U2",
+       "audio": "ebef2e82f36e"
+      },
+      {
+       "parts": [
+        "γράφω",
+        "γράψω",
+        "ἔγραψα",
+        "γέγραφα",
+        "γέγραμμαι",
+        "ἐγράφην"
+       ],
+       "eng": "write, draw",
+       "src": "H&Q U3",
+       "audio": "f432b02fa7d8"
+      },
+      {
+       "parts": [
+        "θῡ́ω",
+        "θῡ́σω",
+        "ἔθῡσα",
+        "τέθυκα",
+        "τέθυμαι",
+        "ἐτύθην"
+       ],
+       "eng": "sacrifice",
+       "src": "H&Q U3",
+       "audio": "056b8fcfb543"
+      },
+      {
+       "parts": [
+        "παύω",
+        "παύσω",
+        "ἔπαυσα",
+        "πέπαυκα",
+        "πέπαυμαι",
+        "ἐπαύθην"
+       ],
+       "eng": "make stop, stop",
+       "src": "H&Q U3",
+       "audio": "e0efb17d64c9"
+      },
+      {
+       "parts": [
+        "φυλάττω",
+        "φυλάξω",
+        "ἐφύλαξα",
+        "πεφύλαχα",
+        "πεφύλαγμαι",
+        "ἐφυλάχθην"
+       ],
+       "eng": "guard",
+       "src": "H&Q U3",
+       "audio": "b65e2a379535"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "title": "Nouns and the article"
+    },
+    {
+     "type": "noun",
+     "title": "o-declension masc./fem.",
+     "source": "Mastronarde, Unit 3, ¶4(a)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ος",
+      "-ου",
+      "-ῳ",
+      "-ον",
+      "-ε",
+      "-ω",
+      "-οιν",
+      "-οι",
+      "-ων",
+      "-οις",
+      "-ους"
+     ],
+     "words": [
+      {
+       "lemma": "ὁδός",
+       "gloss": "road",
+       "gender": "f.",
+       "recite": "037ccbcb46cf",
+       "forms": [
+        {
+         "stem": "ὁδ",
+         "end": "ός",
+         "audio": "65e3af1baf6d"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "οῦ",
+         "audio": "7e4f78a23210"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "ῷ",
+         "audio": "ff948b254aaf"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "όν",
+         "audio": "f9d6c96628d2"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "έ",
+         "audio": "46ca75bc27df"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "ώ",
+         "audio": "83e3582abeb4"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "οῖν",
+         "audio": "43149a30d8a4"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "οί",
+         "audio": "0a9fd18197a2"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "ῶν",
+         "audio": "08ec6ac7b950"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "οῖς",
+         "audio": "6e153a397b06"
+        },
+        {
+         "stem": "ὁδ",
+         "end": "ούς",
+         "audio": "3006c552bb72"
+        }
+       ]
+      },
+      {
+       "lemma": "λόγος",
+       "gloss": "word",
+       "gender": "m.",
+       "recite": "6d43f90bf363",
+       "forms": [
+        {
+         "stem": "λόγ",
+         "end": "ος",
+         "audio": "7be15f986489"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ου",
+         "audio": "8b73df3a0ada"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ῳ",
+         "audio": "70b678051f1c"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ον",
+         "audio": "c24e4dc18f7c"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ε",
+         "audio": "3fe058101f0b"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ω",
+         "audio": "eb97fb756002"
+        },
+        {
+         "stem": "λόγ",
+         "end": "οιν",
+         "audio": "4f450564a004"
+        },
+        {
+         "stem": "λόγ",
+         "end": "οι",
+         "audio": "f1a1735ad1c8"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ων",
+         "audio": "99349499f3ea"
+        },
+        {
+         "stem": "λόγ",
+         "end": "οις",
+         "audio": "c9e39dcaca72"
+        },
+        {
+         "stem": "λόγ",
+         "end": "ους",
+         "audio": "b46fe0f53caa"
+        }
+       ]
+      },
+      {
+       "lemma": "ἄνθρωπος",
+       "gloss": "human being",
+       "gender": "m.",
+       "recite": "a65e160d91d8",
+       "forms": [
+        {
+         "stem": "ἄνθρωπ",
+         "end": "ος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "ου",
+         "audio": "670ede8b0591"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "ῳ",
+         "audio": "0df9562532c9"
+        },
+        {
+         "stem": "ἄνθρωπ",
+         "end": "ον",
+         "audio": "6934122934c1"
+        },
+        {
+         "stem": "ἄνθρωπ",
+         "end": "ε",
+         "audio": "57fe138c7d39"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "ω",
+         "audio": "a03cec49bcd3"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "οιν",
+         "audio": "3743ea7ae8c7"
+        },
+        {
+         "stem": "ἄνθρωπ",
+         "end": "οι",
+         "audio": "db29f5c2e711"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "ων",
+         "audio": "5f4fe8933416"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "οις",
+         "audio": "1fc6dfd9cf6a"
+        },
+        {
+         "stem": "ἀνθρώπ",
+         "end": "ους",
+         "audio": "8e202fd21337"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "o-declension neuter",
+     "source": "Mastronarde, Unit 3, ¶4(b)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ον",
+      "-ου",
+      "-ῳ",
+      "-ον",
+      "-ον",
+      "-ω",
+      "-οιν",
+      "-ᾰ",
+      "-ων",
+      "-οις",
+      "-ᾰ"
+     ],
+     "words": [
+      {
+       "lemma": "ἔργον",
+       "gloss": "work",
+       "gender": "n.",
+       "recite": "ac75b7e010eb",
+       "forms": [
+        {
+         "stem": "ἔργ",
+         "end": "ον",
+         "audio": "03c951fbe15f"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "ου",
+         "audio": "c6e9024f78aa"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "ῳ",
+         "audio": "ec6e59a7bf84"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "ον",
+         "audio": "03c951fbe15f"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "ον",
+         "audio": "03c951fbe15f"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "ω",
+         "audio": "ba9021bbb075"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "οιν",
+         "audio": "19d301558f15"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "α",
+         "audio": "31f8c78f3a13"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "ων",
+         "audio": "7e1cc8ee2560"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "οις",
+         "audio": "cd1faf542bc4"
+        },
+        {
+         "stem": "ἔργ",
+         "end": "α",
+         "audio": "31f8c78f3a13"
+        }
+       ]
+      },
+      {
+       "lemma": "δῶρον",
+       "gloss": "gift",
+       "gender": "n.",
+       "recite": "33334b85ec57",
+       "forms": [
+        {
+         "stem": "δῶρ",
+         "end": "ον",
+         "audio": "f4cd410b92d0"
+        },
+        {
+         "stem": "δώρ",
+         "end": "ου",
+         "audio": "6cc25ded5d7e"
+        },
+        {
+         "stem": "δώρ",
+         "end": "ῳ",
+         "audio": "bbad2ab04be6"
+        },
+        {
+         "stem": "δῶρ",
+         "end": "ον",
+         "audio": "f4cd410b92d0"
+        },
+        {
+         "stem": "δῶρ",
+         "end": "ον",
+         "audio": "f4cd410b92d0"
+        },
+        {
+         "stem": "δώρ",
+         "end": "ω",
+         "audio": "a94b22800392"
+        },
+        {
+         "stem": "δώρ",
+         "end": "οιν",
+         "audio": "a41194e22a71"
+        },
+        {
+         "stem": "δῶρ",
+         "end": "α",
+         "audio": "f4a31b579480"
+        },
+        {
+         "stem": "δώρ",
+         "end": "ων",
+         "audio": "d9d5364ff024"
+        },
+        {
+         "stem": "δώρ",
+         "end": "οις",
+         "audio": "2f404486aa43"
+        },
+        {
+         "stem": "δῶρ",
+         "end": "α",
+         "audio": "f4a31b579480"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "article",
+     "title": "The definite article ὁ, ἡ, τό",
+     "source": "Mastronarde, Unit 4, ¶6",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "nom./acc. du.",
+      "gen./dat. du.",
+      "nom. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "genders": [
+      "masc.",
+      "fem.",
+      "neut."
+     ],
+     "recite": [
+      "9c5bd384349b",
+      "bbebfcfe7d23",
+      "e47223a4b8eb"
+     ],
+     "rows": [
+      [
+       {
+        "stem": "ὁ",
+        "end": "",
+        "audio": "720eac0a5eb3"
+       },
+       {
+        "stem": "ἡ",
+        "end": "",
+        "audio": "94e796aa31fc"
+       },
+       {
+        "stem": "τό",
+        "end": "",
+        "audio": "aa61775ce537"
+       }
+      ],
+      [
+       {
+        "stem": "τοῦ",
+        "end": "",
+        "audio": "d9d4e3302763"
+       },
+       {
+        "stem": "τῆς",
+        "end": "",
+        "audio": "78183c01d10d"
+       },
+       {
+        "stem": "τοῦ",
+        "end": "",
+        "audio": "d9d4e3302763"
+       }
+      ],
+      [
+       {
+        "stem": "τῷ",
+        "end": "",
+        "audio": "ddf83ccb0702"
+       },
+       {
+        "stem": "τῇ",
+        "end": "",
+        "audio": "3a194b559f5e"
+       },
+       {
+        "stem": "τῷ",
+        "end": "",
+        "audio": "ddf83ccb0702"
+       }
+      ],
+      [
+       {
+        "stem": "τόν",
+        "end": "",
+        "audio": "15608728b9a1"
+       },
+       {
+        "stem": "τήν",
+        "end": "",
+        "audio": "e2a815c2049e"
+       },
+       {
+        "stem": "τό",
+        "end": "",
+        "audio": "aa61775ce537"
+       }
+      ],
+      [
+       {
+        "stem": "τώ",
+        "end": "",
+        "audio": "1b4d3985485a"
+       },
+       {
+        "stem": "τώ",
+        "end": "",
+        "audio": "1b4d3985485a"
+       },
+       {
+        "stem": "τώ",
+        "end": "",
+        "audio": "1b4d3985485a"
+       }
+      ],
+      [
+       {
+        "stem": "τοῖν",
+        "end": "",
+        "audio": "dfc4fb8a11c7"
+       },
+       {
+        "stem": "τοῖν",
+        "end": "",
+        "audio": "dfc4fb8a11c7"
+       },
+       {
+        "stem": "τοῖν",
+        "end": "",
+        "audio": "dfc4fb8a11c7"
+       }
+      ],
+      [
+       {
+        "stem": "οἱ",
+        "end": "",
+        "audio": "92c6ced6c1c7"
+       },
+       {
+        "stem": "αἱ",
+        "end": "",
+        "audio": "0bfb56a88582"
+       },
+       {
+        "stem": "τά",
+        "end": "",
+        "audio": "8da69044287c"
+       }
+      ],
+      [
+       {
+        "stem": "τῶν",
+        "end": "",
+        "audio": "7f218e1f65dc"
+       },
+       {
+        "stem": "τῶν",
+        "end": "",
+        "audio": "7f218e1f65dc"
+       },
+       {
+        "stem": "τῶν",
+        "end": "",
+        "audio": "7f218e1f65dc"
+       }
+      ],
+      [
+       {
+        "stem": "τοῖς",
+        "end": "",
+        "audio": "faebd9a0dc0f"
+       },
+       {
+        "stem": "ταῖς",
+        "end": "",
+        "audio": "f8272682dba7"
+       },
+       {
+        "stem": "τοῖς",
+        "end": "",
+        "audio": "faebd9a0dc0f"
+       }
+      ],
+      [
+       {
+        "stem": "τούς",
+        "end": "",
+        "audio": "921a1056881f"
+       },
+       {
+        "stem": "τάς",
+        "end": "",
+        "audio": "c3f8a74cd018"
+       },
+       {
+        "stem": "τά",
+        "end": "",
+        "audio": "8da69044287c"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. long α",
+     "source": "Mastronarde, Unit 4, §2(a), alpha subgroup (stem in ε, ι, ρ)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾱ",
+      "-ᾱς",
+      "-ᾳ",
+      "-ᾱν",
+      "-ᾱ",
+      "-ᾱ",
+      "-αιν",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "θεά",
+       "gloss": "goddess",
+       "gender": "f.",
+       "recite": "b64732d8284b",
+       "forms": [
+        {
+         "stem": "θε",
+         "end": "ά",
+         "audio": "3459381c881b"
+        },
+        {
+         "stem": "θε",
+         "end": "ᾶς",
+         "audio": "33f82bbbea7f"
+        },
+        {
+         "stem": "θε",
+         "end": "ᾷ",
+         "audio": "12058deba051"
+        },
+        {
+         "stem": "θε",
+         "end": "άν",
+         "audio": "88ef68b673bf"
+        },
+        {
+         "stem": "θε",
+         "end": "ά",
+         "audio": "3459381c881b"
+        },
+        {
+         "stem": "θε",
+         "end": "ά",
+         "audio": "3459381c881b"
+        },
+        {
+         "stem": "θε",
+         "end": "αῖν",
+         "audio": "78f2da3dd3f5"
+        },
+        {
+         "stem": "θε",
+         "end": "αί",
+         "audio": "0c3c6a00494b"
+        },
+        {
+         "stem": "θε",
+         "end": "ῶν",
+         "audio": "fda05c63e710"
+        },
+        {
+         "stem": "θε",
+         "end": "αῖς",
+         "audio": "3ef6f2ebbbcf"
+        },
+        {
+         "stem": "θε",
+         "end": "άς",
+         "audio": "be3815a95b15"
+        }
+       ]
+      },
+      {
+       "lemma": "παιδεία",
+       "gloss": "education",
+       "gender": "f.",
+       "recite": "7fc52986b503",
+       "forms": [
+        {
+         "stem": "παιδεί",
+         "end": "α",
+         "audio": "cff7461db7cc"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "ας",
+         "audio": "eea32e48d5f4"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "ᾳ",
+         "audio": "6693c9421fdd"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "αν",
+         "audio": "ffb00033160d"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "α",
+         "audio": "cff7461db7cc"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "α",
+         "audio": "cff7461db7cc"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "αιν",
+         "audio": "e66a3cdaf616"
+        },
+        {
+         "stem": "παιδεῖ",
+         "end": "αι",
+         "audio": "29a8ef7b7045"
+        },
+        {
+         "stem": "παιδει",
+         "end": "ῶν",
+         "audio": "2969df1ef749"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "αις",
+         "audio": "6f149eae12f1"
+        },
+        {
+         "stem": "παιδεί",
+         "end": "ας",
+         "audio": "eea32e48d5f4"
+        }
+       ]
+      },
+      {
+       "lemma": "χώρα",
+       "gloss": "land",
+       "gender": "f.",
+       "recite": "093f9bc2b02c",
+       "forms": [
+        {
+         "stem": "χώρ",
+         "end": "α",
+         "audio": "55a50f326b72"
+        },
+        {
+         "stem": "χώρ",
+         "end": "ας",
+         "audio": "b97bb4e99131"
+        },
+        {
+         "stem": "χώρ",
+         "end": "ᾳ",
+         "audio": "96b513445626"
+        },
+        {
+         "stem": "χώρ",
+         "end": "αν",
+         "audio": "c8d502731150"
+        },
+        {
+         "stem": "χώρ",
+         "end": "α",
+         "audio": "55a50f326b72"
+        },
+        {
+         "stem": "χώρ",
+         "end": "α",
+         "audio": "55a50f326b72"
+        },
+        {
+         "stem": "χώρ",
+         "end": "αιν",
+         "audio": "aed2190610d7"
+        },
+        {
+         "stem": "χῶρ",
+         "end": "αι",
+         "audio": "0d5607551d9c"
+        },
+        {
+         "stem": "χωρ",
+         "end": "ῶν",
+         "audio": "a9987ba7d2b8"
+        },
+        {
+         "stem": "χώρ",
+         "end": "αις",
+         "audio": "2385c274cca2"
+        },
+        {
+         "stem": "χώρ",
+         "end": "ας",
+         "audio": "b97bb4e99131"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. η",
+     "source": "Mastronarde, Unit 4, §2(b), eta subgroup (any other stem)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-η",
+      "-ης",
+      "-ῃ",
+      "-ην",
+      "-η",
+      "-ᾱ",
+      "-αιν",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "γνώμη",
+       "gloss": "opinion",
+       "gender": "f.",
+       "recite": "472e90f662e2",
+       "forms": [
+        {
+         "stem": "γνώμ",
+         "end": "η",
+         "audio": "39cf9bb8f2a2"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "ης",
+         "audio": "0dee6717d724"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "ῃ",
+         "audio": "8e072658eace"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "ην",
+         "audio": "915abb65ef8b"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "η",
+         "audio": "39cf9bb8f2a2"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "α",
+         "audio": "71a97c29f1d5"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "αιν",
+         "audio": "24e9aee7efb6"
+        },
+        {
+         "stem": "γνῶμ",
+         "end": "αι",
+         "audio": "233210fff241"
+        },
+        {
+         "stem": "γνωμ",
+         "end": "ῶν",
+         "audio": "7130227628aa"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "αις",
+         "audio": "8e2437a43ede"
+        },
+        {
+         "stem": "γνώμ",
+         "end": "ας",
+         "audio": "d2b6ef4fe697"
+        }
+       ]
+      },
+      {
+       "lemma": "φυγή",
+       "gloss": "flight",
+       "gender": "f.",
+       "recite": "b6d75d6ad688",
+       "forms": [
+        {
+         "stem": "φυγ",
+         "end": "ή",
+         "audio": "316011962958"
+        },
+        {
+         "stem": "φυγ",
+         "end": "ῆς",
+         "audio": "dc9cfa4039f1"
+        },
+        {
+         "stem": "φυγ",
+         "end": "ῇ",
+         "audio": "3571612ff3c3"
+        },
+        {
+         "stem": "φυγ",
+         "end": "ήν",
+         "audio": "86aa3890426c"
+        },
+        {
+         "stem": "φυγ",
+         "end": "ή",
+         "audio": "316011962958"
+        },
+        {
+         "stem": "φυγ",
+         "end": "ά",
+         "audio": "81e07bbbbe8e"
+        },
+        {
+         "stem": "φυγ",
+         "end": "αῖν",
+         "audio": "184448c8b419"
+        },
+        {
+         "stem": "φυγ",
+         "end": "αί",
+         "audio": "cd46e8db3c63"
+        },
+        {
+         "stem": "φυγ",
+         "end": "ῶν",
+         "audio": "14e881bd9e7f"
+        },
+        {
+         "stem": "φυγ",
+         "end": "αῖς",
+         "audio": "e0560a3ca89a"
+        },
+        {
+         "stem": "φυγ",
+         "end": "άς",
+         "audio": "ed82035ba50c"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. short α (gen. sg. -ᾱς)",
+     "source": "Mastronarde, Unit 6, §1(a), short α, alpha subgroup (stem in ε, ι, ρ)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾰ",
+      "-ᾱς",
+      "-ᾳ",
+      "-ᾰν",
+      "-ᾰ",
+      "-ᾱ",
+      "-αιν",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "ὑγίεια",
+       "gloss": "health",
+       "gender": "f.",
+       "recite": "eb1fba16c3b8",
+       "forms": [
+        {
+         "stem": "ὑγίει",
+         "end": "α",
+         "audio": "d5b6d5f41fec"
+        },
+        {
+         "stem": "ὑγιεί",
+         "end": "ας",
+         "audio": "8bb649e0cc16"
+        },
+        {
+         "stem": "ὑγιεί",
+         "end": "ᾳ",
+         "audio": "972595a70991"
+        },
+        {
+         "stem": "ὑγίει",
+         "end": "αν",
+         "audio": "b5fc631783db"
+        },
+        {
+         "stem": "ὑγίει",
+         "end": "α",
+         "audio": "d5b6d5f41fec"
+        },
+        {
+         "stem": "ὑγιεί",
+         "end": "α",
+         "audio": "ea736c23c3a7"
+        },
+        {
+         "stem": "ὑγιεί",
+         "end": "αιν",
+         "audio": "84a6fbf410b5"
+        },
+        {
+         "stem": "ὑγίει",
+         "end": "αι",
+         "audio": "66d623935854"
+        },
+        {
+         "stem": "ὑγιει",
+         "end": "ῶν",
+         "audio": "07475e34e3ed"
+        },
+        {
+         "stem": "ὑγιεί",
+         "end": "αις",
+         "audio": "34e8f3350f52"
+        },
+        {
+         "stem": "ὑγιεί",
+         "end": "ας",
+         "audio": "8bb649e0cc16"
+        }
+       ]
+      },
+      {
+       "lemma": "πεῖρα",
+       "gloss": "trial, attempt",
+       "gender": "f.",
+       "recite": "ad7e813f6b7e",
+       "forms": [
+        {
+         "stem": "πεῖρ",
+         "end": "α",
+         "audio": "3f1783569649"
+        },
+        {
+         "stem": "πείρ",
+         "end": "ας",
+         "audio": "4d955ddfd9b9"
+        },
+        {
+         "stem": "πείρ",
+         "end": "ᾳ",
+         "audio": "e6ebfb6bf5f5"
+        },
+        {
+         "stem": "πεῖρ",
+         "end": "αν",
+         "audio": "85325337d321"
+        },
+        {
+         "stem": "πεῖρ",
+         "end": "α",
+         "audio": "3f1783569649"
+        },
+        {
+         "stem": "πείρ",
+         "end": "α",
+         "audio": "a450be9a6c6f"
+        },
+        {
+         "stem": "πείρ",
+         "end": "αιν",
+         "audio": "7eef0a86fff3"
+        },
+        {
+         "stem": "πεῖρ",
+         "end": "αι",
+         "audio": "9a330e6b3b3f"
+        },
+        {
+         "stem": "πειρ",
+         "end": "ῶν",
+         "audio": "71ef7decd61f"
+        },
+        {
+         "stem": "πείρ",
+         "end": "αις",
+         "audio": "799764c2d216"
+        },
+        {
+         "stem": "πείρ",
+         "end": "ας",
+         "audio": "4d955ddfd9b9"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. short α (gen. sg. -ης)",
+     "source": "Mastronarde, Unit 6, §1(b), short α, eta subgroup",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾰ",
+      "-ης",
+      "-ῃ",
+      "-ᾰν",
+      "-ᾰ",
+      "-ᾱ",
+      "-αιν",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "θάλαττα",
+       "gloss": "sea",
+       "gender": "f.",
+       "recite": "9a5499aa6c65",
+       "forms": [
+        {
+         "stem": "θάλαττ",
+         "end": "α",
+         "audio": "ab65824692d1"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "ης",
+         "audio": "897eda729561"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "ῃ",
+         "audio": "cc6e044d7bf3"
+        },
+        {
+         "stem": "θάλαττ",
+         "end": "αν",
+         "audio": "f215e893cfe7"
+        },
+        {
+         "stem": "θάλαττ",
+         "end": "α",
+         "audio": "ab65824692d1"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "α",
+         "audio": "4d2c4ef7735d"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "αιν",
+         "audio": "401a10aec389"
+        },
+        {
+         "stem": "θάλαττ",
+         "end": "αι",
+         "audio": "cf1d188cf655"
+        },
+        {
+         "stem": "θαλαττ",
+         "end": "ῶν",
+         "audio": "b1d277064df8"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "αις",
+         "audio": "4b91a1177a2a"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "ας",
+         "audio": "c165a3e0560b"
+        }
+       ]
+      },
+      {
+       "lemma": "γλῶττα",
+       "gloss": "tongue",
+       "gender": "f.",
+       "recite": "3ca8f600b4dd",
+       "forms": [
+        {
+         "stem": "γλῶττ",
+         "end": "α",
+         "audio": "99fd038b367c"
+        },
+        {
+         "stem": "γλώττ",
+         "end": "ης",
+         "audio": "d25a0dd25971"
+        },
+        {
+         "stem": "γλώττ",
+         "end": "ῃ",
+         "audio": "d396e6bbccb7"
+        },
+        {
+         "stem": "γλῶττ",
+         "end": "αν",
+         "audio": "93cbe8657267"
+        },
+        {
+         "stem": "γλῶττ",
+         "end": "α",
+         "audio": "99fd038b367c"
+        },
+        {
+         "stem": "γλώττ",
+         "end": "α",
+         "audio": "18449026ade6"
+        },
+        {
+         "stem": "γλώττ",
+         "end": "αιν",
+         "audio": "f4911a71e3ae"
+        },
+        {
+         "stem": "γλῶττ",
+         "end": "αι",
+         "audio": "b47dea98485b"
+        },
+        {
+         "stem": "γλωττ",
+         "end": "ῶν",
+         "audio": "8cab0abdf28a"
+        },
+        {
+         "stem": "γλώττ",
+         "end": "αις",
+         "audio": "d2734c573bf9"
+        },
+        {
+         "stem": "γλώττ",
+         "end": "ας",
+         "audio": "2da71759ffc9"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. masculine (nom. sg. -ᾱς)",
+     "source": "Mastronarde, Unit 6, §2(a), masculine",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾱς",
+      "-ου",
+      "-ᾳ",
+      "-ᾱν",
+      "-ᾱ",
+      "-ᾱ",
+      "-αιν",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "νεανίας",
+       "gloss": "young man",
+       "gender": "m.",
+       "recite": "aa080c5e4a01",
+       "forms": [
+        {
+         "stem": "νεανί",
+         "end": "ας",
+         "audio": "3c6eb6114436"
+        },
+        {
+         "stem": "νεανί",
+         "end": "ου",
+         "audio": "3924374b75e5"
+        },
+        {
+         "stem": "νεανί",
+         "end": "ᾳ",
+         "audio": "271f20183f9d"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αν",
+         "audio": "f8d87e75250a"
+        },
+        {
+         "stem": "νεανί",
+         "end": "α",
+         "audio": "56ee249ad9d7"
+        },
+        {
+         "stem": "νεανί",
+         "end": "α",
+         "audio": "56ee249ad9d7"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αιν",
+         "audio": "7a1752d868df"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αι",
+         "audio": "afb9630695be"
+        },
+        {
+         "stem": "νεανι",
+         "end": "ῶν",
+         "audio": "b14aa4392370"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αις",
+         "audio": "085908181aec"
+        },
+        {
+         "stem": "νεανί",
+         "end": "ας",
+         "audio": "3c6eb6114436"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. masculine (nom. sg. -ης)",
+     "source": "Mastronarde, Unit 6, §2(b), masculine",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./acc./voc. du.",
+      "gen./dat. du.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ης",
+      "-ου",
+      "-ῃ",
+      "-ην",
+      "-ᾰ",
+      "-ᾱ",
+      "-αιν",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "στρατιώτης",
+       "gloss": "soldier",
+       "gender": "m.",
+       "recite": "35acf181e6c5",
+       "forms": [
+        {
+         "stem": "στρατιώτ",
+         "end": "ης",
+         "audio": "41d60d39d3cc"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "ου",
+         "audio": "1643da3ca795"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "ῃ",
+         "audio": "3891060647fc"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "ην",
+         "audio": "32d7378781cc"
+        },
+        {
+         "stem": "στρατιῶτ",
+         "end": "α",
+         "audio": "7f49376fc5db"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "α",
+         "audio": "adf444bc3745"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "αιν",
+         "audio": "38bc63dabea6"
+        },
+        {
+         "stem": "στρατιῶτ",
+         "end": "αι",
+         "audio": "30a7ca4a03a0"
+        },
+        {
+         "stem": "στρατιωτ",
+         "end": "ῶν",
+         "audio": "5aeb0ca475fb"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "αις",
+         "audio": "e9e83384b844"
+        },
+        {
+         "stem": "στρατιώτ",
+         "end": "ας",
+         "audio": "443b9e11660b"
+        }
+       ]
+      },
+      {
+       "lemma": "κριτής",
+       "gloss": "judge",
+       "gender": "m.",
+       "recite": "0116a8ad6e96",
+       "forms": [
+        {
+         "stem": "κριτ",
+         "end": "ής",
+         "audio": "0c8fafcd0039"
+        },
+        {
+         "stem": "κριτ",
+         "end": "οῦ",
+         "audio": "ef8810acd8bb"
+        },
+        {
+         "stem": "κριτ",
+         "end": "ῇ",
+         "audio": "69ed4f3e4064"
+        },
+        {
+         "stem": "κριτ",
+         "end": "ήν",
+         "audio": "93feb7209a4c"
+        },
+        {
+         "stem": "κριτ",
+         "end": "ά",
+         "audio": "1b59dfb4988f"
+        },
+        {
+         "stem": "κριτ",
+         "end": "ά",
+         "audio": "1b59dfb4988f"
+        },
+        {
+         "stem": "κριτ",
+         "end": "αῖν",
+         "audio": "57c85a71708a"
+        },
+        {
+         "stem": "κριτ",
+         "end": "αί",
+         "audio": "5bb4c071eb38"
+        },
+        {
+         "stem": "κριτ",
+         "end": "ῶν",
+         "audio": "414cd7c7281c"
+        },
+        {
+         "stem": "κριτ",
+         "end": "αῖς",
+         "audio": "49e34332304d"
+        },
+        {
+         "stem": "κριτ",
+         "end": "άς",
+         "audio": "42358f15ebab"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "vocab": [
+    {
+     "type": "vocab",
+     "title": "Hansen & Quinn Unit 1",
+     "entries": [
+      {
+       "head": "ἀγορᾱ́, ἀγορᾶς, ἡ",
+       "eng": "market place",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "4ba184980817"
+      },
+      {
+       "head": "ἀδελφός, ἀδελφοῦ, ὁ",
+       "eng": "brother",
+       "pos": "noun; voc. ἄδελφε",
+       "src": "H&Q U1",
+       "audio": "788b4e409dab"
+      },
+      {
+       "head": "ἄνθρωπος, ἀνθρώπου, ὁ",
+       "eng": "man, human being",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "c2bd46890e91"
+      },
+      {
+       "head": "βιβλίον, βιβλίου, τό",
+       "eng": "book",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "17763316b1e3"
+      },
+      {
+       "head": "δῶρον, δώρου, τό",
+       "eng": "gift; bribe (especially in pl.)",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "c450f1734c00"
+      },
+      {
+       "head": "εἰς",
+       "eng": "(+ acc.) into, to; for (purpose)",
+       "pos": "preposition",
+       "src": "H&Q U1",
+       "audio": "3d109446800f"
+      },
+      {
+       "head": "ἐκ, ἐξ",
+       "eng": "(+ gen.) from, out of",
+       "pos": "preposition",
+       "src": "H&Q U1",
+       "audio": "0e0624890833"
+      },
+      {
+       "head": "ἐν",
+       "eng": "(+ dat.) in",
+       "pos": "preposition",
+       "src": "H&Q U1",
+       "audio": "78ded745f9c6"
+      },
+      {
+       "head": "ἔργον, ἔργου, τό",
+       "eng": "work, deed",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "48afc490f769"
+      },
+      {
+       "head": "θεός, θεοῦ, ὁ or ἡ",
+       "eng": "god, goddess",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "b8f888fa170d"
+      },
+      {
+       "head": "καί",
+       "eng": "(conj.) and; (adv.) even, also",
+       "pos": "conjunction / adverb",
+       "src": "H&Q U1",
+       "audio": "7a785bdc55c8"
+      },
+      {
+       "head": "καί . . . καί",
+       "eng": "both . . . and",
+       "pos": "conjunctions",
+       "src": "H&Q U1",
+       "audio": "62a2ab92f262"
+      },
+      {
+       "head": "λόγος, λόγου, ὁ",
+       "eng": "word, speech, story",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "feda124ef2d1"
+      },
+      {
+       "head": "μάχη, μάχης, ἡ",
+       "eng": "battle",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "58331da8e59e"
+      },
+      {
+       "head": "νῆσος, νήσου, ἡ",
+       "eng": "island",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "b117048a1559"
+      },
+      {
+       "head": "ὁ, ἡ, τό",
+       "eng": "the; often shows possession",
+       "pos": "definite article",
+       "src": "H&Q U1",
+       "audio": "1f50c256d23b"
+      },
+      {
+       "head": "ὁδός, ὁδοῦ, ἡ",
+       "eng": "road",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "4a8e5153a0f0"
+      },
+      {
+       "head": "οἰκίᾱ, οἰκίᾱς, ἡ",
+       "eng": "house",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "8aa78ca37ba8"
+      },
+      {
+       "head": "Ὅμηρος, Ὁμήρου, ὁ",
+       "eng": "Homer (epic poet)",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "f0a12eebb478"
+      },
+      {
+       "head": "παιδεύει",
+       "eng": "educates, teaches",
+       "pos": "verb (3rd sg.)",
+       "src": "H&Q U1",
+       "audio": "135dc393e244"
+      },
+      {
+       "head": "πέμπει",
+       "eng": "sends",
+       "pos": "verb (3rd sg.)",
+       "src": "H&Q U1",
+       "audio": "ab9b4a5f8e78"
+      },
+      {
+       "head": "τέχνη, τέχνης, ἡ",
+       "eng": "art, skill, craft",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "86b4d6bb987e"
+      },
+      {
+       "head": "χώρᾱ, χώρᾱς, ἡ",
+       "eng": "land, country",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "194ca3fd057e"
+      },
+      {
+       "head": "ψῡχή, ψῡχῆς, ἡ",
+       "eng": "soul",
+       "pos": "noun",
+       "src": "H&Q U1",
+       "audio": "e4f9dbddf802"
+      },
+      {
+       "head": "ὦ",
+       "eng": "O! (used with the vocative)",
+       "pos": "interjection",
+       "src": "H&Q U1",
+       "audio": "b7482b2e6f89"
+      }
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Hansen & Quinn Unit 2",
+     "entries": [
+      {
+       "head": "ἄγγελος, ἀγγέλου, ὁ",
+       "eng": "messenger",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "50441e73d118"
+      },
+      {
+       "head": "ἀπό",
+       "eng": "(+ gen.) from, away from",
+       "pos": "preposition",
+       "src": "H&Q U2",
+       "audio": "6bc3c8377911"
+      },
+      {
+       "head": "ἆρα",
+       "eng": "introduces a question (not translated)",
+       "pos": "particle",
+       "src": "H&Q U2",
+       "audio": "418562b22a35"
+      },
+      {
+       "head": "γάρ",
+       "eng": "for (explanatory)",
+       "pos": "postpositive conjunction",
+       "src": "H&Q U2",
+       "audio": "d2ea64c6cba0"
+      },
+      {
+       "head": "δέ",
+       "eng": "but; and",
+       "pos": "postpositive conjunction",
+       "src": "H&Q U2",
+       "audio": "a5e8cb06c458"
+      },
+      {
+       "head": "ἕξ",
+       "eng": "six",
+       "pos": "indeclinable numeral",
+       "src": "H&Q U2",
+       "audio": "2b9e1888334a"
+      },
+      {
+       "head": "εὖ",
+       "eng": "well",
+       "pos": "adverb",
+       "src": "H&Q U2",
+       "audio": "67d99701f309"
+      },
+      {
+       "head": "ζῷον, ζῴου, τό",
+       "eng": "animal",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "08321402b88c"
+      },
+      {
+       "head": "ἤ",
+       "eng": "or",
+       "pos": "conjunction",
+       "src": "H&Q U2",
+       "audio": "bc8a4a2950fb"
+      },
+      {
+       "head": "ἤ . . . ἤ",
+       "eng": "either . . . or",
+       "pos": "conjunctions",
+       "src": "H&Q U2",
+       "audio": "73ad9923b2c5"
+      },
+      {
+       "head": "κελεύω, κελεύσω, ἐκέλευσα, κεκέλευκα, κεκέλευσμαι, ἐκελεύσθην",
+       "eng": "order, command",
+       "pos": "verb (+ acc. of person + infinitive)",
+       "src": "H&Q U2",
+       "audio": "cd7ab129a51e"
+      },
+      {
+       "head": "λῡ́ω, λῡ́σω, ἔλῡσα, λέλυκα, λέλυμαι, ἐλύθην",
+       "eng": "unbind, free, release; dissolve; destroy",
+       "pos": "verb",
+       "src": "H&Q U2",
+       "audio": "8f06895a5077"
+      },
+      {
+       "head": "μέν . . . δέ",
+       "eng": "on the one hand . . . on the other hand",
+       "pos": "postpositive conjunctions",
+       "src": "H&Q U2",
+       "audio": "656de3d0c9fd"
+      },
+      {
+       "head": "νῦν",
+       "eng": "now",
+       "pos": "adverb",
+       "src": "H&Q U2",
+       "audio": "0cede0798c8c"
+      },
+      {
+       "head": "ξένος, ξένου, ὁ",
+       "eng": "guest-friend, host, stranger, foreigner",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "3796c4c2c156"
+      },
+      {
+       "head": "οὐ, οὐκ, οὐχ",
+       "eng": "not",
+       "pos": "adverb",
+       "src": "H&Q U2",
+       "audio": "12be44495dbb"
+      },
+      {
+       "head": "παιδεύω, παιδεύσω, ἐπαίδευσα, πεπαίδευκα, πεπαίδευμαι, ἐπαιδεύθην",
+       "eng": "educate, teach",
+       "pos": "verb",
+       "src": "H&Q U2",
+       "audio": "52bd0ac11bbf"
+      },
+      {
+       "head": "παρά",
+       "eng": "(+ gen.) from (the side of); (+ dat.) at (the side of), at the house of; (+ acc.) to (the side of), beside; contrary to",
+       "pos": "preposition",
+       "src": "H&Q U2",
+       "audio": "4a3ac1de32e4"
+      },
+      {
+       "head": "πέμπω, πέμψω, ἔπεμψα, πέπομφα, πέπεμμαι, ἐπέμφθην",
+       "eng": "send",
+       "pos": "verb",
+       "src": "H&Q U2",
+       "audio": "ebef2e82f36e"
+      },
+      {
+       "head": "πέντε",
+       "eng": "five",
+       "pos": "indeclinable numeral",
+       "src": "H&Q U2",
+       "audio": "17ee4d1866ff"
+      },
+      {
+       "head": "πόλεμος, πολέμου, ὁ",
+       "eng": "war",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "a45d4be9fb36"
+      },
+      {
+       "head": "πρό",
+       "eng": "(+ gen.) before; in front of",
+       "pos": "preposition",
+       "src": "H&Q U2",
+       "audio": "7edba4459155"
+      },
+      {
+       "head": "στέφανος, στεφάνου, ὁ",
+       "eng": "crown, wreath",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "58f7197a49ee"
+      },
+      {
+       "head": "φίλος, φίλου, ὁ",
+       "eng": "friend",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "b6499dd693b7"
+      },
+      {
+       "head": "φιλίᾱ, φιλίᾱς, ἡ",
+       "eng": "friendship",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "b64baa7ba68b"
+      },
+      {
+       "head": "χρῡσός, χρῡσοῦ, ὁ",
+       "eng": "gold",
+       "pos": "noun",
+       "src": "H&Q U2",
+       "audio": "64683d5b0f4f"
+      }
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Hansen & Quinn Unit 3",
+     "entries": [
+      {
+       "head": "ἆθλον, ἄθλου, τό",
+       "eng": "prize",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "a00179f53205"
+      },
+      {
+       "head": "ἀλλά",
+       "eng": "but (stronger contrast than δέ; begins its clause)",
+       "pos": "conjunction",
+       "src": "H&Q U3",
+       "audio": "944312787a3d"
+      },
+      {
+       "head": "ἀντί",
+       "eng": "(+ gen.) instead of",
+       "pos": "preposition",
+       "src": "H&Q U3",
+       "audio": "2e73bdc8e487"
+      },
+      {
+       "head": "ἀρετή, ἀρετῆς, ἡ",
+       "eng": "excellence, virtue",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "d93f5ceb6036"
+      },
+      {
+       "head": "βουλή, βουλῆς, ἡ",
+       "eng": "will; council",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "b486219341b7"
+      },
+      {
+       "head": "γράφω, γράψω, ἔγραψα, γέγραφα, γέγραμμαι, ἐγράφην",
+       "eng": "write, draw",
+       "pos": "verb; PP VI has no -θ-",
+       "src": "H&Q U3",
+       "audio": "f432b02fa7d8"
+      },
+      {
+       "head": "δή",
+       "eng": "in fact, of course",
+       "pos": "postpositive particle",
+       "src": "H&Q U3",
+       "audio": "0fbe77601285"
+      },
+      {
+       "head": "δῆμος, δήμου, ὁ",
+       "eng": "the people",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "15201018c13f"
+      },
+      {
+       "head": "δημοκρατίᾱ, δημοκρατίᾱς, ἡ",
+       "eng": "democracy",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "b5e22e6bd00b"
+      },
+      {
+       "head": "διά",
+       "eng": "(+ gen.) through; (+ acc.) on account of",
+       "pos": "preposition",
+       "src": "H&Q U3",
+       "audio": "9dd6521da2e0"
+      },
+      {
+       "head": "εἰρήνη, εἰρήνης, ἡ",
+       "eng": "peace",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "b023c54d8049"
+      },
+      {
+       "head": "ἐκκλησίᾱ, ἐκκλησίᾱς, ἡ",
+       "eng": "assembly",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "5790ac19fde8"
+      },
+      {
+       "head": "ἐπεί",
+       "eng": "after, when, since",
+       "pos": "conjunction (temporal or causal)",
+       "src": "H&Q U3",
+       "audio": "fc44fe7f056d"
+      },
+      {
+       "head": "ἐπειδή",
+       "eng": "after, when, since",
+       "pos": "conjunction (ἐπεί + δή)",
+       "src": "H&Q U3",
+       "audio": "5c7489fcda06"
+      },
+      {
+       "head": "θῡ́ω, θῡ́σω, ἔθῡσα, τέθυκα, τέθυμαι, ἐτύθην",
+       "eng": "sacrifice",
+       "pos": "verb",
+       "src": "H&Q U3",
+       "audio": "056b8fcfb543"
+      },
+      {
+       "head": "θυσίᾱ, θυσίᾱς, ἡ",
+       "eng": "sacrifice",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "3b2b0820e92d"
+      },
+      {
+       "head": "ἵνα",
+       "eng": "in order that",
+       "pos": "conjunction (purpose clauses)",
+       "src": "H&Q U3",
+       "audio": "b17adbb065df"
+      },
+      {
+       "head": "μή",
+       "eng": "not (negates purpose clauses)",
+       "pos": "adverb",
+       "src": "H&Q U3",
+       "audio": "52998c370fe2"
+      },
+      {
+       "head": "νῑ́κη, νῑ́κης, ἡ",
+       "eng": "victory",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "3bb6f438862e"
+      },
+      {
+       "head": "ὅπως",
+       "eng": "in order that",
+       "pos": "conjunction (purpose clauses)",
+       "src": "H&Q U3",
+       "audio": "7784bd341fd9"
+      },
+      {
+       "head": "ὀφθαλμός, ὀφθαλμοῦ, ὁ",
+       "eng": "eye",
+       "pos": "noun",
+       "src": "H&Q U3",
+       "audio": "f137e06af6df"
+      },
+      {
+       "head": "παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην",
+       "eng": "make stop, stop",
+       "pos": "verb",
+       "src": "H&Q U3",
+       "audio": "e0efb17d64c9"
+      },
+      {
+       "head": "περί",
+       "eng": "(+ gen.) concerning, about; (+ dat.) around; (+ acc.) around, concerning",
+       "pos": "preposition",
+       "src": "H&Q U3",
+       "audio": "8ed5fb16de53"
+      },
+      {
+       "head": "φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην",
+       "eng": "guard",
+       "pos": "verb; aspirated perfect",
+       "src": "H&Q U3",
+       "audio": "b65e2a379535"
+      },
+      {
+       "head": "ὡς",
+       "eng": "in order that",
+       "pos": "conjunction (purpose clauses)",
+       "src": "H&Q U3",
+       "audio": "ed10ab8590ec"
+      }
+     ]
+    }
+   ]
   }
  },
  "voices": [

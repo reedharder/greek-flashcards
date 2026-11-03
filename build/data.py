@@ -13,9 +13,11 @@ WEEKS = [
     {"id": "w3", "num": 3, "label": "Week 3", "topic": "The definite article"},
     {"id": "w4", "num": 4, "label": "Week 4", "topic": "First (a-) declension"},
     {"id": "w5", "num": 5, "label": "Week 5", "topic": "Indicative active: present, imperfect, future, aorist"},
-    {"id": "w6", "num": 6, "label": "Week 6", "topic": "Review"},
+    {"id": "w6", "num": 6, "label": "Week 6", "topic": "Review", "reuse": ["w5-paideuo", "w5-vocab"]},
     {"id": "w7", "num": 7, "label": "Week 7",
      "topic": "Perfect and pluperfect; subjunctive and optative; purpose clauses"},
+    {"id": "w8", "num": 8, "label": "Week 8", "topic": "Review: Hansen & Quinn Units 1–3",
+     "reuse": ["w2-paradigms", "w3-article", "w4-paradigms", "w5-paideuo", "w7-paideuo", "w4-vocab", "w5-vocab", "w7-vocab"]},
 ]
 
 # ---------------------------------------------------------------------------

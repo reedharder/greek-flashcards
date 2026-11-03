@@ -169,6 +169,10 @@ table.rv.syn td.none { font-size: var(--s-xs); color: var(--muted); font-style: 
 table.rv.syn tbody th small { display: block; font-style: normal; font-size: var(--s-xs); }
 .pill { display: inline-block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; padding: 0 7px; border: 1px solid var(--rule); color: var(--muted); }
 .pill.secondary { color: var(--ochre); border-color: var(--ochre); }
+table.rv.pp th, table.rv.pp td { padding: 5px 7px; }
+table.rv.pp tbody th { white-space: normal; min-width: 8em; max-width: 11em; }
+table.rv.pp td.f { font-size: 18px; }
+h4.part { font-size: var(--s-lg); font-weight: 500; color: var(--ink); margin: 14px 0 -8px; padding-top: 14px; border-top: 2px solid var(--lapis); }
 .ov h4 { margin: 18px 0 6px; }
 .ov h4:first-of-type { margin-top: 4px; }
 .ov ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: var(--s-sm); }
@@ -356,7 +360,8 @@ function renderHome() {
 
 function weekHtml(w, i) {
   const decks = DECKS.filter(d => d.week === w.id);
-  const reuse = w.id === "w6" ? DECKS.filter(d => d.week === "w5") : [];
+  const reuse = (w.reuse || []).map(k => DECKS.find(d => d.key === k)).filter(Boolean);
+  const reuseWeeks = [...new Set(reuse.map(d => WEEKS.find(x => x.id === d.week).num))];
   const list = (h, xs) => xs.length ? `<li><b>${h}:</b><ul>${xs.map(x => `<li>${esc(x)}</li>`).join("")}</ul></li>` : "";
   const date = w.date ? "Wed " + new Date(w.date + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "Week " + w.num;
   const tasks = list("Read", w.read || []) + list("Memorize", w.memorize || []) + list("Complete", w.complete || []);
@@ -369,7 +374,7 @@ function weekHtml(w, i) {
       ${hasReview(w.id) ? `<p style="margin:10px 0 0"><button class="btn small" data-review="${w.id}">Review sheet: ${w.id === "w1" ? "alphabet" : "tables" + (REVIEW[w.id].vocab.length ? " &amp; vocab" : "")}</button></p>` : ""}
       <div class="decks">
         ${decks.map(deckHtml).join("")}
-        ${reuse.length ? `<div class="deck"><div class="t">Review the Week 5 decks</div><div class="acts"><button class="btn small primary" data-study="${reuse.map(d => d.key).join(",")}">Study</button></div><div class="sub">No new decks this week.</div></div>` : ""}
+        ${reuse.length ? `<div class="deck"><div class="t">Review ${reuse.length > 2 ? "every deck from" : "the decks from"} Week${reuseWeeks.length > 1 ? "s" : ""} ${reuseWeeks.join(", ")}</div><div class="acts"><button class="btn small primary" data-study="${reuse.map(d => d.key).join(",")}">Study</button></div><div class="sub">No new decks this week. ${reuse.length > 2 ? "For the translation into Greek, switch on only the English → Greek card type." : ""}</div></div>` : ""}
         ${!decks.length && !reuse.length ? `<p class="note">No deck.</p>` : ""}
       </div>
     </div></article>`;
@@ -435,7 +440,7 @@ function formHtml(c) {
   return sayBtn(c.audio, inner);
 }
 function tableHtml(t) {
-  if (t.type === "overlaps") return tableBody(t);
+  if (t.type === "overlaps" || t.type === "heading") return tableBody(t);
   return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu", "alts", "notrans"]) + "</div>");
 }
 function tableBody(t) {
@@ -459,6 +464,11 @@ function tableBody(t) {
     </table></div>
     <h3 style="margin-top:16px">Diphthongs, breathings, accents</h3><div class="scroll"><table class="rv"><tbody>
     ${t.marks.map(m => `<tr><td class="f">${esc(m.sym)}</td><td class="t">${esc(m.sound)}</td></tr>`).join("")}</tbody></table></div></div>`;
+  if (t.type === "heading") return `<h4 class="part">${esc(t.title)}</h4>`;
+  if (t.type === "pparts") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv pp">
+    <thead><tr><th></th>${["I", "II", "III", "IV", "V", "VI"].map(n => `<th>${n}</th>`).join("")}</tr></thead>
+    <tbody>${t.rows.map(r => `<tr><th>${esc(r.eng)}${playBtn(r.audio, "Say the principal parts")}</th>${r.parts.map(p => `<td class="f">${esc(p)}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table></div></div>`;
   if (t.type === "synopsis") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv syn">
     <thead><tr><th></th>${t.moods.map(m => `<th>${esc(m)}</th>`).join("")}</tr></thead>
     <tbody>${t.rows.map(r => `<tr><th>${esc(r.tense)}<small>PP ${r.pp} · <span class="pill ${r.seq}">${r.seq}</span></small></th>${r.cells.map(c => c.none ? `<td class="none">${esc(c.none)}</td>` : `<td class="f">${formHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody>

@@ -502,6 +502,31 @@ def verbs_review():
 
 REVIEW["verbs"] = verbs_review()
 
+
+def principal_parts_table(wids):
+    """Every vocab verb listed with its six principal parts (the entries that spell them out)."""
+    rows = []
+    for wid in wids:
+        for head, eng, pos, src in VOCAB.get(wid, []):
+            parts = [p.strip() for p in head.split(",")]
+            if pos.startswith("verb") and len(parts) == 6:
+                rows.append({"parts": parts, "eng": eng, "src": src, "audio": audio(head)})
+    return {"type": "pparts", "title": "Principal parts of every verb in the vocabulary",
+            "source": "I present · II future · III aorist · IV perfect active · V perfect middle/passive · VI aorist passive",
+            "rows": rows}
+
+
+# Week 8: no new material. Comprehensive review of Units 1–3: all verb forms first, then the verbs' principal
+# parts, the noun and article tables, and the Hansen & Quinn vocabulary for Units 1–3.
+REVIEW["w8"] = {
+    "tables": [{"type": "heading", "title": "Verbs: every form of παιδεύω so far"}]
+              + REVIEW["verbs"]["tables"]
+              + [principal_parts_table(("w5", "w7")),
+                 {"type": "heading", "title": "Nouns and the article"}]
+              + REVIEW["w2"]["tables"] + REVIEW["w3"]["tables"] + REVIEW["w4"]["tables"],
+    "vocab": [v for w in ("w4", "w5", "w7") for v in REVIEW[w]["vocab"]],
+}
+
 # ---------------------------------------------------------------------------
 # Anki packaging
 # ---------------------------------------------------------------------------

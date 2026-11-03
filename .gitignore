@@ -11,3 +11,6 @@ app/artifact.html
 # speech synthesis environment and downloaded voice models
 .venv-tts/
 build/voices/
+# audio packs for the Claude build (duplicates of anki/media)
+app/audio_*.mp3
+app/_test.html

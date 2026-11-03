@@ -388,6 +388,10 @@ VERB_NOTES = [
     "Subjunctive, optative and infinitive never take it, so the aorist subjunctive παιδεύσω has no ἐ- although ἐπαίδευσα does.",
     "σ marks the future and the whole aorist system; κ (with reduplication πε-) marks the perfect active system: "
     "perfect, pluperfect, perfect infinitive.",
+    "ψ and ξ hide the σ: a stem in π, β, φ + σ gives ψ (πέμψω, γράψω); a stem in κ, γ, χ or ττ + σ gives ξ (φυλάξω).",
+    "Not every perfect has κ: πέπομφα (πέμπω) and πεφύλαχα (φυλάττω) are aspirated perfects, and γέγραφα keeps "
+    "the stem's φ. Reduplication repeats the first consonant with ε; an aspirate is repeated unaspirated: "
+    "θύω → τέθυκα, φυλάττω → πεφύλαχα.",
     "Subjunctive = the indicative's thematic vowel lengthened (ο → ω, ε → η, ει → ῃ): παιδεύομεν → παιδεύωμεν, "
     "παιδεύει → παιδεύῃ. Present and aorist subjunctive share every ending; only the σ of the stem tells them apart.",
     "Optative = a vowel + ι before the endings -μι, -ς, (none), -μεν, -τε, -εν: οι in the present, αι in the aorist.",
@@ -396,3 +400,16 @@ VERB_NOTES = [
     "Sequence of moods: after a primary main verb (present, future, perfect) a purpose clause takes the subjunctive; "
     "after a secondary one (imperfect, aorist, pluperfect) it takes the optative.",
 ]
+
+
+# English forms for generated paradigms of the other vocabulary verbs (base, 3rd sg., past, past participle, -ing)
+VERB_ENGLISH = {
+    "παιδεύω": ("educate", "educates", "educated", "educated", "educating"),
+    "κελεύω": ("order", "orders", "ordered", "ordered", "ordering"),
+    "λῡ́ω": ("free", "frees", "freed", "freed", "freeing"),
+    "πέμπω": ("send", "sends", "sent", "sent", "sending"),
+    "γράφω": ("write", "writes", "wrote", "written", "writing"),
+    "θῡ́ω": ("sacrifice", "sacrifices", "sacrificed", "sacrificed", "sacrificing"),
+    "παύω": ("stop", "stops", "stopped", "stopped", "stopping"),
+    "φυλάττω": ("guard", "guards", "guarded", "guarded", "guarding"),
+}

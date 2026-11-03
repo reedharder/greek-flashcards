@@ -5,7 +5,6 @@ Outputs:
   app/artifact.html          same page without the document skeleton, for publishing
   docs/                      GitHub Pages site: the app plus downloadable .apkg files
 """
-import base64
 import json
 import os
 import shutil
@@ -45,9 +44,19 @@ def clip_keys(x):
 MEDIA = os.path.join(ROOT, "anki", "media")
 used = sorted(set(clip_keys(data)))
 voices = data["voices"]
-# The Claude artifact can't serve loose files, so it embeds every clip; the other builds link to mp3 files.
-embedded = {v: {k: base64.b64encode(open(os.path.join(MEDIA, f"{v}_{k}.mp3"), "rb").read()).decode() for k in used}
-            for v in voices}
+# The Claude artifact can't serve hundreds of loose files and must stay under 16 MB, so each voice's clips are
+# concatenated into one mp3 published beside the page (app/audio_<voice>.mp3) with a byte index embedded in the
+# page; the other builds link to the individual mp3 files.
+pack_index = {}
+for v in voices:
+    offset, index = 0, {}
+    with open(os.path.join(ROOT, "app", f"audio_{v}.mp3"), "wb") as pack:
+        for k in used:
+            clip = open(os.path.join(MEDIA, f"{v}_{k}.mp3"), "rb").read()
+            pack.write(clip)
+            index[k] = [offset, len(clip)]
+            offset += len(clip)
+    pack_index[v] = index
 
 
 def js(obj):
@@ -61,7 +70,7 @@ public_page = tpl.replace("__DATA__", js(data)).replace("__SUBTITLE__", "Ancient
 
 
 def with_audio(p, base):
-    return p.replace("__AUDIO__", "{}" if base else js(embedded)).replace("__AUDIOBASE__", base)
+    return p.replace("__AUDIO__", "{}" if base else js(pack_index)).replace("__AUDIOBASE__", base)
 
 
 def standalone(body):
@@ -90,4 +99,5 @@ for fn in os.listdir(os.path.join(ROOT, "anki")):
     if fn.endswith(".apkg"):
         shutil.copyfile(os.path.join(ROOT, "anki", fn), os.path.join(site, "anki", fn))
 
-print("artifact bytes", len(artifact.encode()), "clips per voice", len(used), "voices", voices)
+print("artifact bytes", len(artifact.encode()), "clips per voice", len(used), "voices", voices,
+      "packs", {v: os.path.getsize(os.path.join(ROOT, "app", f"audio_{v}.mp3")) for v in voices})

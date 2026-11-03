@@ -217,8 +217,10 @@ table.rv.mx thead th { white-space: normal; font-size: var(--s-xs); text-align: 
 <script>
 (() => {
 const DATA = JSON.parse(document.getElementById("data").textContent);
-const AUDIO = JSON.parse(document.getElementById("audio").textContent);   // {voice: {key: base64}} when embedded
-const AUDIO_BASE = "__AUDIOBASE__";   // else clips are served as <AUDIO_BASE><voice>_<key>.mp3
+const AUDIO = JSON.parse(document.getElementById("audio").textContent);   // Claude build: {voice: {key: [offset, length]}} into audio_<voice>.mp3
+const AUDIO_BASE = "__AUDIOBASE__";   // other builds serve each clip as <AUDIO_BASE><voice>_<key>.mp3
+const VARIANTS = DATA.verbVariants || {}, VERB_CHOICES = DATA.verbChoices || [];
+const BASE_VERB = VERB_CHOICES[0]?.lemma;
 const REVIEW = DATA.review || {};
 const VOICES = [["lessac", "Ancient (reconstructed)"], ["melina", "Modern Greek"]].filter(v => (DATA.voices || []).includes(v[0]));
 const DECKS = DATA.decks;
@@ -236,7 +238,8 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 // ---------- local prefs (per browser convenience) ----------
 function lsGet(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
-const prefs = Object.assign({ newPerSession: 20, types: TYPES.map(t => t[0]), voice: VOICES[0]?.[0] }, lsGet("melete.prefs", {}));
+const prefs = Object.assign({ newPerSession: 20, types: TYPES.map(t => t[0]), voice: VOICES[0]?.[0], verb: BASE_VERB }, lsGet("melete.prefs", {}));
+if (!VERB_CHOICES.some(v => v.lemma === prefs.verb)) prefs.verb = BASE_VERB;
 if (!VOICES.some(v => v[0] === prefs.voice)) prefs.voice = VOICES[0]?.[0];
 
 // ---------- progress store: db per-viewer subtree when available, else localStorage ----------
@@ -319,7 +322,7 @@ function deckStats(d, now = Date.now()) {
 
 // ---------- home ----------
 function renderHome() {
-  session = null;
+  session = null; currentReview = null;
   const now = Date.now();
   let due = 0, learn = 0, fresh = 0, mastered = 0, total = 0, seen = 0;
   for (const d of DECKS) { const s = deckStats(d, now); due += s.due; learn += s.learn; fresh += s.new; mastered += s.mastered; total += s.total; seen += s.total - s.new; }
@@ -352,7 +355,7 @@ function renderHome() {
     lsSet("melete.prefs", prefs); renderHome();
   });
   $("#npc").onchange = e => { prefs.newPerSession = +e.target.value; lsSet("melete.prefs", prefs); };
-  $("#voice")?.addEventListener("change", e => { prefs.voice = e.target.value; lsSet("melete.prefs", prefs); play(sampleClip()); });
+  $("#voice")?.addEventListener("change", e => { prefs.voice = e.target.value; lsSet("melete.prefs", prefs); play(sampleClip()); loadPack(prefs.voice); });
   v.querySelectorAll("[data-review]").forEach(b => b.onclick = () => renderReview(b.dataset.review));
   v.querySelectorAll("[data-study]").forEach(b => b.onclick = () => startSession(b.dataset.study.split(",")));
   v.querySelectorAll("[data-reset]").forEach(b => b.onclick = () => armReset(b));
@@ -420,6 +423,7 @@ const NOTATION = [
   ["subscript", /[ᾳῃῳ]/, "ᾳ ῃ ῳ", "Iota subscript: a long vowel + ι, written under the vowel; usually not pronounced."],
   ["alts", /"alts"/, "παιδεύσαις / παιδεύσειας", "A slash separates alternative forms: both are used, with no difference in meaning, so learn both."],
   ["notrans", /"trans":null/, "no translation", "Subjunctive and optative forms carry no fixed translation: their meaning depends on the kind of clause they appear in (e.g. a purpose clause)."],
+  ["psixi", /"sign":"[ψξ]"/, "ψ · ξ", "ψ and ξ contain the tense sign σ: π, β, φ + σ → ψ; κ, γ, χ (or ττ) + σ → ξ. They are marked in orange like σ."],
   ["marks", /"aug"|"sign"/, "ἐ- · πε- · σ · κ", "Highlighting: the ending is blue. Orange marks the augment ἐ- (past indicative tenses), the perfect's reduplication πε-, and the tense signs σ (future, aorist) and κ (perfect active)."],
 ];
 const notesFor = obj => {
@@ -441,7 +445,7 @@ function formHtml(c) {
 }
 function tableHtml(t) {
   if (t.type === "overlaps" || t.type === "heading") return tableBody(t);
-  return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu", "alts", "notrans"]) + "</div>");
+  return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu", "alts", "notrans", "psixi"]) + "</div>");
 }
 function tableBody(t) {
   const head = (title, src) => `<h3>${esc(title)}</h3>${src ? `<p class="src">${esc(src)}</p>` : ""}`;
@@ -490,14 +494,18 @@ function vocabHtml(v) {
     <tbody>${v.entries.map(e => `<tr><td class="f">${sayBtn(e.audio, esc(e.head))}</td><td class="t">${esc(e.eng)}</td><td class="t" style="color:var(--muted)">${esc(e.pos)}</td></tr>`).join("")}</tbody>
     </table></div>${footnotes(v, ["entry", "parts", "case"])}</div>`;
 }
-function renderReview(id) {
-  session = null;
-  const r = REVIEW[id], w = WEEKS.find(x => x.id === id) || { label: r.label, topic: r.topic };
+function withVerb(t) { return (t.vid && prefs.verb !== BASE_VERB && VARIANTS[prefs.verb]?.[t.vid]) || t; }
+function renderReview(id, keepScroll) {
+  session = null; currentReview = id;
+  const r0 = REVIEW[id], w = WEEKS.find(x => x.id === id) || { label: r0.label, topic: r0.topic };
+  const r = { ...r0, tables: r0.tables.map(withVerb) };
+  const canSwap = r0.tables.some(t => t.vid) && VERB_CHOICES.length > 1;
   const forms = r.tables.some(t => t.type !== "alphabet");
   const v = $("#view");
   v.innerHTML = `<section class="review${prefs.quiz && forms ? " quiz" : ""}">
     <div class="review-head"><button class="btn small" id="back">← All weeks</button>
-      ${forms ? `<button class="chip" id="quiz" aria-pressed="${!!prefs.quiz}">Hide forms (tap to reveal)</button>` : ""}</div>
+      <span class="tools">${canSwap ? `<label class="label" for="verbpick">Verb</label><select id="verbpick" class="chip gk">${VERB_CHOICES.map(v => `<option value="${esc(v.lemma)}" ${prefs.verb === v.lemma ? "selected" : ""}>${esc(v.lemma)} · ${esc(v.gloss.split(";")[0])}</option>`).join("")}</select>` : ""}
+      ${forms ? `<button class="chip" id="quiz" aria-pressed="${!!prefs.quiz}">Hide forms (tap to reveal)</button>` : ""}</span></div>
     <div><div class="label">${esc(w.label)} · review sheet</div><h2>${esc(w.topic)}</h2></div>
     <div class="tools">${forms ? `<span class="legend"><span><span class="end gk">ending</span></span><span><span class="mk">augment, reduplication, tense sign (σ, κ)</span></span></span>` : ""}
       <span>Tap a form to hear it · ▶ recites a whole column</span></div>
@@ -506,13 +514,14 @@ function renderReview(id) {
     ${(() => { const ns = notesFor(r); return ns.length ? `<details class="sheet key-notes"><summary>How to read the notation</summary><dl>${ns.map(([, , sym, txt]) => `<dt>${esc(sym)}</dt><dd>${esc(txt)}</dd>`).join("")}</dl></details>` : ""; })()}
     </section>`;
   $("#back").onclick = renderHome;
-  $("#quiz")?.addEventListener("click", () => { prefs.quiz = !prefs.quiz; lsSet("melete.prefs", prefs); renderReview(id); });
+  $("#quiz")?.addEventListener("click", () => { prefs.quiz = !prefs.quiz; lsSet("melete.prefs", prefs); renderReview(id, true); });
+  $("#verbpick")?.addEventListener("change", e => { prefs.verb = e.target.value; lsSet("melete.prefs", prefs); renderReview(id, true); });
   v.querySelectorAll("[data-say]").forEach(b => b.onclick = () => {
     if (b.closest(".quiz td.f") && !b.classList.contains("shown")) b.classList.add("shown");
     play(b.dataset.say);
   });
   v.querySelectorAll("[data-play]").forEach(b => b.onclick = () => play(b.dataset.play));
-  window.scrollTo(0, 0);
+  if (!keepScroll) window.scrollTo(0, 0);
 }
 
 // ---------- study session ----------
@@ -559,11 +568,33 @@ function next() {
   renderCard();
 }
 
+// Claude build: one mp3 pack per voice, fetched on first use; each clip becomes a data: URL on demand
+const packs = {}, packLoading = {}, dataUrls = {};
+function loadPack(voice) {
+  if (packs[voice] || packLoading[voice] || !AUDIO[voice]) return;
+  packLoading[voice] = fetch(`audio_${voice}.mp3`).then(r => r.ok ? r.arrayBuffer() : Promise.reject(r.status))
+    .then(buf => { packs[voice] = new Uint8Array(buf); rerender(); })
+    .catch(() => { packLoading[voice] = null; });
+}
 function clipSrc(key) {
   if (!key) return null;
   if (AUDIO_BASE) return `${AUDIO_BASE}${prefs.voice}_${key}.mp3`;
-  const b = AUDIO[prefs.voice]?.[key];
-  return b ? "data:audio/mpeg;base64," + b : null;
+  const v = prefs.voice, at = AUDIO[v]?.[key];
+  if (!at) return null;
+  if (!packs[v]) { loadPack(v); return null; }
+  const id = v + ":" + key;
+  if (!dataUrls[id]) {
+    const bytes = packs[v].subarray(at[0], at[0] + at[1]);
+    let bin = "";
+    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    dataUrls[id] = "data:audio/mpeg;base64," + btoa(bin);
+  }
+  return dataUrls[id];
+}
+let currentReview = null;
+function rerender() {   // a pack arrived: redraw whatever shows audio
+  if (session?.cur) renderCard();
+  else if (currentReview) renderReview(currentReview, true);
 }
 function audioEl(key, autoplay) {
   const src = clipSrc(key);
@@ -633,5 +664,6 @@ document.addEventListener("keydown", e => {
 
 renderHome();
 connectDb();
+loadPack(prefs.voice);
 })();
 </script>

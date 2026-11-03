@@ -16,7 +16,8 @@ import unicodedata
 
 import genanki
 
-from data import WEEKS, PARADIGMS, EXTRAS, ALPHABET, DIPHTHONGS, VOCAB, VERB_SLOTS, VERB_NOTES
+from data import WEEKS, PARADIGMS, EXTRAS, ALPHABET, DIPHTHONGS, VOCAB, VERB_SLOTS, VERB_NOTES, VERB_ENGLISH
+import conjugate
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANKI = os.path.join(ROOT, "anki")
@@ -316,7 +317,7 @@ def article_review(a):
              "rows": [[form_cell(f) for f in r] for r in a["forms"]]}]
 
 
-def verb_review(verbs, extras, title="indicative active"):
+def verb_review(verbs, extras, title="indicative active", vid=None):
     groups = {}   # one table per group (e.g. indicative vs. subjunctive & optative)
     for v in verbs:
         groups.setdefault(v.get("group", title), []).append(v)
@@ -333,6 +334,9 @@ def verb_review(verbs, extras, title="indicative active"):
         tables.append({"type": "verb", "title": f"{vs[0]['lemma']}: {group}", "lemma": vs[0]["lemma"],
                        "slots": VERB_SLOTS, "tenses": tenses, "extras": []})
     tables[0]["extras"] = [{"label": p, "greek": a, "note": n, "audio": audio(a)} for p, a, n in extras]
+    for i, t in enumerate(tables):
+        if vid:
+            t["vid"] = f"{vid}:{i}"
     return tables
 
 
@@ -354,11 +358,11 @@ REVIEW = {
            "vocab": [vocab_review(VOCAB["w2"], "Mastronarde Unit 3 + Mollin & Williamson Lesson 2")]},
     "w3": {"tables": article_review(PARADIGMS["w3"][0]), "vocab": []},
     "w4": {"tables": noun_review(PARADIGMS["w4"]), "vocab": [vocab_review(VOCAB["w4"], "Hansen & Quinn Unit 1")]},
-    "w5": {"tables": verb_review(PARADIGMS["w5"], EXTRAS["w5"]),
+    "w5": {"tables": verb_review(PARADIGMS["w5"], EXTRAS["w5"], vid="w5"),
            "vocab": [vocab_review(VOCAB["w5"], "Hansen & Quinn Unit 2")]},
 }
 # Week 6 is review: everything from Weeks 2–5
-REVIEW["w7"] = {"tables": verb_review(PARADIGMS["w7"], EXTRAS["w7"]),
+REVIEW["w7"] = {"tables": verb_review(PARADIGMS["w7"], EXTRAS["w7"], vid="w7"),
                 "vocab": [vocab_review(VOCAB["w7"], "Hansen & Quinn Unit 3")]}
 REVIEW["w6"] = {"tables": [t for w in ("w2", "w3", "w4", "w5") for t in REVIEW[w]["tables"]],
                 "vocab": [v for w in ("w2", "w4", "w5") for v in REVIEW[w]["vocab"]]}
@@ -381,11 +385,11 @@ def bare_text(s):
     return "".join(c for c in unicodedata.normalize("NFD", s) if not unicodedata.combining(c))
 
 
-def all_verbs():
+def all_verbs(paradigms):
     """Every finite verb table so far, with tense and mood split out."""
     out = []
     for wid in ("w5", "w7"):
-        for v in PARADIGMS.get(wid, []):
+        for v in paradigms.get(wid, []):
             if v.get("kind") != "verb":
                 continue
             tense, *mood = v["tense"].split()
@@ -393,13 +397,19 @@ def all_verbs():
     return out
 
 
-def all_infinitives():
+def all_infinitives(extras, verbs):
+    """Infinitives, marked like the finite forms of their tense (σ/ψ/ξ, reduplication + κ)."""
+    def marks_of(tense, mood):
+        v = next((v for v in verbs if v["t"] == tense and v["mood"] == mood), {})
+        return v.get("prefix"), v.get("sign", "σ" if tense == "aorist" else None)
     out = []
     for wid in ("w5", "w7"):
-        for label, form, note in EXTRAS.get(wid, []):
+        for label, form, note in extras.get(wid, []):
             if "infinitive" in label:
                 tense = label.split(":")[1].split()[0]
-                end, prefix, sign = INF_PARTS[tense]
+                end = INF_PARTS[tense][0]
+                prefix, sign = (None, None) if tense == "present" else \
+                    ((None, marks_of("aorist", "subjunctive")[1]) if tense == "aorist" else marks_of("perfect", "indicative"))
                 out.append({"t": tense, "form": form, "label": f"{tense} infinitive active", "note": note,
                             "cell": mark_stem(form_cell(form, end), prefix, sign)})
     return out
@@ -411,8 +421,10 @@ def verb_cells(v):
     return [mark_stem(form_cell(f, e), prefix, sign) for f, e in zip(v["forms"], v["endings"])]
 
 
-def verbs_review():
-    verbs, infs = all_verbs(), all_infinitives()
+def verbs_review(paradigms=PARADIGMS, extras=EXTRAS, pp_info=None):
+    verbs = all_verbs(paradigms)
+    infs = all_infinitives(extras, verbs)
+    pp_info = pp_info or PP_INFO
     order = ["present", "imperfect", "future", "aorist", "perfect", "pluperfect"]
     # 1. synopsis: first singular of every tense x mood, infinitives in their own column
     rows = []
@@ -445,13 +457,13 @@ def verbs_review():
         vs = sorted((v for v in verbs if PP_OF[v["t"]] == pp), key=lambda v: (MOODS.index(v["mood"]), order.index(v["t"])))
         if not vs:
             continue
-        head, stem = PP_INFO[pp]
+        head, stem = pp_info[pp]
         tenses = [{"tense": v["label"].replace(" active", ""), "label": v["label"], "stem": v["stem"], "source": v["source"],
                    "recite": audio(", ".join(v["forms"]), slow=True), "forms": verb_cells(v), "trans": v.get("trans")}
                   for v in vs]
         extras = [{"label": i["label"], "greek": i["form"], "note": i["note"], "audio": audio(i["form"])}
                   for i in infs if PP_OF[i["t"]] == pp]
-        tables.append({"type": "verb", "title": f"Principal Part {pp}: {head} · {stem}", "lemma": "παιδεύω",
+        tables.append({"type": "verb", "title": f"Principal Part {pp}: {head} · {stem}", "lemma": vs[0]["lemma"],
                        "slots": VERB_SLOTS, "tenses": tenses, "extras": extras})
 
     # 3. overlaps, computed from the paradigms
@@ -497,7 +509,9 @@ def verbs_review():
     overlaps = {"type": "overlaps", "title": "Overlaps in formation", "same": same, "accent": accent,
                 "shared": shared, "matrix": matrix, "notes": VERB_NOTES}
     tables.append(overlaps)
-    return {"tables": tables, "vocab": [], "label": "All weeks", "topic": "All verb forms so far: παιδεύω"}
+    for i, t in enumerate(tables):
+        t["vid"] = f"verbs:{i}"
+    return {"tables": tables, "vocab": [], "label": "All weeks", "topic": "All verb forms so far"}
 
 
 REVIEW["verbs"] = verbs_review()
@@ -519,13 +533,60 @@ def principal_parts_table(wids):
 # Week 8: no new material. Comprehensive review of Units 1–3: all verb forms first, then the verbs' principal
 # parts, the noun and article tables, and the Hansen & Quinn vocabulary for Units 1–3.
 REVIEW["w8"] = {
-    "tables": [{"type": "heading", "title": "Verbs: every form of παιδεύω so far"}]
+    "tables": [{"type": "heading", "title": "Verbs: every form of παιδεύω so far", "vid": "w8:head"}]
               + REVIEW["verbs"]["tables"]
               + [principal_parts_table(("w5", "w7")),
                  {"type": "heading", "title": "Nouns and the article"}]
               + REVIEW["w2"]["tables"] + REVIEW["w3"]["tables"] + REVIEW["w4"]["tables"],
     "vocab": [v for w in ("w4", "w5", "w7") for v in REVIEW[w]["vocab"]],
 }
+
+
+# ---------------------------------------------------------------------------
+# Other vocabulary verbs: the same tables, generated from principal parts (conjugate.py checks itself against
+# παιδεύω's textbook forms). The app swaps a table for its variant by "vid".
+# ---------------------------------------------------------------------------
+def vocab_verbs():
+    out = []
+    for wid in ("w5", "w7"):
+        for head, eng, pos, src in VOCAB.get(wid, []):
+            parts = [nfc(p.strip()) for p in head.split(",")]
+            if pos.startswith("verb") and len(parts) == 6:
+                out.append((parts, eng, src))
+    return out
+
+
+def infinitive_templates(wid):
+    return [(label.split(":")[1].split()[0], form, note) for label, form, note in EXTRAS.get(wid, []) if "infinitive" in label]
+
+
+# the generator must reproduce παιδεύω exactly before it is trusted with any other verb
+_check, _ = conjugate.conjugate(["παιδεύω", "παιδεύσω", "ἐπαίδευσα", "πεπαίδευκα"], PARADIGMS["w5"] + PARADIGMS["w7"],
+                                infinitive_templates("w5") + infinitive_templates("w7"), dict(zip(("base", "s3", "past", "pp", "ing"), VERB_ENGLISH["παιδεύω"])))
+assert [f for v in _check for f in v["forms"]] == [nfc(f) for v in PARADIGMS["w5"] + PARADIGMS["w7"] for f in v["forms"]], "conjugate.py drifted"
+
+VERB_VARIANTS, VERB_CHOICES = {}, [{"lemma": "παιδεύω", "gloss": "educate, teach", "src": "H&Q U2"}]
+for parts, gloss, src in vocab_verbs():
+    lemma = parts[0]
+    if lemma == "παιδεύω" or lemma not in VERB_ENGLISH:
+        continue
+    english = dict(zip(("base", "s3", "past", "pp", "ing"), VERB_ENGLISH[lemma]))
+    par, ext = {}, {}
+    for wid in ("w5", "w7"):
+        tables, infs = conjugate.conjugate(parts, PARADIGMS[wid], infinitive_templates(wid), english)
+        par[wid] = tables
+        ext[wid] = [(f"{lemma}: {t} infinitive active", f, n) for t, f, n in infs]
+    ext["w5"].append((f"{lemma}: the six principal parts", ", ".join(parts),
+                      "I present · II future · III aorist · IV perfect act. · V perfect mid./pass. · VI aorist passive"))
+    st = conjugate.stems(parts)
+    pp_info = {"I": (parts[0], f"present stem {st['present']}-"), "II": (parts[1], f"future stem {st['future']}-"),
+               "III": (parts[2], f"aorist stem {st['aorist']}- (augmented {st['aorist_aug']}- in the indicative)"),
+               "IV": (parts[3], f"perfect active stem {st['perfect']}-")}
+    tables = verb_review(par["w5"], ext["w5"], vid="w5") + verb_review(par["w7"], ext["w7"], vid="w7") \
+        + verbs_review(par, ext, pp_info)["tables"]
+    VERB_VARIANTS[lemma] = {t["vid"]: t for t in tables}
+    VERB_VARIANTS[lemma]["w8:head"] = {"type": "heading", "title": f"Verbs: every form of {lemma} so far", "vid": "w8:head"}
+    VERB_CHOICES.append({"lemma": lemma, "gloss": gloss, "src": src})
 
 # ---------------------------------------------------------------------------
 # Anki packaging
@@ -601,6 +662,7 @@ for key, d in cards_by_deck.items():
 genanki.Package(all_decks, media_files=[os.path.join(MEDIA, m) for m in sorted(all_media)]).write_to_file(
     os.path.join(ANKI, "Greek_All_Weeks.apkg"))
 
-json.dump({"weeks": WEEKS, "decks": list(cards_by_deck.values()), "review": REVIEW, "voices": VOICES},
+json.dump({"weeks": WEEKS, "decks": list(cards_by_deck.values()), "review": REVIEW, "voices": VOICES,
+           "verbVariants": VERB_VARIANTS, "verbChoices": VERB_CHOICES},
           open(os.path.join(APP, "cards.json"), "w"), ensure_ascii=False, indent=1)
 print("total cards", sum(len(d["cards"]) for d in cards_by_deck.values()), "audio files", len(all_media))

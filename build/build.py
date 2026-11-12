@@ -16,7 +16,7 @@ import unicodedata
 
 import genanki
 
-from data import WEEKS, PARADIGMS, EXTRAS, ALPHABET, DIPHTHONGS, VOCAB, VERB_SLOTS, VERB_NOTES, VERB_ENGLISH
+from data import WEEKS, PARADIGMS, EXTRAS, ALPHABET, DIPHTHONGS, VOCAB, VERB_SLOTS, VERB_NOTES, VERB_ENGLISH, ACCENT_PATTERNS, ACCENT_RULES
 import conjugate
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -530,6 +530,21 @@ def principal_parts_table(wids):
             "rows": rows}
 
 
+def accent_review():
+    ex = lambda g: {"g": g, "audio": audio(g)}
+    tables = [{"type": "patterns", "title": "Possibilities of accent", "source": "Hansen & Quinn §10 · a = antepenult, "
+               "p = penult, u = ultima; ˘ short, ¯ long",
+               "rows": [{"scheme": sch, "rule": r, "ex": ex(g)} for sch, r, g in ACCENT_PATTERNS]}]
+    for sec in ACCENT_RULES:
+        tables.append({"type": "rules", "title": sec["title"], "source": sec["source"],
+                       "items": [{"text": t, "ex": [ex(g) for g in gs]} for t, gs in sec["items"]]})
+    return tables
+
+
+REVIEW["accents"] = {"tables": accent_review(), "vocab": [], "label": "All weeks", "topic": "Accent rules"}
+REVIEW["w1"]["tables"] = REVIEW["w1"]["tables"] + [{"type": "heading", "title": "Accent rules"}] + REVIEW["accents"]["tables"]
+
+
 # Week 8: no new material. Comprehensive review of Units 1–3: all verb forms first, then the verbs' principal
 # parts, the noun and article tables, and the Hansen & Quinn vocabulary for Units 1–3.
 REVIEW["w8"] = {
@@ -537,7 +552,8 @@ REVIEW["w8"] = {
               + REVIEW["verbs"]["tables"]
               + [principal_parts_table(("w5", "w7")),
                  {"type": "heading", "title": "Nouns and the article"}]
-              + REVIEW["w2"]["tables"] + REVIEW["w3"]["tables"] + REVIEW["w4"]["tables"],
+              + REVIEW["w2"]["tables"] + REVIEW["w3"]["tables"] + REVIEW["w4"]["tables"]
+              + [{"type": "heading", "title": "Accent rules"}] + REVIEW["accents"]["tables"],
     "vocab": [v for w in ("w4", "w5", "w7") for v in REVIEW[w]["vocab"]],
 }
 

@@ -172,6 +172,11 @@ table.rv.syn tbody th small { display: block; font-style: normal; font-size: var
 table.rv.pp th, table.rv.pp td { padding: 5px 7px; }
 table.rv.pp tbody th { white-space: normal; min-width: 8em; max-width: 11em; }
 table.rv.pp td.f { font-size: 18px; }
+table.rv.acc td.sch { font-family: var(--f-mono); font-size: var(--s-sm); white-space: nowrap; color: var(--lapis); }
+table.rv.acc td.f { white-space: nowrap; }
+ul.rules { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px; font-size: var(--s-sm); max-width: 70ch; }
+ul.rules .exs { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; }
+ul.rules .exs .gk { font-size: 20px; }
 h4.part { font-size: var(--s-lg); font-weight: 500; color: var(--ink); margin: 14px 0 -8px; padding-top: 14px; border-top: 2px solid var(--lapis); }
 .ov h4 { margin: 18px 0 6px; }
 .ov h4:first-of-type { margin-top: 4px; }
@@ -346,7 +351,8 @@ function renderHome() {
       ${VOICES.length > 1 ? `<label class="label" for="voice">Voice</label>
       <select id="voice" class="chip">${VOICES.map(([k, l]) => `<option value="${k}" ${prefs.voice === k ? "selected" : ""}>${l}</option>`).join("")}</select>` : ""}
     </section>
-    ${REVIEW.verbs ? `<section class="across"><span class="label">Across weeks</span><span class="t">All verb forms so far, with overlaps in formation</span><button class="btn small" data-review="verbs" style="margin-left:auto">Review sheet</button></section>` : ""}
+    ${[["verbs", "All verb forms so far, with overlaps in formation"], ["accents", "Accent rules (Hansen & Quinn)"]].filter(([k]) => REVIEW[k]).map(([k, l]) =>
+      `<section class="across"><span class="label">Across weeks</span><span class="t">${l}</span><button class="btn small" data-review="${k}" style="margin-left:auto">Review sheet</button></section>`).join("")}
     <section class="weeks">${WEEKS.map(weekHtml).join("")}</section>`;
   $("#studyAll").onclick = () => startSession(DECKS.map(d => d.key));
   v.querySelectorAll("[data-type]").forEach(b => b.onclick = () => {
@@ -374,7 +380,7 @@ function weekHtml(w, i) {
       <h2>${esc(w.topic)}</h2>
       ${tasks ? `<details><summary>Assignments</summary><ul>${tasks}</ul></details>` : ""}
       ${w.notes ? `<p class="note">${esc(w.notes)}</p>` : ""}
-      ${hasReview(w.id) ? `<p style="margin:10px 0 0"><button class="btn small" data-review="${w.id}">Review sheet: ${w.id === "w1" ? "alphabet" : "tables" + (REVIEW[w.id].vocab.length ? " &amp; vocab" : "")}</button></p>` : ""}
+      ${hasReview(w.id) ? `<p style="margin:10px 0 0"><button class="btn small" data-review="${w.id}">Review sheet: ${w.id === "w1" ? "alphabet &amp; accents" : "tables" + (REVIEW[w.id].vocab.length ? " &amp; vocab" : "")}</button></p>` : ""}
       <div class="decks">
         ${decks.map(deckHtml).join("")}
         ${reuse.length ? `<div class="deck"><div class="t">Review ${reuse.length > 2 ? "every deck from" : "the decks from"} Week${reuseWeeks.length > 1 ? "s" : ""} ${reuseWeeks.join(", ")}</div><div class="acts"><button class="btn small primary" data-study="${reuse.map(d => d.key).join(",")}">Study</button></div><div class="sub">No new decks this week. ${reuse.length > 2 ? "For the translation into Greek, switch on only the English → Greek card type." : ""}</div></div>` : ""}
@@ -444,7 +450,7 @@ function formHtml(c) {
   return sayBtn(c.audio, inner);
 }
 function tableHtml(t) {
-  if (t.type === "overlaps" || t.type === "heading") return tableBody(t);
+  if (["overlaps", "heading", "patterns", "rules"].includes(t.type)) return tableBody(t);
   return tableBody(t).replace(/<\/div>$/, footnotes(t, ["nu", "alts", "notrans", "psixi"]) + "</div>");
 }
 function tableBody(t) {
@@ -468,6 +474,10 @@ function tableBody(t) {
     </table></div>
     <h3 style="margin-top:16px">Diphthongs, breathings, accents</h3><div class="scroll"><table class="rv"><tbody>
     ${t.marks.map(m => `<tr><td class="f">${esc(m.sym)}</td><td class="t">${esc(m.sound)}</td></tr>`).join("")}</tbody></table></div></div>`;
+  if (t.type === "patterns") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv acc">
+    <tbody>${t.rows.map(r => `<tr><td class="sch">${esc(r.scheme)}</td><td class="t">${esc(r.rule)}</td><td class="f">${sayBtn(r.ex.audio, esc(r.ex.g))}</td></tr>`).join("")}</tbody>
+    </table></div></div>`;
+  if (t.type === "rules") return `<div class="sheet">${head(t.title, t.source)}<ul class="rules">${t.items.map(i => `<li>${esc(i.text)}${i.ex.length ? `<span class="exs">${i.ex.map(e => sayBtn(e.audio, `<span class="gk">${esc(e.g)}</span>`)).join(" ")}</span>` : ""}</li>`).join("")}</ul></div>`;
   if (t.type === "heading") return `<h4 class="part">${esc(t.title)}</h4>`;
   if (t.type === "pparts") return `<div class="sheet">${head(t.title, t.source)}<div class="scroll"><table class="rv pp">
     <thead><tr><th></th>${["I", "II", "III", "IV", "V", "VI"].map(n => `<th>${n}</th>`).join("")}</tr></thead>
@@ -500,7 +510,7 @@ function renderReview(id, keepScroll) {
   const r0 = REVIEW[id], w = WEEKS.find(x => x.id === id) || { label: r0.label, topic: r0.topic };
   const r = { ...r0, tables: r0.tables.map(withVerb) };
   const canSwap = r0.tables.some(t => t.vid) && VERB_CHOICES.length > 1;
-  const forms = r.tables.some(t => t.type !== "alphabet");
+  const forms = r.tables.some(t => ["noun", "article", "verb", "synopsis"].includes(t.type));
   const v = $("#view");
   v.innerHTML = `<section class="review${prefs.quiz && forms ? " quiz" : ""}">
     <div class="review-head"><button class="btn small" id="back">← All weeks</button>

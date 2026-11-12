@@ -9363,6 +9363,346 @@
        "sound": "pitch accents: rising, lowered, rising-falling"
       }
      ]
+    },
+    {
+     "type": "heading",
+     "title": "Accent rules"
+    },
+    {
+     "type": "patterns",
+     "title": "Possibilities of accent",
+     "source": "Hansen & Quinn §10 · a = antepenult, p = penult, u = ultima; ˘ short, ¯ long",
+     "rows": [
+      {
+       "scheme": "a · p · ú  + pause",
+       "rule": "Acute on the ultima only before a pause (end of sentence, comma, semicolon).",
+       "ex": {
+        "g": "ὁδός",
+        "audio": "65e3af1baf6d"
+       }
+      },
+      {
+       "scheme": "a · p · ù  + word",
+       "rule": "Before another word with no pause, an acute on the ultima becomes grave.",
+       "ex": {
+        "g": "τὸν λόγον",
+        "audio": "bff129f5dd30"
+       }
+      },
+      {
+       "scheme": "a · ṕ · u",
+       "rule": "Acute on the penult is allowed whatever the ultima, except as in the last row.",
+       "ex": {
+        "g": "ἀνθρώπου",
+        "audio": "670ede8b0591"
+       }
+      },
+      {
+       "scheme": "á · p · ŭ",
+       "rule": "Acute on the antepenult only when the ultima is short.",
+       "ex": {
+        "g": "ἄνθρωπος",
+        "audio": "c8eb74f8641f"
+       }
+      },
+      {
+       "scheme": "a · p · ῦ",
+       "rule": "Circumflex on the ultima: only over a long vowel or diphthong.",
+       "ex": {
+        "g": "ὁδοῦ",
+        "audio": "7e4f78a23210"
+       }
+      },
+      {
+       "scheme": "a · p̄̃ · ŭ",
+       "rule": "An accented long penult before a short ultima MUST be circumflex; a circumflex on the penult is never possible before a long ultima.",
+       "ex": {
+        "g": "δῶρον",
+        "audio": "f4cd410b92d0"
+       }
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Where an accent can go",
+     "source": "Hansen & Quinn §10",
+     "items": [
+      {
+       "text": "Three accents: acute ´ (pitch rises), grave ` (pitch lowered), circumflex ῀ (rise and fall on one syllable). The accent is part of a word's spelling: learn it with the word.",
+       "ex": []
+      },
+      {
+       "text": "Only the last three syllables can carry it: the ultima (last), the penult (next to last) and the antepenult (third from the end).",
+       "ex": []
+      },
+      {
+       "text": "It is written over the vowel, or over the second letter of a diphthong. A breathing comes before an acute or grave, and under a circumflex.",
+       "ex": [
+        {
+         "g": "ἄνθρωπος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "g": "οἶκος",
+         "audio": "5016965e6df2"
+        },
+        {
+         "g": "ἦτα",
+         "audio": "189c9b95275c"
+        }
+       ]
+      },
+      {
+       "text": "Circumflex: only over a long vowel or diphthong, only on the ultima or penult. Grave: only on the ultima, replacing an acute there when another word follows without a pause.",
+       "ex": [
+        {
+         "g": "θεῶν",
+         "audio": "fda05c63e710"
+        },
+        {
+         "g": "τὸν λόγον",
+         "audio": "bff129f5dd30"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Long or short?",
+     "source": "Hansen & Quinn §§10, 14–15, 33–34",
+     "items": [
+      {
+       "text": "Long: η, ω, every diphthong, and α, ι, υ when marked with a macron (ᾱ ῑ ῡ) or carrying a circumflex. Short: ε, ο, and unmarked α, ι, υ.",
+       "ex": [
+        {
+         "g": "χώρᾱ",
+         "audio": "55a50f326b72"
+        },
+        {
+         "g": "δρᾶμα",
+         "audio": "41c0bcdb60bc"
+        }
+       ]
+      },
+      {
+       "text": "Final -αι and -οι count as SHORT for accent, so a long accented penult before them takes a circumflex.",
+       "ex": [
+        {
+         "g": "χῶραι",
+         "audio": "0d5607551d9c"
+        },
+        {
+         "g": "ἄνθρωποι",
+         "audio": "db29f5c2e711"
+        },
+        {
+         "g": "νῆσοι",
+         "audio": "3a273ce7c46e"
+        }
+       ]
+      },
+      {
+       "text": "Exception: in the optative, final -οι and -αι count as LONG.",
+       "ex": [
+        {
+         "g": "παιδεύοι",
+         "audio": "fd840910762a"
+        },
+        {
+         "g": "παιδεύσαι",
+         "audio": "0dd6c0855e22"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Recessive accent: verbs",
+     "source": "Hansen & Quinn §11",
+     "items": [
+      {
+       "text": "Most verb forms push the accent as far from the end as the rules allow.",
+       "ex": []
+      },
+      {
+       "text": "Three or more syllables: short ultima → acute on the antepenult; long ultima → acute on the penult.",
+       "ex": [
+        {
+         "g": "ἐπαίδευον",
+         "audio": "67df99770b2f"
+        },
+        {
+         "g": "παιδεύει",
+         "audio": "135dc393e244"
+        },
+        {
+         "g": "πεπαίδευκα",
+         "audio": "cb376c78438b"
+        },
+        {
+         "g": "ἔπαυσα",
+         "audio": "f7ab18e934f8"
+        }
+       ]
+      },
+      {
+       "text": "Two syllables: the accent is on the penult. Short penult → acute; long penult → circumflex before a short ultima, acute before a long one.",
+       "ex": [
+        {
+         "g": "πέμπω",
+         "audio": "aa24c33abd6f"
+        },
+        {
+         "g": "παύω",
+         "audio": "c86a06dcff32"
+        }
+       ]
+      },
+      {
+       "text": "Infinitives so far break the pattern: the aorist active infinitive is accented on the penult (so παιδεῦσαι, unlike the optative παιδεύσαι), and the perfect active infinitive always on the penult.",
+       "ex": [
+        {
+         "g": "παιδεῦσαι",
+         "audio": "e369eb3b5bec"
+        },
+        {
+         "g": "πεπαιδευκέναι",
+         "audio": "5c4735234120"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Persistent accent: nouns",
+     "source": "Hansen & Quinn §§12, 14–15",
+     "items": [
+      {
+       "text": "A noun's accent is given by the nominative singular and tries to stay on that syllable in every form. When the rules force a change, it changes kind first (circumflex → acute), then position.",
+       "ex": []
+      },
+      {
+       "text": "Changes kind: a long penult keeps the accent but must turn acute before a long ultima.",
+       "ex": [
+        {
+         "g": "νῆσος",
+         "audio": "2594f194ff52"
+        },
+        {
+         "g": "νήσου",
+         "audio": "c47c0c397ef0"
+        },
+        {
+         "g": "δῶρον",
+         "audio": "f4cd410b92d0"
+        },
+        {
+         "g": "δώρου",
+         "audio": "6cc25ded5d7e"
+        }
+       ]
+      },
+      {
+       "text": "Changes position: an antepenult accent moves to the penult when the ultima turns long.",
+       "ex": [
+        {
+         "g": "ἄνθρωπος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "g": "ἀνθρώπου",
+         "audio": "670ede8b0591"
+        },
+        {
+         "g": "θάλαττα",
+         "audio": "ab65824692d1"
+        },
+        {
+         "g": "θαλάττης",
+         "audio": "897eda729561"
+        }
+       ]
+      },
+      {
+       "text": "First declension: the genitive plural is always -ῶν, whatever the nominative's accent.",
+       "ex": [
+        {
+         "g": "τεχνῶν",
+         "audio": "6049de90ee71"
+        },
+        {
+         "g": "χωρῶν",
+         "audio": "a9987ba7d2b8"
+        },
+        {
+         "g": "θαλαττῶν",
+         "audio": "b1d277064df8"
+        }
+       ]
+      },
+      {
+       "text": "First and second declension: a noun with an acute on the ultima in the nominative takes a circumflex in the genitive and dative, singular and plural.",
+       "ex": [
+        {
+         "g": "ὁδός",
+         "audio": "65e3af1baf6d"
+        },
+        {
+         "g": "ὁδοῦ",
+         "audio": "7e4f78a23210"
+        },
+        {
+         "g": "ὁδῷ",
+         "audio": "ff948b254aaf"
+        },
+        {
+         "g": "φυγή",
+         "audio": "316011962958"
+        },
+        {
+         "g": "φυγῆς",
+         "audio": "dc9cfa4039f1"
+        },
+        {
+         "g": "θεᾶς",
+         "audio": "33f82bbbea7f"
+        }
+       ]
+      },
+      {
+       "text": "The vocative ἄδελφε (from ἀδελφός) is an exception to learn separately.",
+       "ex": [
+        {
+         "g": "ἄδελφε",
+         "audio": "5f25f7e90188"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Words with no accent",
+     "source": "Hansen & Quinn §16; Unit 3 vocabulary notes",
+     "items": [
+      {
+       "text": "Proclitics have no accent and are pronounced with the following word: the article forms ὁ, ἡ, οἱ, αἱ, and the negative οὐ (οὐκ, οὐχ). μή is not a proclitic.",
+       "ex": [
+        {
+         "g": "ὁ λόγος",
+         "audio": "2f3d7f76acca"
+        },
+        {
+         "g": "οὐ πέμπει",
+         "audio": "8835f9b7ef9b"
+        }
+       ]
+      }
+     ]
     }
    ],
    "vocab": []
@@ -15867,6 +16207,349 @@
    "label": "All weeks",
    "topic": "All verb forms so far"
   },
+  "accents": {
+   "tables": [
+    {
+     "type": "patterns",
+     "title": "Possibilities of accent",
+     "source": "Hansen & Quinn §10 · a = antepenult, p = penult, u = ultima; ˘ short, ¯ long",
+     "rows": [
+      {
+       "scheme": "a · p · ú  + pause",
+       "rule": "Acute on the ultima only before a pause (end of sentence, comma, semicolon).",
+       "ex": {
+        "g": "ὁδός",
+        "audio": "65e3af1baf6d"
+       }
+      },
+      {
+       "scheme": "a · p · ù  + word",
+       "rule": "Before another word with no pause, an acute on the ultima becomes grave.",
+       "ex": {
+        "g": "τὸν λόγον",
+        "audio": "bff129f5dd30"
+       }
+      },
+      {
+       "scheme": "a · ṕ · u",
+       "rule": "Acute on the penult is allowed whatever the ultima, except as in the last row.",
+       "ex": {
+        "g": "ἀνθρώπου",
+        "audio": "670ede8b0591"
+       }
+      },
+      {
+       "scheme": "á · p · ŭ",
+       "rule": "Acute on the antepenult only when the ultima is short.",
+       "ex": {
+        "g": "ἄνθρωπος",
+        "audio": "c8eb74f8641f"
+       }
+      },
+      {
+       "scheme": "a · p · ῦ",
+       "rule": "Circumflex on the ultima: only over a long vowel or diphthong.",
+       "ex": {
+        "g": "ὁδοῦ",
+        "audio": "7e4f78a23210"
+       }
+      },
+      {
+       "scheme": "a · p̄̃ · ŭ",
+       "rule": "An accented long penult before a short ultima MUST be circumflex; a circumflex on the penult is never possible before a long ultima.",
+       "ex": {
+        "g": "δῶρον",
+        "audio": "f4cd410b92d0"
+       }
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Where an accent can go",
+     "source": "Hansen & Quinn §10",
+     "items": [
+      {
+       "text": "Three accents: acute ´ (pitch rises), grave ` (pitch lowered), circumflex ῀ (rise and fall on one syllable). The accent is part of a word's spelling: learn it with the word.",
+       "ex": []
+      },
+      {
+       "text": "Only the last three syllables can carry it: the ultima (last), the penult (next to last) and the antepenult (third from the end).",
+       "ex": []
+      },
+      {
+       "text": "It is written over the vowel, or over the second letter of a diphthong. A breathing comes before an acute or grave, and under a circumflex.",
+       "ex": [
+        {
+         "g": "ἄνθρωπος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "g": "οἶκος",
+         "audio": "5016965e6df2"
+        },
+        {
+         "g": "ἦτα",
+         "audio": "189c9b95275c"
+        }
+       ]
+      },
+      {
+       "text": "Circumflex: only over a long vowel or diphthong, only on the ultima or penult. Grave: only on the ultima, replacing an acute there when another word follows without a pause.",
+       "ex": [
+        {
+         "g": "θεῶν",
+         "audio": "fda05c63e710"
+        },
+        {
+         "g": "τὸν λόγον",
+         "audio": "bff129f5dd30"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Long or short?",
+     "source": "Hansen & Quinn §§10, 14–15, 33–34",
+     "items": [
+      {
+       "text": "Long: η, ω, every diphthong, and α, ι, υ when marked with a macron (ᾱ ῑ ῡ) or carrying a circumflex. Short: ε, ο, and unmarked α, ι, υ.",
+       "ex": [
+        {
+         "g": "χώρᾱ",
+         "audio": "55a50f326b72"
+        },
+        {
+         "g": "δρᾶμα",
+         "audio": "41c0bcdb60bc"
+        }
+       ]
+      },
+      {
+       "text": "Final -αι and -οι count as SHORT for accent, so a long accented penult before them takes a circumflex.",
+       "ex": [
+        {
+         "g": "χῶραι",
+         "audio": "0d5607551d9c"
+        },
+        {
+         "g": "ἄνθρωποι",
+         "audio": "db29f5c2e711"
+        },
+        {
+         "g": "νῆσοι",
+         "audio": "3a273ce7c46e"
+        }
+       ]
+      },
+      {
+       "text": "Exception: in the optative, final -οι and -αι count as LONG.",
+       "ex": [
+        {
+         "g": "παιδεύοι",
+         "audio": "fd840910762a"
+        },
+        {
+         "g": "παιδεύσαι",
+         "audio": "0dd6c0855e22"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Recessive accent: verbs",
+     "source": "Hansen & Quinn §11",
+     "items": [
+      {
+       "text": "Most verb forms push the accent as far from the end as the rules allow.",
+       "ex": []
+      },
+      {
+       "text": "Three or more syllables: short ultima → acute on the antepenult; long ultima → acute on the penult.",
+       "ex": [
+        {
+         "g": "ἐπαίδευον",
+         "audio": "67df99770b2f"
+        },
+        {
+         "g": "παιδεύει",
+         "audio": "135dc393e244"
+        },
+        {
+         "g": "πεπαίδευκα",
+         "audio": "cb376c78438b"
+        },
+        {
+         "g": "ἔπαυσα",
+         "audio": "f7ab18e934f8"
+        }
+       ]
+      },
+      {
+       "text": "Two syllables: the accent is on the penult. Short penult → acute; long penult → circumflex before a short ultima, acute before a long one.",
+       "ex": [
+        {
+         "g": "πέμπω",
+         "audio": "aa24c33abd6f"
+        },
+        {
+         "g": "παύω",
+         "audio": "c86a06dcff32"
+        }
+       ]
+      },
+      {
+       "text": "Infinitives so far break the pattern: the aorist active infinitive is accented on the penult (so παιδεῦσαι, unlike the optative παιδεύσαι), and the perfect active infinitive always on the penult.",
+       "ex": [
+        {
+         "g": "παιδεῦσαι",
+         "audio": "e369eb3b5bec"
+        },
+        {
+         "g": "πεπαιδευκέναι",
+         "audio": "5c4735234120"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Persistent accent: nouns",
+     "source": "Hansen & Quinn §§12, 14–15",
+     "items": [
+      {
+       "text": "A noun's accent is given by the nominative singular and tries to stay on that syllable in every form. When the rules force a change, it changes kind first (circumflex → acute), then position.",
+       "ex": []
+      },
+      {
+       "text": "Changes kind: a long penult keeps the accent but must turn acute before a long ultima.",
+       "ex": [
+        {
+         "g": "νῆσος",
+         "audio": "2594f194ff52"
+        },
+        {
+         "g": "νήσου",
+         "audio": "c47c0c397ef0"
+        },
+        {
+         "g": "δῶρον",
+         "audio": "f4cd410b92d0"
+        },
+        {
+         "g": "δώρου",
+         "audio": "6cc25ded5d7e"
+        }
+       ]
+      },
+      {
+       "text": "Changes position: an antepenult accent moves to the penult when the ultima turns long.",
+       "ex": [
+        {
+         "g": "ἄνθρωπος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "g": "ἀνθρώπου",
+         "audio": "670ede8b0591"
+        },
+        {
+         "g": "θάλαττα",
+         "audio": "ab65824692d1"
+        },
+        {
+         "g": "θαλάττης",
+         "audio": "897eda729561"
+        }
+       ]
+      },
+      {
+       "text": "First declension: the genitive plural is always -ῶν, whatever the nominative's accent.",
+       "ex": [
+        {
+         "g": "τεχνῶν",
+         "audio": "6049de90ee71"
+        },
+        {
+         "g": "χωρῶν",
+         "audio": "a9987ba7d2b8"
+        },
+        {
+         "g": "θαλαττῶν",
+         "audio": "b1d277064df8"
+        }
+       ]
+      },
+      {
+       "text": "First and second declension: a noun with an acute on the ultima in the nominative takes a circumflex in the genitive and dative, singular and plural.",
+       "ex": [
+        {
+         "g": "ὁδός",
+         "audio": "65e3af1baf6d"
+        },
+        {
+         "g": "ὁδοῦ",
+         "audio": "7e4f78a23210"
+        },
+        {
+         "g": "ὁδῷ",
+         "audio": "ff948b254aaf"
+        },
+        {
+         "g": "φυγή",
+         "audio": "316011962958"
+        },
+        {
+         "g": "φυγῆς",
+         "audio": "dc9cfa4039f1"
+        },
+        {
+         "g": "θεᾶς",
+         "audio": "33f82bbbea7f"
+        }
+       ]
+      },
+      {
+       "text": "The vocative ἄδελφε (from ἀδελφός) is an exception to learn separately.",
+       "ex": [
+        {
+         "g": "ἄδελφε",
+         "audio": "5f25f7e90188"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Words with no accent",
+     "source": "Hansen & Quinn §16; Unit 3 vocabulary notes",
+     "items": [
+      {
+       "text": "Proclitics have no accent and are pronounced with the following word: the article forms ὁ, ἡ, οἱ, αἱ, and the negative οὐ (οὐκ, οὐχ). μή is not a proclitic.",
+       "ex": [
+        {
+         "g": "ὁ λόγος",
+         "audio": "2f3d7f76acca"
+        },
+        {
+         "g": "οὐ πέμπει",
+         "audio": "8835f9b7ef9b"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "vocab": [],
+   "label": "All weeks",
+   "topic": "Accent rules"
+  },
   "w8": {
    "tables": [
     {
@@ -18543,6 +19226,346 @@
          "stem": "κριτ",
          "end": "άς",
          "audio": "42358f15ebab"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "title": "Accent rules"
+    },
+    {
+     "type": "patterns",
+     "title": "Possibilities of accent",
+     "source": "Hansen & Quinn §10 · a = antepenult, p = penult, u = ultima; ˘ short, ¯ long",
+     "rows": [
+      {
+       "scheme": "a · p · ú  + pause",
+       "rule": "Acute on the ultima only before a pause (end of sentence, comma, semicolon).",
+       "ex": {
+        "g": "ὁδός",
+        "audio": "65e3af1baf6d"
+       }
+      },
+      {
+       "scheme": "a · p · ù  + word",
+       "rule": "Before another word with no pause, an acute on the ultima becomes grave.",
+       "ex": {
+        "g": "τὸν λόγον",
+        "audio": "bff129f5dd30"
+       }
+      },
+      {
+       "scheme": "a · ṕ · u",
+       "rule": "Acute on the penult is allowed whatever the ultima, except as in the last row.",
+       "ex": {
+        "g": "ἀνθρώπου",
+        "audio": "670ede8b0591"
+       }
+      },
+      {
+       "scheme": "á · p · ŭ",
+       "rule": "Acute on the antepenult only when the ultima is short.",
+       "ex": {
+        "g": "ἄνθρωπος",
+        "audio": "c8eb74f8641f"
+       }
+      },
+      {
+       "scheme": "a · p · ῦ",
+       "rule": "Circumflex on the ultima: only over a long vowel or diphthong.",
+       "ex": {
+        "g": "ὁδοῦ",
+        "audio": "7e4f78a23210"
+       }
+      },
+      {
+       "scheme": "a · p̄̃ · ŭ",
+       "rule": "An accented long penult before a short ultima MUST be circumflex; a circumflex on the penult is never possible before a long ultima.",
+       "ex": {
+        "g": "δῶρον",
+        "audio": "f4cd410b92d0"
+       }
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Where an accent can go",
+     "source": "Hansen & Quinn §10",
+     "items": [
+      {
+       "text": "Three accents: acute ´ (pitch rises), grave ` (pitch lowered), circumflex ῀ (rise and fall on one syllable). The accent is part of a word's spelling: learn it with the word.",
+       "ex": []
+      },
+      {
+       "text": "Only the last three syllables can carry it: the ultima (last), the penult (next to last) and the antepenult (third from the end).",
+       "ex": []
+      },
+      {
+       "text": "It is written over the vowel, or over the second letter of a diphthong. A breathing comes before an acute or grave, and under a circumflex.",
+       "ex": [
+        {
+         "g": "ἄνθρωπος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "g": "οἶκος",
+         "audio": "5016965e6df2"
+        },
+        {
+         "g": "ἦτα",
+         "audio": "189c9b95275c"
+        }
+       ]
+      },
+      {
+       "text": "Circumflex: only over a long vowel or diphthong, only on the ultima or penult. Grave: only on the ultima, replacing an acute there when another word follows without a pause.",
+       "ex": [
+        {
+         "g": "θεῶν",
+         "audio": "fda05c63e710"
+        },
+        {
+         "g": "τὸν λόγον",
+         "audio": "bff129f5dd30"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Long or short?",
+     "source": "Hansen & Quinn §§10, 14–15, 33–34",
+     "items": [
+      {
+       "text": "Long: η, ω, every diphthong, and α, ι, υ when marked with a macron (ᾱ ῑ ῡ) or carrying a circumflex. Short: ε, ο, and unmarked α, ι, υ.",
+       "ex": [
+        {
+         "g": "χώρᾱ",
+         "audio": "55a50f326b72"
+        },
+        {
+         "g": "δρᾶμα",
+         "audio": "41c0bcdb60bc"
+        }
+       ]
+      },
+      {
+       "text": "Final -αι and -οι count as SHORT for accent, so a long accented penult before them takes a circumflex.",
+       "ex": [
+        {
+         "g": "χῶραι",
+         "audio": "0d5607551d9c"
+        },
+        {
+         "g": "ἄνθρωποι",
+         "audio": "db29f5c2e711"
+        },
+        {
+         "g": "νῆσοι",
+         "audio": "3a273ce7c46e"
+        }
+       ]
+      },
+      {
+       "text": "Exception: in the optative, final -οι and -αι count as LONG.",
+       "ex": [
+        {
+         "g": "παιδεύοι",
+         "audio": "fd840910762a"
+        },
+        {
+         "g": "παιδεύσαι",
+         "audio": "0dd6c0855e22"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Recessive accent: verbs",
+     "source": "Hansen & Quinn §11",
+     "items": [
+      {
+       "text": "Most verb forms push the accent as far from the end as the rules allow.",
+       "ex": []
+      },
+      {
+       "text": "Three or more syllables: short ultima → acute on the antepenult; long ultima → acute on the penult.",
+       "ex": [
+        {
+         "g": "ἐπαίδευον",
+         "audio": "67df99770b2f"
+        },
+        {
+         "g": "παιδεύει",
+         "audio": "135dc393e244"
+        },
+        {
+         "g": "πεπαίδευκα",
+         "audio": "cb376c78438b"
+        },
+        {
+         "g": "ἔπαυσα",
+         "audio": "f7ab18e934f8"
+        }
+       ]
+      },
+      {
+       "text": "Two syllables: the accent is on the penult. Short penult → acute; long penult → circumflex before a short ultima, acute before a long one.",
+       "ex": [
+        {
+         "g": "πέμπω",
+         "audio": "aa24c33abd6f"
+        },
+        {
+         "g": "παύω",
+         "audio": "c86a06dcff32"
+        }
+       ]
+      },
+      {
+       "text": "Infinitives so far break the pattern: the aorist active infinitive is accented on the penult (so παιδεῦσαι, unlike the optative παιδεύσαι), and the perfect active infinitive always on the penult.",
+       "ex": [
+        {
+         "g": "παιδεῦσαι",
+         "audio": "e369eb3b5bec"
+        },
+        {
+         "g": "πεπαιδευκέναι",
+         "audio": "5c4735234120"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Persistent accent: nouns",
+     "source": "Hansen & Quinn §§12, 14–15",
+     "items": [
+      {
+       "text": "A noun's accent is given by the nominative singular and tries to stay on that syllable in every form. When the rules force a change, it changes kind first (circumflex → acute), then position.",
+       "ex": []
+      },
+      {
+       "text": "Changes kind: a long penult keeps the accent but must turn acute before a long ultima.",
+       "ex": [
+        {
+         "g": "νῆσος",
+         "audio": "2594f194ff52"
+        },
+        {
+         "g": "νήσου",
+         "audio": "c47c0c397ef0"
+        },
+        {
+         "g": "δῶρον",
+         "audio": "f4cd410b92d0"
+        },
+        {
+         "g": "δώρου",
+         "audio": "6cc25ded5d7e"
+        }
+       ]
+      },
+      {
+       "text": "Changes position: an antepenult accent moves to the penult when the ultima turns long.",
+       "ex": [
+        {
+         "g": "ἄνθρωπος",
+         "audio": "c8eb74f8641f"
+        },
+        {
+         "g": "ἀνθρώπου",
+         "audio": "670ede8b0591"
+        },
+        {
+         "g": "θάλαττα",
+         "audio": "ab65824692d1"
+        },
+        {
+         "g": "θαλάττης",
+         "audio": "897eda729561"
+        }
+       ]
+      },
+      {
+       "text": "First declension: the genitive plural is always -ῶν, whatever the nominative's accent.",
+       "ex": [
+        {
+         "g": "τεχνῶν",
+         "audio": "6049de90ee71"
+        },
+        {
+         "g": "χωρῶν",
+         "audio": "a9987ba7d2b8"
+        },
+        {
+         "g": "θαλαττῶν",
+         "audio": "b1d277064df8"
+        }
+       ]
+      },
+      {
+       "text": "First and second declension: a noun with an acute on the ultima in the nominative takes a circumflex in the genitive and dative, singular and plural.",
+       "ex": [
+        {
+         "g": "ὁδός",
+         "audio": "65e3af1baf6d"
+        },
+        {
+         "g": "ὁδοῦ",
+         "audio": "7e4f78a23210"
+        },
+        {
+         "g": "ὁδῷ",
+         "audio": "ff948b254aaf"
+        },
+        {
+         "g": "φυγή",
+         "audio": "316011962958"
+        },
+        {
+         "g": "φυγῆς",
+         "audio": "dc9cfa4039f1"
+        },
+        {
+         "g": "θεᾶς",
+         "audio": "33f82bbbea7f"
+        }
+       ]
+      },
+      {
+       "text": "The vocative ἄδελφε (from ἀδελφός) is an exception to learn separately.",
+       "ex": [
+        {
+         "g": "ἄδελφε",
+         "audio": "5f25f7e90188"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "rules",
+     "title": "Words with no accent",
+     "source": "Hansen & Quinn §16; Unit 3 vocabulary notes",
+     "items": [
+      {
+       "text": "Proclitics have no accent and are pronounced with the following word: the article forms ὁ, ἡ, οἱ, αἱ, and the negative οὐ (οὐκ, οὐχ). μή is not a proclitic.",
+       "ex": [
+        {
+         "g": "ὁ λόγος",
+         "audio": "2f3d7f76acca"
+        },
+        {
+         "g": "οὐ πέμπει",
+         "audio": "8835f9b7ef9b"
         }
        ]
       }

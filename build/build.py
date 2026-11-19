@@ -101,6 +101,10 @@ def noun_table_html(p):
             + "".join(rows) + "</table>")
 
 
+def order(slots):
+    return "singular → dual → plural" if any("du." in s for s in slots) else "singular → plural"
+
+
 def build_noun_deck(key, nouns):
     for p in nouns:
         lem = p["lemma"]
@@ -123,7 +127,7 @@ def build_noun_deck(key, nouns):
                 front_audio=audio(form), tags=["parse", p["group"]])
         # recitation
         add(key, f"{key}-{lem}-recite",
-            f"<div class='prompt'>Recite {head}</div><div class='ask'>singular → dual → plural · N G D A V</div>",
+            f"<div class='prompt'>Recite {head}</div><div class='ask'>{order(p['slots'])} · N G D A V</div>",
             noun_table_html(p) + f"<div class='meta'>{p['source']}</div>",
             back_audio=audio(", ".join(p["forms"]), slow=True), tags=["recite", p["group"]])
 
@@ -148,9 +152,36 @@ def build_article_deck(key, a):
     for i, gen in enumerate(gens):
         col = [r[i] for r in forms]
         add(key, f"{key}-recite-{gen}",
-            f"<div class='prompt'>Recite the article: {gen}</div><div class='ask'>singular → dual → plural · N G D A</div>",
+            f"<div class='prompt'>Recite the article: {gen}</div><div class='ask'>{order(slots)} · N G D A</div>",
             table + f"<div class='meta'>{a['source']}</div>",
             back_audio=audio(", ".join(col), slow=True), tags=["recite", "article"])
+
+
+def build_adjective_deck(key, adjs):
+    for a in adjs:
+        slots, gens, forms, ends, lem = a["slots"], a["genders"], a["forms"], a["endings"], a["lemma"]
+        head = f"{g(lem)} <span class='meta'>(“{a['gloss']}”)</span>"
+        seen = {}
+        for slot, row, erow in zip(slots, forms, ends):
+            for gen, form, end in zip(gens, row, erow):
+                add(key, f"{key}-{lem}-{gen}-{slot}",
+                    f"<div class='prompt'>{head}</div><div class='ask'>{gen} {slot}</div>",
+                    f"<div class='answer'>{g(form)}</div><div class='meta'>ending {g(end)} · {a['group']}</div>",
+                    back_audio=audio(form), tags=["produce", a["group"]])
+                seen.setdefault(form, []).append(f"{gen} {slot}")
+        for form, labels in seen.items():
+            add(key, f"{key}-{lem}-parse-{form}",
+                f"<div class='answer'>{g(form)}</div><div class='ask'>Parse: gender, number, case</div>",
+                f"<div class='answer small'>{' <i>or</i> '.join(labels)}</div><div class='meta'>of {g(lem)} “{a['gloss']}”</div>",
+                front_audio=audio(form), tags=["parse", a["group"]])
+        rows = "".join(f"<tr><th>{s}</th>" + "".join(f"<td>{g(f)}</td>" for f in r) + "</tr>" for s, r in zip(slots, forms))
+        table = (f"<table class='para'><caption>{g(lem)} “{a['gloss']}”</caption><tr><th></th>"
+                 + "".join(f"<th>{x}</th>" for x in gens) + "</tr>" + rows + "</table>")
+        for i, gen in enumerate(gens):
+            add(key, f"{key}-{lem}-recite-{gen}",
+                f"<div class='prompt'>Recite {head}: {gen}</div><div class='ask'>{order(slots)} · N G D A V</div>",
+                table + f"<div class='meta'>{a['source']}</div>",
+                back_audio=audio(", ".join(r[i] for r in forms), slow=True), tags=["recite", a["group"]])
 
 
 NU_NOTE = "<br>(ν) = movable ν: added before a vowel or at a pause, often dropped before a consonant"
@@ -250,6 +281,15 @@ build_verb_deck("w7-paideuo", PARADIGMS["w7"], EXTRAS["w7"])
 add_deck("w7-vocab", "w7", "vocab", "Vocabulary: Hansen & Quinn Unit 3", "Hansen & Quinn pp. 71–73")
 build_vocab_deck("w7-vocab", VOCAB["w7"])
 
+W10_NOUNS = [p for p in PARADIGMS["w10"] if p["kind"] == "noun"]
+W10_ADJS = [p for p in PARADIGMS["w10"] if p["kind"] == "adjective"]
+add_deck("w10-paradigms", "w10", "memorize", "First declension concluded; adjectives ἀγαθός, ἄξιος, ἄδικος",
+         "Hansen & Quinn §§37–38")
+build_noun_deck("w10-paradigms", W10_NOUNS)
+build_adjective_deck("w10-paradigms", W10_ADJS)
+add_deck("w10-vocab", "w10", "vocab", "Vocabulary: Hansen & Quinn Unit 4", "Hansen & Quinn pp. 99–103")
+build_vocab_deck("w10-vocab", VOCAB["w10"])
+
 
 # ---------------------------------------------------------------------------
 # Review sheets: the week's tables (forms split stem | ending) and vocab lists
@@ -317,6 +357,13 @@ def article_review(a):
              "rows": [[form_cell(f) for f in r] for r in a["forms"]]}]
 
 
+def adjective_review(adjs):
+    return [{"type": "article", "title": f"{a['lemma']} “{a['gloss']}”", "source": f"{a['source']} · {a['group']}",
+             "slots": a["slots"], "genders": a["genders"],
+             "recite": [audio(", ".join(r[i] for r in a["forms"]), slow=True) for i in range(len(a["genders"]))],
+             "rows": [[form_cell(f, e) for f, e in zip(r, er)] for r, er in zip(a["forms"], a["endings"])]} for a in adjs]
+
+
 def verb_review(verbs, extras, title="indicative active", vid=None):
     groups = {}   # one table per group (e.g. indicative vs. subjunctive & optative)
     for v in verbs:
@@ -364,6 +411,8 @@ REVIEW = {
 # Week 6 is review: everything from Weeks 2–5
 REVIEW["w7"] = {"tables": verb_review(PARADIGMS["w7"], EXTRAS["w7"], vid="w7"),
                 "vocab": [vocab_review(VOCAB["w7"], "Hansen & Quinn Unit 3")]}
+REVIEW["w10"] = {"tables": noun_review(W10_NOUNS) + adjective_review(W10_ADJS),
+                 "vocab": [vocab_review(VOCAB["w10"], "Hansen & Quinn Unit 4")]}
 REVIEW["w6"] = {"tables": [t for w in ("w2", "w3", "w4", "w5") for t in REVIEW[w]["tables"]],
                 "vocab": [v for w in ("w2", "w4", "w5") for v in REVIEW[w]["vocab"]]}
 

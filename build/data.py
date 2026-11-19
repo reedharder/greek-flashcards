@@ -18,6 +18,8 @@ WEEKS = [
      "topic": "Perfect and pluperfect; subjunctive and optative; purpose clauses"},
     {"id": "w8", "num": 8, "label": "Week 8", "topic": "Review: Hansen & Quinn Units 1–3",
      "reuse": ["w2-paradigms", "w3-article", "w4-paradigms", "w5-paideuo", "w7-paideuo", "w4-vocab", "w5-vocab", "w7-vocab"]},
+    {"id": "w10", "num": 10, "label": "Week 10",
+     "topic": "First declension concluded; adjectives of the first and second declensions; conditions"},
 ]
 
 # ---------------------------------------------------------------------------
@@ -29,10 +31,28 @@ NOUN_SLOTS = ["nom. sg.", "gen. sg.", "dat. sg.", "acc. sg.", "voc. sg.",
               "nom./voc. pl.", "gen. pl.", "dat. pl.", "acc. pl."]
 
 
-def noun(lemma, gloss, gender, forms, endings, source, group):
-    assert len(forms) == 11 and len(endings) == 11, lemma
+# Hansen & Quinn leave out the dual
+HQ_SLOTS = ["nom. sg.", "gen. sg.", "dat. sg.", "acc. sg.", "voc. sg.",
+            "nom./voc. pl.", "gen. pl.", "dat. pl.", "acc. pl."]
+
+
+def noun(lemma, gloss, gender, forms, endings, source, group, slots=NOUN_SLOTS):
+    assert len(forms) == len(slots) and len(endings) == len(slots), lemma
     return {"kind": "noun", "lemma": lemma, "gloss": gloss, "gender": gender,
-            "slots": NOUN_SLOTS, "forms": forms, "endings": endings,
+            "slots": slots, "forms": forms, "endings": endings,
+            "source": source, "group": group}
+
+
+def no_dual(endings):
+    return endings[:5] + endings[7:]
+
+
+def adjective(lemma, gloss, genders, columns, endings, source, group):
+    """columns: one list of 9 forms (HQ_SLOTS) per gender; endings likewise."""
+    assert len(genders) == len(columns) == len(endings), lemma
+    assert all(len(c) == 9 for c in columns + endings), lemma
+    return {"kind": "adjective", "lemma": lemma, "gloss": gloss, "slots": HQ_SLOTS, "genders": genders,
+            "forms": [list(r) for r in zip(*columns)], "endings": [list(r) for r in zip(*endings)],
             "source": source, "group": group}
 
 
@@ -47,6 +67,11 @@ A_SHORT_ETA = ["-ᾰ", "-ης", "-ῃ", "-ᾰν", "-ᾰ", "-ᾱ", "-αιν", "-�
 MASC_A = ["-ᾱς", "-ου", "-ᾳ", "-ᾱν", "-ᾱ", "-ᾱ", "-αιν", "-αι", "-ῶν", "-αις", "-ᾱς"]
 MASC_ETA = ["-ης", "-ου", "-ῃ", "-ην", "-ᾰ", "-ᾱ", "-αιν", "-αι", "-ῶν", "-αις", "-ᾱς"]
 M4 = "Mastronarde, Unit 4, §2"
+ADJ_M = ["-ος", "-ου", "-ῳ", "-ον", "-ε", "-οι", "-ων", "-οις", "-ους"]
+ADJ_F_ETA = ["-η", "-ης", "-ῃ", "-ην", "-η", "-αι", "-ων", "-αις", "-ᾱς"]
+ADJ_F_A = ["-ᾱ", "-ᾱς", "-ᾳ", "-ᾱν", "-ᾱ", "-αι", "-ων", "-αις", "-ᾱς"]
+ADJ_N = ["-ον", "-ου", "-ῳ", "-ον", "-ον", "-ᾰ", "-ων", "-οις", "-ᾰ"]
+HQ37, HQ38 = "Hansen & Quinn, §37", "Hansen & Quinn, §38"
 M6 = "Mastronarde, Unit 6"
 
 PARADIGMS = {
@@ -186,6 +211,45 @@ PARADIGMS["w7"] = [
      "forms": ["παιδεύσαιμι", "παιδεύσαις / παιδεύσειας", "παιδεύσαι / παιδεύσειε(ν)", "παιδεύσαιμεν", "παιδεύσαιτε",
                "παιδεύσαιεν / παιδεύσειαν"],
      "endings": ["-αιμι", "-αις / -ειας", "-αι / -ειε(ν)", "-αιμεν", "-αιτε", "-αιεν / -ειαν"]},
+]
+
+PARADIGMS["w10"] = [
+        noun("θάλαττα", "sea", "f.",
+             ["θάλαττα", "θαλάττης", "θαλάττῃ", "θάλατταν", "θάλαττα", "θάλατται", "θαλαττῶν", "θαλάτταις", "θαλάττας"],
+             no_dual(A_SHORT_ETA), HQ37 + ".1, short α (other stems)", "1st decl. short α", HQ_SLOTS),
+        noun("μοῦσα", "muse", "f.",
+             ["μοῦσα", "μούσης", "μούσῃ", "μοῦσαν", "μοῦσα", "μοῦσαι", "μουσῶν", "μούσαις", "μούσας"],
+             no_dual(A_SHORT_ETA), HQ37 + ".1, short α (other stems)", "1st decl. short α", HQ_SLOTS),
+        noun("γέφυρα", "bridge", "f.",
+             ["γέφυρα", "γεφύρας", "γεφύρᾳ", "γέφυραν", "γέφυρα", "γέφυραι", "γεφυρῶν", "γεφύραις", "γεφύρας"],
+             no_dual(A_SHORT), HQ37 + ".1, short α (stem in ε, ι, ρ)", "1st decl. short α", HQ_SLOTS),
+        noun("μοῖρα", "fate", "f.",
+             ["μοῖρα", "μοίρας", "μοίρᾳ", "μοῖραν", "μοῖρα", "μοῖραι", "μοιρῶν", "μοίραις", "μοίρας"],
+             no_dual(A_SHORT), HQ37 + ".1, short α (stem in ε, ι, ρ)", "1st decl. short α", HQ_SLOTS),
+        noun("πολίτης", "citizen", "m.",
+             ["πολίτης", "πολίτου", "πολίτῃ", "πολίτην", "πολῖτα", "πολῖται", "πολιτῶν", "πολίταις", "πολίτας"],
+             no_dual(MASC_ETA), HQ37 + ".2, masculine in -ης", "1st decl. masculine", HQ_SLOTS),
+        noun("ποιητής", "poet", "m.",
+             ["ποιητής", "ποιητοῦ", "ποιητῇ", "ποιητήν", "ποιητά", "ποιηταί", "ποιητῶν", "ποιηταῖς", "ποιητάς"],
+             no_dual(MASC_ETA), HQ37 + ".2, masculine in -ης", "1st decl. masculine", HQ_SLOTS),
+        noun("νεανίας", "young man", "m.",
+             ["νεανίας", "νεανίου", "νεανίᾳ", "νεανίαν", "νεανία", "νεανίαι", "νεανιῶν", "νεανίαις", "νεανίας"],
+             no_dual(MASC_A), HQ37 + ".2, masculine in -ᾱς (stem in ε, ι, ρ)", "1st decl. masculine", HQ_SLOTS),
+        adjective("ἀγαθός, ἀγαθή, ἀγαθόν", "good", ["masc.", "fem.", "neut."],
+                  [["ἀγαθός", "ἀγαθοῦ", "ἀγαθῷ", "ἀγαθόν", "ἀγαθέ", "ἀγαθοί", "ἀγαθῶν", "ἀγαθοῖς", "ἀγαθούς"],
+                   ["ἀγαθή", "ἀγαθῆς", "ἀγαθῇ", "ἀγαθήν", "ἀγαθή", "ἀγαθαί", "ἀγαθῶν", "ἀγαθαῖς", "ἀγαθάς"],
+                   ["ἀγαθόν", "ἀγαθοῦ", "ἀγαθῷ", "ἀγαθόν", "ἀγαθόν", "ἀγαθά", "ἀγαθῶν", "ἀγαθοῖς", "ἀγαθά"]],
+                  [ADJ_M, ADJ_F_ETA, ADJ_N], HQ38 + ".1, three endings", "adjective, three endings (fem. η)"),
+        adjective("ἄξιος, ἀξία, ἄξιον", "worthy", ["masc.", "fem.", "neut."],
+                  [["ἄξιος", "ἀξίου", "ἀξίῳ", "ἄξιον", "ἄξιε", "ἄξιοι", "ἀξίων", "ἀξίοις", "ἀξίους"],
+                   ["ἀξία", "ἀξίας", "ἀξίᾳ", "ἀξίαν", "ἀξία", "ἄξιαι", "ἀξίων", "ἀξίαις", "ἀξίας"],
+                   ["ἄξιον", "ἀξίου", "ἀξίῳ", "ἄξιον", "ἄξιον", "ἄξια", "ἀξίων", "ἀξίοις", "ἄξια"]],
+                  [ADJ_M, ADJ_F_A, ADJ_N], HQ38 + ".1, three endings, stem in ε, ι, ρ",
+                  "adjective, three endings (fem. ᾱ)"),
+        adjective("ἄδικος, ἄδικον", "unjust", ["masc./fem.", "neut."],
+                  [["ἄδικος", "ἀδίκου", "ἀδίκῳ", "ἄδικον", "ἄδικε", "ἄδικοι", "ἀδίκων", "ἀδίκοις", "ἀδίκους"],
+                   ["ἄδικον", "ἀδίκου", "ἀδίκῳ", "ἄδικον", "ἄδικον", "ἄδικα", "ἀδίκων", "ἀδίκοις", "ἄδικα"]],
+                  [ADJ_M, ADJ_N], HQ38 + ".2, two endings", "adjective, two endings"),
 ]
 
 VERB_SLOTS = ["1st sg.", "2nd sg.", "3rd sg.", "1st pl.", "2nd pl.", "3rd pl."]
@@ -375,6 +439,42 @@ VOCAB = {
         ("περί", "(+ gen.) concerning, about; (+ dat.) around; (+ acc.) around, concerning", "preposition", "H&Q U3"),
         ("φυλάττω, φυλάξω, ἐφύλαξα, πεφύλαχα, πεφύλαγμαι, ἐφυλάχθην", "guard", "verb; aspirated perfect", "H&Q U3"),
         ("ὡς", "in order that", "conjunction (purpose clauses)", "H&Q U3"),
+    ],
+    "w10": [
+        # Hansen & Quinn, Unit 4 Vocabulary, pp. 99–100 (notes pp. 100–103)
+        ("ἀγαθός, ἀγαθή, ἀγαθόν", "good (morally good; serviceable)", "adjective", "H&Q U4"),
+        ("ἄν", "used in some conditional sentences (not translated; never first in its clause)", "particle", "H&Q U4"),
+        ("ἄξιος, ἀξίᾱ, ἄξιον", "worthy, worth (+ gen.)", "adjective", "H&Q U4"),
+        ("ἀνάξιος, ἀνάξιον", "unworthy (+ gen.)", "adjective, two endings (alpha privative)", "H&Q U4"),
+        ("ἀρχή, ἀρχῆς, ἡ", "beginning; rule, empire", "noun", "H&Q U4"),
+        ("γέφῡρα, γεφῡ́ρᾱς, ἡ", "bridge", "noun", "H&Q U4"),
+        ("διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην", "teach", "verb", "H&Q U4"),
+        ("δίκη, δίκης, ἡ", "justice; lawsuit", "noun", "H&Q U4"),
+        ("ἄδικος, ἄδικον", "unjust", "adjective, two endings (alpha privative)", "H&Q U4"),
+        ("δίκαιος, δικαίᾱ, δίκαιον", "just", "adjective", "H&Q U4"),
+        ("ἐθέλω, ἐθελήσω, ἠθέλησα, ἠθέληκα, —, —", "be willing, wish (+ infinitive); οὐκ ἐθέλω: refuse",
+         "verb; ἐ- belongs to the stem; augment lengthens it to ἠ- (imperf. ἤθελον)", "H&Q U4"),
+        ("εἰ", "if", "particle (proclitic)", "H&Q U4"),
+        ("ἐάν", "if (= εἰ + ἄν)", "particle", "H&Q U4"),
+        ("ἡμέρᾱ, ἡμέρᾱς, ἡ", "day", "noun", "H&Q U4"),
+        ("θάλαττα, θαλάττης, ἡ", "sea", "noun", "H&Q U4"),
+        ("θάπτω, θάψω, ἔθαψα, —, τέθαμμαι, ἐτάφην", "bury", "verb", "H&Q U4"),
+        ("καίτοι", "and further, and yet", "particle (accent is an exception)", "H&Q U4"),
+        ("κακός, κακή, κακόν", "bad, evil", "adjective", "H&Q U4"),
+        ("καλός, καλή, καλόν", "beautiful, noble, good", "adjective", "H&Q U4"),
+        ("μετά", "(+ gen.) with; (+ acc.) after", "preposition", "H&Q U4"),
+        ("μοῖρα, μοίρᾱς, ἡ", "fate", "noun", "H&Q U4"),
+        ("μοῦσα, μούσης, ἡ", "muse", "noun", "H&Q U4"),
+        ("νεᾱνίᾱς, νεᾱνίου, ὁ", "young man", "noun", "H&Q U4"),
+        ("ὅπλον, ὅπλου, τό", "tool; (pl.) weapons", "noun", "H&Q U4"),
+        ("ὁπλῑ́της, ὁπλῑ́του, ὁ", "hoplite, heavy-armed foot-soldier", "noun", "H&Q U4"),
+        ("πάλαι", "long ago", "adverb (also attributive: οἱ πάλαι ἄνθρωποι, men of old)", "H&Q U4"),
+        ("ποιητής, ποιητοῦ, ὁ", "poet, author", "noun", "H&Q U4"),
+        ("πολῑ́της, πολῑ́του, ὁ", "citizen", "noun", "H&Q U4"),
+        ("στρατιώτης, στρατιώτου, ὁ", "soldier", "noun", "H&Q U4"),
+        ("σύν", "(+ dat.) with", "preposition", "H&Q U4"),
+        ("τάττω, τάξω, ἔταξα, τέταχα, τέταγμαι, ἐτάχθην", "draw up in order, station, appoint", "verb", "H&Q U4"),
+        ("φίλος, φίλη, φίλον", "dear, beloved, one's own", "adjective", "H&Q U4"),
     ],
 }
 

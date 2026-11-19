@@ -61,6 +61,12 @@
     "w5-vocab",
     "w7-vocab"
    ]
+  },
+  {
+   "id": "w10",
+   "num": 10,
+   "label": "Week 10",
+   "topic": "First declension concluded; adjectives of the first and second declensions; conditions"
   }
  ],
  "decks": [
@@ -9111,6 +9117,3407 @@
    ],
    "apkg": "Greek_W7_Vocab.apkg",
    "ankiName": "Ancient Greek::Week 7::Vocab — Vocabulary: Hansen & Quinn Unit 3"
+  },
+  {
+   "key": "w10-paradigms",
+   "week": "w10",
+   "kind": "memorize",
+   "title": "First declension concluded; adjectives ἀγαθός, ἄξιος, ἄδικος",
+   "description": "Hansen & Quinn §§37–38",
+   "cards": [
+    {
+     "id": "w10-paradigms-θάλαττα-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θάλαττα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "ab65824692d1",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θαλάττης</span></div><div class='meta'>ending <span class=\"gk\">-ης</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "897eda729561",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θαλάττῃ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "cc6e044d7bf3",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θάλατταν</span></div><div class='meta'>ending <span class=\"gk\">-ᾰν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "f215e893cfe7",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θάλαττα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "ab65824692d1",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θάλατται</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "cf1d188cf655",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θαλαττῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "b1d277064df8",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θαλάτταις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "4b91a1177a2a",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">θαλάττας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "c165a3e0560b",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θάλαττα",
+     "front": "<div class='answer'><span class=\"gk\">θάλαττα</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom. sg. <i>or</i> voc. sg.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "ab65824692d1",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θαλάττης",
+     "front": "<div class='answer'><span class=\"gk\">θαλάττης</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. sg.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "897eda729561",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θαλάττῃ",
+     "front": "<div class='answer'><span class=\"gk\">θαλάττῃ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. sg.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "cc6e044d7bf3",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θάλατταν",
+     "front": "<div class='answer'><span class=\"gk\">θάλατταν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. acc. sg.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "f215e893cfe7",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θάλατται",
+     "front": "<div class='answer'><span class=\"gk\">θάλατται</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "cf1d188cf655",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θαλαττῶν",
+     "front": "<div class='answer'><span class=\"gk\">θαλαττῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. pl.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "b1d277064df8",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θαλάτταις",
+     "front": "<div class='answer'><span class=\"gk\">θαλάτταις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. pl.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "4b91a1177a2a",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-parse-θαλάττας",
+     "front": "<div class='answer'><span class=\"gk\">θαλάττας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. acc. pl.</div><div class='meta'>of <span class=\"gk\">θάλαττα</span> “sea”</div>",
+     "frontAudio": "c165a3e0560b",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-θάλαττα-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">θάλαττα</span> <span class='meta'>(f., “sea”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">θάλαττα</span> “sea” (f.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">θάλαττα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">θαλάττης</span></td><td class='end'><span class=\"gk\">-ης</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">θαλάττῃ</span></td><td class='end'><span class=\"gk\">-ῃ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">θάλατταν</span></td><td class='end'><span class=\"gk\">-ᾰν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">θάλαττα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">θάλατται</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">θαλαττῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">θαλάτταις</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">θαλάττας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.1, short α (other stems)</div>",
+     "frontAudio": null,
+     "backAudio": "c10a9d088349",
+     "tags": [
+      "recite",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῦσα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "acc1eddb7c7c",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μούσης</span></div><div class='meta'>ending <span class=\"gk\">-ης</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "9e4a71b29767",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μούσῃ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "fe39a685105f",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῦσαν</span></div><div class='meta'>ending <span class=\"gk\">-ᾰν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "49f537e43e96",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῦσα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "acc1eddb7c7c",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῦσαι</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "aa3f2533310a",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μουσῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "57727a633445",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μούσαις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "0fac90286a19",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μούσας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "96f442ad0939",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μοῦσα",
+     "front": "<div class='answer'><span class=\"gk\">μοῦσα</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom. sg. <i>or</i> voc. sg.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "acc1eddb7c7c",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μούσης",
+     "front": "<div class='answer'><span class=\"gk\">μούσης</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. sg.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "9e4a71b29767",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μούσῃ",
+     "front": "<div class='answer'><span class=\"gk\">μούσῃ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. sg.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "fe39a685105f",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μοῦσαν",
+     "front": "<div class='answer'><span class=\"gk\">μοῦσαν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. acc. sg.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "49f537e43e96",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μοῦσαι",
+     "front": "<div class='answer'><span class=\"gk\">μοῦσαι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "aa3f2533310a",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μουσῶν",
+     "front": "<div class='answer'><span class=\"gk\">μουσῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. pl.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "57727a633445",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μούσαις",
+     "front": "<div class='answer'><span class=\"gk\">μούσαις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. pl.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "0fac90286a19",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-parse-μούσας",
+     "front": "<div class='answer'><span class=\"gk\">μούσας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. acc. pl.</div><div class='meta'>of <span class=\"gk\">μοῦσα</span> “muse”</div>",
+     "frontAudio": "96f442ad0939",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῦσα-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">μοῦσα</span> <span class='meta'>(f., “muse”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">μοῦσα</span> “muse” (f.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">μοῦσα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">μούσης</span></td><td class='end'><span class=\"gk\">-ης</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">μούσῃ</span></td><td class='end'><span class=\"gk\">-ῃ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">μοῦσαν</span></td><td class='end'><span class=\"gk\">-ᾰν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">μοῦσα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">μοῦσαι</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">μουσῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">μούσαις</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">μούσας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.1, short α (other stems)</div>",
+     "frontAudio": null,
+     "backAudio": "9c5987b20f78",
+     "tags": [
+      "recite",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γέφυρα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "572be279494e",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γεφύρας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "5b66d1c59f79",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γεφύρᾳ</span></div><div class='meta'>ending <span class=\"gk\">-ᾳ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "625b5db2ef52",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γέφυραν</span></div><div class='meta'>ending <span class=\"gk\">-ᾰν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "22994f74d9ec",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γέφυρα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "572be279494e",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γέφυραι</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "2e992d2cd7ad",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γεφυρῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "7a3d3e579dea",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γεφύραις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "093d5a1d479c",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">γεφύρας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "5b66d1c59f79",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γέφυρα",
+     "front": "<div class='answer'><span class=\"gk\">γέφυρα</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom. sg. <i>or</i> voc. sg.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "572be279494e",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γεφύρας",
+     "front": "<div class='answer'><span class=\"gk\">γεφύρας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. sg. <i>or</i> acc. pl.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "5b66d1c59f79",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γεφύρᾳ",
+     "front": "<div class='answer'><span class=\"gk\">γεφύρᾳ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. sg.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "625b5db2ef52",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γέφυραν",
+     "front": "<div class='answer'><span class=\"gk\">γέφυραν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. acc. sg.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "22994f74d9ec",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γέφυραι",
+     "front": "<div class='answer'><span class=\"gk\">γέφυραι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "2e992d2cd7ad",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γεφυρῶν",
+     "front": "<div class='answer'><span class=\"gk\">γεφυρῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. pl.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "7a3d3e579dea",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-parse-γεφύραις",
+     "front": "<div class='answer'><span class=\"gk\">γεφύραις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. pl.</div><div class='meta'>of <span class=\"gk\">γέφυρα</span> “bridge”</div>",
+     "frontAudio": "093d5a1d479c",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-γέφυρα-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">γέφυρα</span> <span class='meta'>(f., “bridge”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">γέφυρα</span> “bridge” (f.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">γέφυρα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">γεφύρας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">γεφύρᾳ</span></td><td class='end'><span class=\"gk\">-ᾳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">γέφυραν</span></td><td class='end'><span class=\"gk\">-ᾰν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">γέφυρα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">γέφυραι</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">γεφυρῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">γεφύραις</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">γεφύρας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.1, short α (stem in ε, ι, ρ)</div>",
+     "frontAudio": null,
+     "backAudio": "d4e633a65216",
+     "tags": [
+      "recite",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῖρα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "0e89b42f7588",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοίρας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "f19f99ffaf2e",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοίρᾳ</span></div><div class='meta'>ending <span class=\"gk\">-ᾳ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "4ef4d1ecfe0c",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῖραν</span></div><div class='meta'>ending <span class=\"gk\">-ᾰν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "661df0cccebf",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῖρα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "0e89b42f7588",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῖραι</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "a35f13b5691b",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοιρῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "0c38f626fc5b",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοίραις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "0ef3a03f5df4",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοίρας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. short α</div>",
+     "frontAudio": null,
+     "backAudio": "f19f99ffaf2e",
+     "tags": [
+      "produce",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοῖρα",
+     "front": "<div class='answer'><span class=\"gk\">μοῖρα</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom. sg. <i>or</i> voc. sg.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "0e89b42f7588",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοίρας",
+     "front": "<div class='answer'><span class=\"gk\">μοίρας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. sg. <i>or</i> acc. pl.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "f19f99ffaf2e",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοίρᾳ",
+     "front": "<div class='answer'><span class=\"gk\">μοίρᾳ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. sg.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "4ef4d1ecfe0c",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοῖραν",
+     "front": "<div class='answer'><span class=\"gk\">μοῖραν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. acc. sg.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "661df0cccebf",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοῖραι",
+     "front": "<div class='answer'><span class=\"gk\">μοῖραι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "a35f13b5691b",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοιρῶν",
+     "front": "<div class='answer'><span class=\"gk\">μοιρῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. gen. pl.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "0c38f626fc5b",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-parse-μοίραις",
+     "front": "<div class='answer'><span class=\"gk\">μοίραις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>f. dat. pl.</div><div class='meta'>of <span class=\"gk\">μοῖρα</span> “fate”</div>",
+     "frontAudio": "0ef3a03f5df4",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-μοῖρα-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">μοῖρα</span> <span class='meta'>(f., “fate”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">μοῖρα</span> “fate” (f.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">μοῖρα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">μοίρας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">μοίρᾳ</span></td><td class='end'><span class=\"gk\">-ᾳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">μοῖραν</span></td><td class='end'><span class=\"gk\">-ᾰν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">μοῖρα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">μοῖραι</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">μοιρῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">μοίραις</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">μοίρας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.1, short α (stem in ε, ι, ρ)</div>",
+     "frontAudio": null,
+     "backAudio": "05c1fbe0ef0a",
+     "tags": [
+      "recite",
+      "1st decl. short α"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολίτης</span></div><div class='meta'>ending <span class=\"gk\">-ης</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "838958b70cee",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολίτου</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "ddfeef165ac8",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολίτῃ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "74beded6f63e",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολίτην</span></div><div class='meta'>ending <span class=\"gk\">-ην</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "b22d5080edd4",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολῖτα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "73d144d943a6",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολῖται</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "25423ad90768",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολιτῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "f5b34fb379bf",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολίταις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "e57a47791760",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολίτας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "8b7d9f76df93",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολίτης",
+     "front": "<div class='answer'><span class=\"gk\">πολίτης</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. nom. sg.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "838958b70cee",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολίτου",
+     "front": "<div class='answer'><span class=\"gk\">πολίτου</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. gen. sg.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "ddfeef165ac8",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολίτῃ",
+     "front": "<div class='answer'><span class=\"gk\">πολίτῃ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. dat. sg.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "74beded6f63e",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολίτην",
+     "front": "<div class='answer'><span class=\"gk\">πολίτην</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. acc. sg.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "b22d5080edd4",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολῖτα",
+     "front": "<div class='answer'><span class=\"gk\">πολῖτα</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. voc. sg.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "73d144d943a6",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολῖται",
+     "front": "<div class='answer'><span class=\"gk\">πολῖται</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "25423ad90768",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολιτῶν",
+     "front": "<div class='answer'><span class=\"gk\">πολιτῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. gen. pl.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "f5b34fb379bf",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολίταις",
+     "front": "<div class='answer'><span class=\"gk\">πολίταις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. dat. pl.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "e57a47791760",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-parse-πολίτας",
+     "front": "<div class='answer'><span class=\"gk\">πολίτας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. acc. pl.</div><div class='meta'>of <span class=\"gk\">πολίτης</span> “citizen”</div>",
+     "frontAudio": "8b7d9f76df93",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-πολίτης-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">πολίτης</span> <span class='meta'>(m., “citizen”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">πολίτης</span> “citizen” (m.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">πολίτης</span></td><td class='end'><span class=\"gk\">-ης</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">πολίτου</span></td><td class='end'><span class=\"gk\">-ου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">πολίτῃ</span></td><td class='end'><span class=\"gk\">-ῃ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">πολίτην</span></td><td class='end'><span class=\"gk\">-ην</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">πολῖτα</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">πολῖται</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">πολιτῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">πολίταις</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">πολίτας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.2, masculine in -ης</div>",
+     "frontAudio": null,
+     "backAudio": "9e5c4e8c998b",
+     "tags": [
+      "recite",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητής</span></div><div class='meta'>ending <span class=\"gk\">-ης</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "66709cd0e153",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητοῦ</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "b1421e103c82",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητῇ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "8cf11045c0e8",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητήν</span></div><div class='meta'>ending <span class=\"gk\">-ην</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "e28622aae807",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητά</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "fa8f4989868e",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιηταί</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "4bf87487f89d",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "0d2470592a4b",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιηταῖς</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "3e2b52d9d76c",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητάς</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "a0b4316735be",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητής",
+     "front": "<div class='answer'><span class=\"gk\">ποιητής</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. nom. sg.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "66709cd0e153",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητοῦ",
+     "front": "<div class='answer'><span class=\"gk\">ποιητοῦ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. gen. sg.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "b1421e103c82",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητῇ",
+     "front": "<div class='answer'><span class=\"gk\">ποιητῇ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. dat. sg.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "8cf11045c0e8",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητήν",
+     "front": "<div class='answer'><span class=\"gk\">ποιητήν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. acc. sg.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "e28622aae807",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητά",
+     "front": "<div class='answer'><span class=\"gk\">ποιητά</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. voc. sg.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "fa8f4989868e",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιηταί",
+     "front": "<div class='answer'><span class=\"gk\">ποιηταί</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "4bf87487f89d",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητῶν",
+     "front": "<div class='answer'><span class=\"gk\">ποιητῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. gen. pl.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "0d2470592a4b",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιηταῖς",
+     "front": "<div class='answer'><span class=\"gk\">ποιηταῖς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. dat. pl.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "3e2b52d9d76c",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-parse-ποιητάς",
+     "front": "<div class='answer'><span class=\"gk\">ποιητάς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. acc. pl.</div><div class='meta'>of <span class=\"gk\">ποιητής</span> “poet”</div>",
+     "frontAudio": "a0b4316735be",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ποιητής-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ποιητής</span> <span class='meta'>(m., “poet”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ποιητής</span> “poet” (m.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">ποιητής</span></td><td class='end'><span class=\"gk\">-ης</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ποιητοῦ</span></td><td class='end'><span class=\"gk\">-ου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ποιητῇ</span></td><td class='end'><span class=\"gk\">-ῃ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ποιητήν</span></td><td class='end'><span class=\"gk\">-ην</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ποιητά</span></td><td class='end'><span class=\"gk\">-ᾰ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ποιηταί</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ποιητῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ποιηταῖς</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ποιητάς</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.2, masculine in -ης</div>",
+     "frontAudio": null,
+     "backAudio": "624cceaaef37",
+     "tags": [
+      "recite",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "3c6eb6114436",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίου</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "3924374b75e5",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίᾳ</span></div><div class='meta'>ending <span class=\"gk\">-ᾳ</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "271f20183f9d",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίαν</span></div><div class='meta'>ending <span class=\"gk\">-ᾱν</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "f8d87e75250a",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανία</span></div><div class='meta'>ending <span class=\"gk\">-ᾱ</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "56ee249ad9d7",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίαι</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "afb9630695be",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανιῶν</span></div><div class='meta'>ending <span class=\"gk\">-ῶν</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "b14aa4392370",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίαις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "085908181aec",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεανίας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · 1st decl. masculine</div>",
+     "frontAudio": null,
+     "backAudio": "3c6eb6114436",
+     "tags": [
+      "produce",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανίας",
+     "front": "<div class='answer'><span class=\"gk\">νεανίας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. nom. sg. <i>or</i> acc. pl.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "3c6eb6114436",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανίου",
+     "front": "<div class='answer'><span class=\"gk\">νεανίου</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. gen. sg.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "3924374b75e5",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανίᾳ",
+     "front": "<div class='answer'><span class=\"gk\">νεανίᾳ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. dat. sg.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "271f20183f9d",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανίαν",
+     "front": "<div class='answer'><span class=\"gk\">νεανίαν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. acc. sg.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "f8d87e75250a",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανία",
+     "front": "<div class='answer'><span class=\"gk\">νεανία</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. voc. sg.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "56ee249ad9d7",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανίαι",
+     "front": "<div class='answer'><span class=\"gk\">νεανίαι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "afb9630695be",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανιῶν",
+     "front": "<div class='answer'><span class=\"gk\">νεανιῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. gen. pl.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "b14aa4392370",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-parse-νεανίαις",
+     "front": "<div class='answer'><span class=\"gk\">νεανίαις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>m. dat. pl.</div><div class='meta'>of <span class=\"gk\">νεανίας</span> “young man”</div>",
+     "frontAudio": "085908181aec",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-νεανίας-recite",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">νεανίας</span> <span class='meta'>(m., “young man”)</span></div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">νεανίας</span> “young man” (m.)</caption><tr><th>nom. sg.</th><td><span class=\"gk\">νεανίας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">νεανίου</span></td><td class='end'><span class=\"gk\">-ου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">νεανίᾳ</span></td><td class='end'><span class=\"gk\">-ᾳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">νεανίαν</span></td><td class='end'><span class=\"gk\">-ᾱν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">νεανία</span></td><td class='end'><span class=\"gk\">-ᾱ</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">νεανίαι</span></td><td class='end'><span class=\"gk\">-αι</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">νεανιῶν</span></td><td class='end'><span class=\"gk\">-ῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">νεανίαις</span></td><td class='end'><span class=\"gk\">-αις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">νεανίας</span></td><td class='end'><span class=\"gk\">-ᾱς</span></td></tr></table><div class='meta'>Hansen & Quinn, §37.2, masculine in -ᾱς (stem in ε, ι, ρ)</div>",
+     "frontAudio": null,
+     "backAudio": "e742b5db4cc8",
+     "tags": [
+      "recite",
+      "1st decl. masculine"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθός</span></div><div class='meta'>ending <span class=\"gk\">-ος</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "65256fc0f259",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθή</span></div><div class='meta'>ending <span class=\"gk\">-η</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "1b96743a45cf",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθόν</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "20f33fdefadd",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθοῦ</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "0edc3e56a6b6",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῆς</span></div><div class='meta'>ending <span class=\"gk\">-ης</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "a1225aa53fe2",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθοῦ</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "0edc3e56a6b6",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῷ</span></div><div class='meta'>ending <span class=\"gk\">-ῳ</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "a63d6d4fbefe",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῇ</span></div><div class='meta'>ending <span class=\"gk\">-ῃ</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "3c3b5ca148f5",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῷ</span></div><div class='meta'>ending <span class=\"gk\">-ῳ</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "a63d6d4fbefe",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθόν</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "20f33fdefadd",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθήν</span></div><div class='meta'>ending <span class=\"gk\">-ην</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "b108adba5e0b",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθόν</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "20f33fdefadd",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθέ</span></div><div class='meta'>ending <span class=\"gk\">-ε</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "a5a5292c8bfe",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθή</span></div><div class='meta'>ending <span class=\"gk\">-η</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "1b96743a45cf",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθόν</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "20f33fdefadd",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθοί</span></div><div class='meta'>ending <span class=\"gk\">-οι</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "8bddb74c8e3d",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθαί</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "7c82549cf73b",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθά</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "47d5b9798a15",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῶν</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "bdefdd66c2d7",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῶν</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "bdefdd66c2d7",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθῶν</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "bdefdd66c2d7",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθοῖς</span></div><div class='meta'>ending <span class=\"gk\">-οις</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "795521f9e65e",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθαῖς</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "2ac8a43b34f4",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθοῖς</span></div><div class='meta'>ending <span class=\"gk\">-οις</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "795521f9e65e",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-masc.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>masc. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθούς</span></div><div class='meta'>ending <span class=\"gk\">-ους</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "356b62b5e0b0",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-fem.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>fem. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθάς</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "329f15073fe7",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-neut.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span></div><div class='ask'>neut. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθά</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · adjective, three endings (fem. η)</div>",
+     "frontAudio": null,
+     "backAudio": "47d5b9798a15",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθός",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθός</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. nom. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "65256fc0f259",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθή",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθή</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. nom. sg. <i>or</i> fem. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "1b96743a45cf",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθόν",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθόν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>neut. nom. sg. <i>or</i> masc. acc. sg. <i>or</i> neut. acc. sg. <i>or</i> neut. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "20f33fdefadd",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθοῦ",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθοῦ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. gen. sg. <i>or</i> neut. gen. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "0edc3e56a6b6",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθῆς",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθῆς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. gen. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "a1225aa53fe2",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθῷ",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθῷ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. dat. sg. <i>or</i> neut. dat. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "a63d6d4fbefe",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθῇ",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθῇ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. dat. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "3c3b5ca148f5",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθήν",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθήν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. acc. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "b108adba5e0b",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθέ",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθέ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "a5a5292c8bfe",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθοί",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθοί</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "8bddb74c8e3d",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθαί",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθαί</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "7c82549cf73b",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθά",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθά</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>neut. nom./voc. pl. <i>or</i> neut. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "47d5b9798a15",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθῶν",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθῶν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. gen. pl. <i>or</i> fem. gen. pl. <i>or</i> neut. gen. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "bdefdd66c2d7",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθοῖς",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθοῖς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. dat. pl. <i>or</i> neut. dat. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "795521f9e65e",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθαῖς",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθαῖς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. dat. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "2ac8a43b34f4",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθούς",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθούς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "356b62b5e0b0",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-parse-ἀγαθάς",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθάς</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</div>",
+     "frontAudio": "329f15073fe7",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-recite-masc.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span>: masc.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</caption><tr><th></th><th>masc.</th><th>fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἀγαθός</span></td><td><span class=\"gk\">ἀγαθή</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀγαθοῦ</span></td><td><span class=\"gk\">ἀγαθῆς</span></td><td><span class=\"gk\">ἀγαθοῦ</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀγαθῷ</span></td><td><span class=\"gk\">ἀγαθῇ</span></td><td><span class=\"gk\">ἀγαθῷ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἀγαθόν</span></td><td><span class=\"gk\">ἀγαθήν</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἀγαθέ</span></td><td><span class=\"gk\">ἀγαθή</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἀγαθοί</span></td><td><span class=\"gk\">ἀγαθαί</span></td><td><span class=\"gk\">ἀγαθά</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀγαθῶν</span></td><td><span class=\"gk\">ἀγαθῶν</span></td><td><span class=\"gk\">ἀγαθῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀγαθοῖς</span></td><td><span class=\"gk\">ἀγαθαῖς</span></td><td><span class=\"gk\">ἀγαθοῖς</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀγαθούς</span></td><td><span class=\"gk\">ἀγαθάς</span></td><td><span class=\"gk\">ἀγαθά</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.1, three endings</div>",
+     "frontAudio": null,
+     "backAudio": "3cc7595a6ee8",
+     "tags": [
+      "recite",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-recite-fem.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span>: fem.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</caption><tr><th></th><th>masc.</th><th>fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἀγαθός</span></td><td><span class=\"gk\">ἀγαθή</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀγαθοῦ</span></td><td><span class=\"gk\">ἀγαθῆς</span></td><td><span class=\"gk\">ἀγαθοῦ</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀγαθῷ</span></td><td><span class=\"gk\">ἀγαθῇ</span></td><td><span class=\"gk\">ἀγαθῷ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἀγαθόν</span></td><td><span class=\"gk\">ἀγαθήν</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἀγαθέ</span></td><td><span class=\"gk\">ἀγαθή</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἀγαθοί</span></td><td><span class=\"gk\">ἀγαθαί</span></td><td><span class=\"gk\">ἀγαθά</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀγαθῶν</span></td><td><span class=\"gk\">ἀγαθῶν</span></td><td><span class=\"gk\">ἀγαθῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀγαθοῖς</span></td><td><span class=\"gk\">ἀγαθαῖς</span></td><td><span class=\"gk\">ἀγαθοῖς</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀγαθούς</span></td><td><span class=\"gk\">ἀγαθάς</span></td><td><span class=\"gk\">ἀγαθά</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.1, three endings</div>",
+     "frontAudio": null,
+     "backAudio": "a60205fbd797",
+     "tags": [
+      "recite",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἀγαθός, ἀγαθή, ἀγαθόν-recite-neut.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> <span class='meta'>(“good”)</span>: neut.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span> “good”</caption><tr><th></th><th>masc.</th><th>fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἀγαθός</span></td><td><span class=\"gk\">ἀγαθή</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀγαθοῦ</span></td><td><span class=\"gk\">ἀγαθῆς</span></td><td><span class=\"gk\">ἀγαθοῦ</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀγαθῷ</span></td><td><span class=\"gk\">ἀγαθῇ</span></td><td><span class=\"gk\">ἀγαθῷ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἀγαθόν</span></td><td><span class=\"gk\">ἀγαθήν</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἀγαθέ</span></td><td><span class=\"gk\">ἀγαθή</span></td><td><span class=\"gk\">ἀγαθόν</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἀγαθοί</span></td><td><span class=\"gk\">ἀγαθαί</span></td><td><span class=\"gk\">ἀγαθά</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀγαθῶν</span></td><td><span class=\"gk\">ἀγαθῶν</span></td><td><span class=\"gk\">ἀγαθῶν</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀγαθοῖς</span></td><td><span class=\"gk\">ἀγαθαῖς</span></td><td><span class=\"gk\">ἀγαθοῖς</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀγαθούς</span></td><td><span class=\"gk\">ἀγαθάς</span></td><td><span class=\"gk\">ἀγαθά</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.1, three endings</div>",
+     "frontAudio": null,
+     "backAudio": "fa2225c2bd21",
+     "tags": [
+      "recite",
+      "adjective, three endings (fem. η)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιος</span></div><div class='meta'>ending <span class=\"gk\">-ος</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "3ab3da3d76eb",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξία</span></div><div class='meta'>ending <span class=\"gk\">-ᾱ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "3a1e03ea42b9",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "e3ae02a700f4",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίου</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "56e85dfc42ae",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "b65c07e1522f",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίου</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "56e85dfc42ae",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίῳ</span></div><div class='meta'>ending <span class=\"gk\">-ῳ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "ab9dbd656bb2",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίᾳ</span></div><div class='meta'>ending <span class=\"gk\">-ᾳ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "b67729043061",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίῳ</span></div><div class='meta'>ending <span class=\"gk\">-ῳ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "ab9dbd656bb2",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "e3ae02a700f4",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίαν</span></div><div class='meta'>ending <span class=\"gk\">-ᾱν</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "3365e9a92db7",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "e3ae02a700f4",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιε</span></div><div class='meta'>ending <span class=\"gk\">-ε</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "893a59302125",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξία</span></div><div class='meta'>ending <span class=\"gk\">-ᾱ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "3a1e03ea42b9",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "e3ae02a700f4",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιοι</span></div><div class='meta'>ending <span class=\"gk\">-οι</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "e7d8cbca308c",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιαι</span></div><div class='meta'>ending <span class=\"gk\">-αι</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "4c6e5679f520",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξια</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "956e1189b4eb",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίων</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "edf7e2a6c036",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίων</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "edf7e2a6c036",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίων</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "edf7e2a6c036",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίοις</span></div><div class='meta'>ending <span class=\"gk\">-οις</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "14dacb182db8",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίαις</span></div><div class='meta'>ending <span class=\"gk\">-αις</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "2c5e25b34785",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίοις</span></div><div class='meta'>ending <span class=\"gk\">-οις</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "14dacb182db8",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-masc.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>masc. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίους</span></div><div class='meta'>ending <span class=\"gk\">-ους</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "85e963c49c86",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-fem.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>fem. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀξίας</span></div><div class='meta'>ending <span class=\"gk\">-ᾱς</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "b65c07e1522f",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-neut.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span></div><div class='ask'>neut. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξια</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · adjective, three endings (fem. ᾱ)</div>",
+     "frontAudio": null,
+     "backAudio": "956e1189b4eb",
+     "tags": [
+      "produce",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἄξιος",
+     "front": "<div class='answer'><span class=\"gk\">ἄξιος</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. nom. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "3ab3da3d76eb",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξία",
+     "front": "<div class='answer'><span class=\"gk\">ἀξία</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. nom. sg. <i>or</i> fem. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "3a1e03ea42b9",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἄξιον",
+     "front": "<div class='answer'><span class=\"gk\">ἄξιον</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>neut. nom. sg. <i>or</i> masc. acc. sg. <i>or</i> neut. acc. sg. <i>or</i> neut. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "e3ae02a700f4",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίου",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίου</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. gen. sg. <i>or</i> neut. gen. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "56e85dfc42ae",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίας",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίας</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. gen. sg. <i>or</i> fem. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "b65c07e1522f",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίῳ",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίῳ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. dat. sg. <i>or</i> neut. dat. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "ab9dbd656bb2",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίᾳ",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίᾳ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. dat. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "b67729043061",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίαν",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίαν</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. acc. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "3365e9a92db7",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἄξιε",
+     "front": "<div class='answer'><span class=\"gk\">ἄξιε</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "893a59302125",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἄξιοι",
+     "front": "<div class='answer'><span class=\"gk\">ἄξιοι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "e7d8cbca308c",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἄξιαι",
+     "front": "<div class='answer'><span class=\"gk\">ἄξιαι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "4c6e5679f520",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἄξια",
+     "front": "<div class='answer'><span class=\"gk\">ἄξια</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>neut. nom./voc. pl. <i>or</i> neut. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "956e1189b4eb",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίων",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίων</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. gen. pl. <i>or</i> fem. gen. pl. <i>or</i> neut. gen. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "edf7e2a6c036",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίοις",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίοις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. dat. pl. <i>or</i> neut. dat. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "14dacb182db8",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίαις",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίαις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>fem. dat. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "2c5e25b34785",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-parse-ἀξίους",
+     "front": "<div class='answer'><span class=\"gk\">ἀξίους</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</div>",
+     "frontAudio": "85e963c49c86",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-recite-masc.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span>: masc.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</caption><tr><th></th><th>masc.</th><th>fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἄξιος</span></td><td><span class=\"gk\">ἀξία</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀξίου</span></td><td><span class=\"gk\">ἀξίας</span></td><td><span class=\"gk\">ἀξίου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀξίῳ</span></td><td><span class=\"gk\">ἀξίᾳ</span></td><td><span class=\"gk\">ἀξίῳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἄξιον</span></td><td><span class=\"gk\">ἀξίαν</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἄξιε</span></td><td><span class=\"gk\">ἀξία</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἄξιοι</span></td><td><span class=\"gk\">ἄξιαι</span></td><td><span class=\"gk\">ἄξια</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀξίων</span></td><td><span class=\"gk\">ἀξίων</span></td><td><span class=\"gk\">ἀξίων</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀξίοις</span></td><td><span class=\"gk\">ἀξίαις</span></td><td><span class=\"gk\">ἀξίοις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀξίους</span></td><td><span class=\"gk\">ἀξίας</span></td><td><span class=\"gk\">ἄξια</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.1, three endings, stem in ε, ι, ρ</div>",
+     "frontAudio": null,
+     "backAudio": "20283284eda0",
+     "tags": [
+      "recite",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-recite-fem.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span>: fem.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</caption><tr><th></th><th>masc.</th><th>fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἄξιος</span></td><td><span class=\"gk\">ἀξία</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀξίου</span></td><td><span class=\"gk\">ἀξίας</span></td><td><span class=\"gk\">ἀξίου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀξίῳ</span></td><td><span class=\"gk\">ἀξίᾳ</span></td><td><span class=\"gk\">ἀξίῳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἄξιον</span></td><td><span class=\"gk\">ἀξίαν</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἄξιε</span></td><td><span class=\"gk\">ἀξία</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἄξιοι</span></td><td><span class=\"gk\">ἄξιαι</span></td><td><span class=\"gk\">ἄξια</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀξίων</span></td><td><span class=\"gk\">ἀξίων</span></td><td><span class=\"gk\">ἀξίων</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀξίοις</span></td><td><span class=\"gk\">ἀξίαις</span></td><td><span class=\"gk\">ἀξίοις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀξίους</span></td><td><span class=\"gk\">ἀξίας</span></td><td><span class=\"gk\">ἄξια</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.1, three endings, stem in ε, ι, ρ</div>",
+     "frontAudio": null,
+     "backAudio": "5b6e9026dd23",
+     "tags": [
+      "recite",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄξιος, ἀξία, ἄξιον-recite-neut.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> <span class='meta'>(“worthy”)</span>: neut.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἄξιος, ἀξία, ἄξιον</span> “worthy”</caption><tr><th></th><th>masc.</th><th>fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἄξιος</span></td><td><span class=\"gk\">ἀξία</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀξίου</span></td><td><span class=\"gk\">ἀξίας</span></td><td><span class=\"gk\">ἀξίου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀξίῳ</span></td><td><span class=\"gk\">ἀξίᾳ</span></td><td><span class=\"gk\">ἀξίῳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἄξιον</span></td><td><span class=\"gk\">ἀξίαν</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἄξιε</span></td><td><span class=\"gk\">ἀξία</span></td><td><span class=\"gk\">ἄξιον</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἄξιοι</span></td><td><span class=\"gk\">ἄξιαι</span></td><td><span class=\"gk\">ἄξια</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀξίων</span></td><td><span class=\"gk\">ἀξίων</span></td><td><span class=\"gk\">ἀξίων</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀξίοις</span></td><td><span class=\"gk\">ἀξίαις</span></td><td><span class=\"gk\">ἀξίοις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀξίους</span></td><td><span class=\"gk\">ἀξίας</span></td><td><span class=\"gk\">ἄξια</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.1, three endings, stem in ε, ι, ρ</div>",
+     "frontAudio": null,
+     "backAudio": "02f32af760bc",
+     "tags": [
+      "recite",
+      "adjective, three endings (fem. ᾱ)"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικος</span></div><div class='meta'>ending <span class=\"gk\">-ος</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "ed73d4987d54",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-nom. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. nom. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "939e255b3a7d",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκου</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "aebf2e5ceed8",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-gen. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. gen. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκου</span></div><div class='meta'>ending <span class=\"gk\">-ου</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "aebf2e5ceed8",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκῳ</span></div><div class='meta'>ending <span class=\"gk\">-ῳ</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "050fbf6526bc",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-dat. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. dat. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκῳ</span></div><div class='meta'>ending <span class=\"gk\">-ῳ</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "050fbf6526bc",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "939e255b3a7d",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-acc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. acc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "939e255b3a7d",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικε</span></div><div class='meta'>ending <span class=\"gk\">-ε</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "3823a7f85e66",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-voc. sg.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. voc. sg.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικον</span></div><div class='meta'>ending <span class=\"gk\">-ον</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "939e255b3a7d",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικοι</span></div><div class='meta'>ending <span class=\"gk\">-οι</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "102bd2418e45",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-nom./voc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. nom./voc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "9d95834ef20a",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκων</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "2cdeb2a959b3",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-gen. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. gen. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκων</span></div><div class='meta'>ending <span class=\"gk\">-ων</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "2cdeb2a959b3",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκοις</span></div><div class='meta'>ending <span class=\"gk\">-οις</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "57064bc4fd40",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-dat. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. dat. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκοις</span></div><div class='meta'>ending <span class=\"gk\">-οις</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "57064bc4fd40",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-masc./fem.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>masc./fem. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀδίκους</span></div><div class='meta'>ending <span class=\"gk\">-ους</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "0697e6c5bd70",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-neut.-acc. pl.",
+     "front": "<div class='prompt'><span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span></div><div class='ask'>neut. acc. pl.</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικα</span></div><div class='meta'>ending <span class=\"gk\">-ᾰ</span> · adjective, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "9d95834ef20a",
+     "tags": [
+      "produce",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἄδικος",
+     "front": "<div class='answer'><span class=\"gk\">ἄδικος</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. nom. sg.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "ed73d4987d54",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἄδικον",
+     "front": "<div class='answer'><span class=\"gk\">ἄδικον</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>neut. nom. sg. <i>or</i> masc./fem. acc. sg. <i>or</i> neut. acc. sg. <i>or</i> neut. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "939e255b3a7d",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἀδίκου",
+     "front": "<div class='answer'><span class=\"gk\">ἀδίκου</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. gen. sg. <i>or</i> neut. gen. sg.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "aebf2e5ceed8",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἀδίκῳ",
+     "front": "<div class='answer'><span class=\"gk\">ἀδίκῳ</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. dat. sg. <i>or</i> neut. dat. sg.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "050fbf6526bc",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἄδικε",
+     "front": "<div class='answer'><span class=\"gk\">ἄδικε</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. voc. sg.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "3823a7f85e66",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἄδικοι",
+     "front": "<div class='answer'><span class=\"gk\">ἄδικοι</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. nom./voc. pl.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "102bd2418e45",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἄδικα",
+     "front": "<div class='answer'><span class=\"gk\">ἄδικα</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>neut. nom./voc. pl. <i>or</i> neut. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "9d95834ef20a",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἀδίκων",
+     "front": "<div class='answer'><span class=\"gk\">ἀδίκων</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. gen. pl. <i>or</i> neut. gen. pl.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "2cdeb2a959b3",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἀδίκοις",
+     "front": "<div class='answer'><span class=\"gk\">ἀδίκοις</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. dat. pl. <i>or</i> neut. dat. pl.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "57064bc4fd40",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-parse-ἀδίκους",
+     "front": "<div class='answer'><span class=\"gk\">ἀδίκους</span></div><div class='ask'>Parse: gender, number, case</div>",
+     "back": "<div class='answer small'>masc./fem. acc. pl.</div><div class='meta'>of <span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</div>",
+     "frontAudio": "0697e6c5bd70",
+     "backAudio": null,
+     "tags": [
+      "parse",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-recite-masc./fem.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span>: masc./fem.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</caption><tr><th></th><th>masc./fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἄδικος</span></td><td><span class=\"gk\">ἄδικον</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀδίκου</span></td><td><span class=\"gk\">ἀδίκου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀδίκῳ</span></td><td><span class=\"gk\">ἀδίκῳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἄδικον</span></td><td><span class=\"gk\">ἄδικον</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἄδικε</span></td><td><span class=\"gk\">ἄδικον</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἄδικοι</span></td><td><span class=\"gk\">ἄδικα</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀδίκων</span></td><td><span class=\"gk\">ἀδίκων</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀδίκοις</span></td><td><span class=\"gk\">ἀδίκοις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀδίκους</span></td><td><span class=\"gk\">ἄδικα</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.2, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "b87c6c82d2dc",
+     "tags": [
+      "recite",
+      "adjective, two endings"
+     ]
+    },
+    {
+     "id": "w10-paradigms-ἄδικος, ἄδικον-recite-neut.",
+     "front": "<div class='prompt'>Recite <span class=\"gk\">ἄδικος, ἄδικον</span> <span class='meta'>(“unjust”)</span>: neut.</div><div class='ask'>singular → plural · N G D A V</div>",
+     "back": "<table class='para'><caption><span class=\"gk\">ἄδικος, ἄδικον</span> “unjust”</caption><tr><th></th><th>masc./fem.</th><th>neut.</th></tr><tr><th>nom. sg.</th><td><span class=\"gk\">ἄδικος</span></td><td><span class=\"gk\">ἄδικον</span></td></tr><tr><th>gen. sg.</th><td><span class=\"gk\">ἀδίκου</span></td><td><span class=\"gk\">ἀδίκου</span></td></tr><tr><th>dat. sg.</th><td><span class=\"gk\">ἀδίκῳ</span></td><td><span class=\"gk\">ἀδίκῳ</span></td></tr><tr><th>acc. sg.</th><td><span class=\"gk\">ἄδικον</span></td><td><span class=\"gk\">ἄδικον</span></td></tr><tr><th>voc. sg.</th><td><span class=\"gk\">ἄδικε</span></td><td><span class=\"gk\">ἄδικον</span></td></tr><tr><th>nom./voc. pl.</th><td><span class=\"gk\">ἄδικοι</span></td><td><span class=\"gk\">ἄδικα</span></td></tr><tr><th>gen. pl.</th><td><span class=\"gk\">ἀδίκων</span></td><td><span class=\"gk\">ἀδίκων</span></td></tr><tr><th>dat. pl.</th><td><span class=\"gk\">ἀδίκοις</span></td><td><span class=\"gk\">ἀδίκοις</span></td></tr><tr><th>acc. pl.</th><td><span class=\"gk\">ἀδίκους</span></td><td><span class=\"gk\">ἄδικα</span></td></tr></table><div class='meta'>Hansen & Quinn, §38.2, two endings</div>",
+     "frontAudio": null,
+     "backAudio": "a5160ba8ea8c",
+     "tags": [
+      "recite",
+      "adjective, two endings"
+     ]
+    }
+   ],
+   "apkg": "Greek_W10_Memorize.apkg",
+   "ankiName": "Ancient Greek::Week 10::Memorize — First declension concluded; adjectives ἀγαθός, ἄξιος, ἄδικος"
+  },
+  {
+   "key": "w10-vocab",
+   "week": "w10",
+   "kind": "vocab",
+   "title": "Vocabulary: Hansen & Quinn Unit 4",
+   "description": "Hansen & Quinn pp. 99–103",
+   "cards": [
+    {
+     "id": "w10-vocab-ἀγαθός, ἀγαθή, ἀγαθόν-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>good (morally good; serviceable)</div><div class='meta'>adjective · H&Q U4</div>",
+     "frontAudio": "93e6996d055c",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἀγαθός, ἀγαθή, ἀγαθόν-eg",
+     "front": "<div class='prompt'>good (morally good; serviceable)</div><div class='ask'>Greek? (adjective)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀγαθός, ἀγαθή, ἀγαθόν</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "93e6996d055c",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἄν-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἄν</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>used in some conditional sentences (not translated; never first in its clause)</div><div class='meta'>particle · H&Q U4</div>",
+     "frontAudio": "af086958adc4",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἄν-eg",
+     "front": "<div class='prompt'>used in some conditional sentences (not translated; never first in its clause)</div><div class='ask'>Greek? (particle)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄν</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "af086958adc4",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἄξιος, ἀξίᾱ, ἄξιον-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἄξιος, ἀξίᾱ, ἄξιον</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>worthy, worth (+ gen.)</div><div class='meta'>adjective · H&Q U4</div>",
+     "frontAudio": "e8f8a99b5901",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἄξιος, ἀξίᾱ, ἄξιον-eg",
+     "front": "<div class='prompt'>worthy, worth (+ gen.)</div><div class='ask'>Greek? (adjective)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄξιος, ἀξίᾱ, ἄξιον</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "e8f8a99b5901",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἀνάξιος, ἀνάξιον-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἀνάξιος, ἀνάξιον</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>unworthy (+ gen.)</div><div class='meta'>adjective, two endings (alpha privative) · H&Q U4</div>",
+     "frontAudio": "9dd812ac7cdb",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἀνάξιος, ἀνάξιον-eg",
+     "front": "<div class='prompt'>unworthy (+ gen.)</div><div class='ask'>Greek? (adjective, two endings (alpha privative))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀνάξιος, ἀνάξιον</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "9dd812ac7cdb",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἀρχή, ἀρχῆς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἀρχή, ἀρχῆς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>beginning; rule, empire</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "963092d52dde",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἀρχή, ἀρχῆς, ἡ-eg",
+     "front": "<div class='prompt'>beginning; rule, empire</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἀρχή, ἀρχῆς, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "963092d52dde",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-γέφῡρα, γεφῡ́ρᾱς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">γέφῡρα, γεφῡ́ρᾱς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>bridge</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "798bfa030a72",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-γέφῡρα, γεφῡ́ρᾱς, ἡ-eg",
+     "front": "<div class='prompt'>bridge</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">γέφῡρα, γεφῡ́ρᾱς, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "798bfa030a72",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην-ge",
+     "front": "<div class='answer'><span class=\"gk\">διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>teach</div><div class='meta'>verb · H&Q U4</div>",
+     "frontAudio": "a02a08274fac",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην-eg",
+     "front": "<div class='prompt'>teach</div><div class='ask'>Greek? (verb)</div>",
+     "back": "<div class='answer'><span class=\"gk\">διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "a02a08274fac",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-δίκη, δίκης, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">δίκη, δίκης, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>justice; lawsuit</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "6dafcf030939",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-δίκη, δίκης, ἡ-eg",
+     "front": "<div class='prompt'>justice; lawsuit</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">δίκη, δίκης, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "6dafcf030939",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἄδικος, ἄδικον-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἄδικος, ἄδικον</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>unjust</div><div class='meta'>adjective, two endings (alpha privative) · H&Q U4</div>",
+     "frontAudio": "347791f6a2de",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἄδικος, ἄδικον-eg",
+     "front": "<div class='prompt'>unjust</div><div class='ask'>Greek? (adjective, two endings (alpha privative))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἄδικος, ἄδικον</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "347791f6a2de",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-δίκαιος, δικαίᾱ, δίκαιον-ge",
+     "front": "<div class='answer'><span class=\"gk\">δίκαιος, δικαίᾱ, δίκαιον</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>just</div><div class='meta'>adjective · H&Q U4</div>",
+     "frontAudio": "ef9448217a69",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-δίκαιος, δικαίᾱ, δίκαιον-eg",
+     "front": "<div class='prompt'>just</div><div class='ask'>Greek? (adjective)</div>",
+     "back": "<div class='answer'><span class=\"gk\">δίκαιος, δικαίᾱ, δίκαιον</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "ef9448217a69",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἐθέλω, ἐθελήσω, ἠθέλησα, ἠθέληκα, —, —-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἐθέλω, ἐθελήσω, ἠθέλησα, ἠθέληκα, —, —</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>be willing, wish (+ infinitive); οὐκ ἐθέλω: refuse</div><div class='meta'>verb; ἐ- belongs to the stem; augment lengthens it to ἠ- (imperf. ἤθελον) · H&Q U4</div>",
+     "frontAudio": "d2d05768b8c2",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἐθέλω, ἐθελήσω, ἠθέλησα, ἠθέληκα, —, —-eg",
+     "front": "<div class='prompt'>be willing, wish (+ infinitive); οὐκ ἐθέλω: refuse</div><div class='ask'>Greek? (verb; ἐ- belongs to the stem; augment lengthens it to ἠ- (imperf. ἤθελον))</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐθέλω, ἐθελήσω, ἠθέλησα, ἠθέληκα, —, —</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "d2d05768b8c2",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-εἰ-ge",
+     "front": "<div class='answer'><span class=\"gk\">εἰ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>if</div><div class='meta'>particle (proclitic) · H&Q U4</div>",
+     "frontAudio": "23866effb849",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-εἰ-eg",
+     "front": "<div class='prompt'>if</div><div class='ask'>Greek? (particle (proclitic))</div>",
+     "back": "<div class='answer'><span class=\"gk\">εἰ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "23866effb849",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἐάν-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἐάν</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>if (= εἰ + ἄν)</div><div class='meta'>particle · H&Q U4</div>",
+     "frontAudio": "ef09b12aaf17",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἐάν-eg",
+     "front": "<div class='prompt'>if (= εἰ + ἄν)</div><div class='ask'>Greek? (particle)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἐάν</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "ef09b12aaf17",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἡμέρᾱ, ἡμέρᾱς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ἡμέρᾱ, ἡμέρᾱς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>day</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "f601a5696bf0",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ἡμέρᾱ, ἡμέρᾱς, ἡ-eg",
+     "front": "<div class='prompt'>day</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ἡμέρᾱ, ἡμέρᾱς, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "f601a5696bf0",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-θάλαττα, θαλάττης, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">θάλαττα, θαλάττης, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>sea</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "e2ac8001f956",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-θάλαττα, θαλάττης, ἡ-eg",
+     "front": "<div class='prompt'>sea</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">θάλαττα, θαλάττης, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "e2ac8001f956",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-θάπτω, θάψω, ἔθαψα, —, τέθαμμαι, ἐτάφην-ge",
+     "front": "<div class='answer'><span class=\"gk\">θάπτω, θάψω, ἔθαψα, —, τέθαμμαι, ἐτάφην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>bury</div><div class='meta'>verb · H&Q U4</div>",
+     "frontAudio": "fc3e1f52e149",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-θάπτω, θάψω, ἔθαψα, —, τέθαμμαι, ἐτάφην-eg",
+     "front": "<div class='prompt'>bury</div><div class='ask'>Greek? (verb)</div>",
+     "back": "<div class='answer'><span class=\"gk\">θάπτω, θάψω, ἔθαψα, —, τέθαμμαι, ἐτάφην</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "fc3e1f52e149",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-καίτοι-ge",
+     "front": "<div class='answer'><span class=\"gk\">καίτοι</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>and further, and yet</div><div class='meta'>particle (accent is an exception) · H&Q U4</div>",
+     "frontAudio": "6835cd5c2d74",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-καίτοι-eg",
+     "front": "<div class='prompt'>and further, and yet</div><div class='ask'>Greek? (particle (accent is an exception))</div>",
+     "back": "<div class='answer'><span class=\"gk\">καίτοι</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "6835cd5c2d74",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-κακός, κακή, κακόν-ge",
+     "front": "<div class='answer'><span class=\"gk\">κακός, κακή, κακόν</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>bad, evil</div><div class='meta'>adjective · H&Q U4</div>",
+     "frontAudio": "63b1cae0f124",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-κακός, κακή, κακόν-eg",
+     "front": "<div class='prompt'>bad, evil</div><div class='ask'>Greek? (adjective)</div>",
+     "back": "<div class='answer'><span class=\"gk\">κακός, κακή, κακόν</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "63b1cae0f124",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-καλός, καλή, καλόν-ge",
+     "front": "<div class='answer'><span class=\"gk\">καλός, καλή, καλόν</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>beautiful, noble, good</div><div class='meta'>adjective · H&Q U4</div>",
+     "frontAudio": "41a912c3e3de",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-καλός, καλή, καλόν-eg",
+     "front": "<div class='prompt'>beautiful, noble, good</div><div class='ask'>Greek? (adjective)</div>",
+     "back": "<div class='answer'><span class=\"gk\">καλός, καλή, καλόν</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "41a912c3e3de",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-μετά-ge",
+     "front": "<div class='answer'><span class=\"gk\">μετά</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>(+ gen.) with; (+ acc.) after</div><div class='meta'>preposition · H&Q U4</div>",
+     "frontAudio": "3c4f3eef0f7a",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-μετά-eg",
+     "front": "<div class='prompt'>(+ gen.) with; (+ acc.) after</div><div class='ask'>Greek? (preposition)</div>",
+     "back": "<div class='answer'><span class=\"gk\">μετά</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "3c4f3eef0f7a",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-μοῖρα, μοίρᾱς, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">μοῖρα, μοίρᾱς, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>fate</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "c3dc67f6c333",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-μοῖρα, μοίρᾱς, ἡ-eg",
+     "front": "<div class='prompt'>fate</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῖρα, μοίρᾱς, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "c3dc67f6c333",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-μοῦσα, μούσης, ἡ-ge",
+     "front": "<div class='answer'><span class=\"gk\">μοῦσα, μούσης, ἡ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>muse</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "a50d4d15494f",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-μοῦσα, μούσης, ἡ-eg",
+     "front": "<div class='prompt'>muse</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">μοῦσα, μούσης, ἡ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "a50d4d15494f",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-νεᾱνίᾱς, νεᾱνίου, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">νεᾱνίᾱς, νεᾱνίου, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>young man</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "19c49a61c8a6",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-νεᾱνίᾱς, νεᾱνίου, ὁ-eg",
+     "front": "<div class='prompt'>young man</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">νεᾱνίᾱς, νεᾱνίου, ὁ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "19c49a61c8a6",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ὅπλον, ὅπλου, τό-ge",
+     "front": "<div class='answer'><span class=\"gk\">ὅπλον, ὅπλου, τό</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>tool; (pl.) weapons</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "bd1230a4f9d4",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ὅπλον, ὅπλου, τό-eg",
+     "front": "<div class='prompt'>tool; (pl.) weapons</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ὅπλον, ὅπλου, τό</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "bd1230a4f9d4",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ὁπλῑ́της, ὁπλῑ́του, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ὁπλῑ́της, ὁπλῑ́του, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>hoplite, heavy-armed foot-soldier</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "e47656b2966a",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ὁπλῑ́της, ὁπλῑ́του, ὁ-eg",
+     "front": "<div class='prompt'>hoplite, heavy-armed foot-soldier</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ὁπλῑ́της, ὁπλῑ́του, ὁ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "e47656b2966a",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-πάλαι-ge",
+     "front": "<div class='answer'><span class=\"gk\">πάλαι</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>long ago</div><div class='meta'>adverb (also attributive: οἱ πάλαι ἄνθρωποι, men of old) · H&Q U4</div>",
+     "frontAudio": "8a9382f7595c",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-πάλαι-eg",
+     "front": "<div class='prompt'>long ago</div><div class='ask'>Greek? (adverb (also attributive: οἱ πάλαι ἄνθρωποι, men of old))</div>",
+     "back": "<div class='answer'><span class=\"gk\">πάλαι</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "8a9382f7595c",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-ποιητής, ποιητοῦ, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">ποιητής, ποιητοῦ, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>poet, author</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "3a4fddab96c6",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-ποιητής, ποιητοῦ, ὁ-eg",
+     "front": "<div class='prompt'>poet, author</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">ποιητής, ποιητοῦ, ὁ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "3a4fddab96c6",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-πολῑ́της, πολῑ́του, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">πολῑ́της, πολῑ́του, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>citizen</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "fe1529d352f9",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-πολῑ́της, πολῑ́του, ὁ-eg",
+     "front": "<div class='prompt'>citizen</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">πολῑ́της, πολῑ́του, ὁ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "fe1529d352f9",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-στρατιώτης, στρατιώτου, ὁ-ge",
+     "front": "<div class='answer'><span class=\"gk\">στρατιώτης, στρατιώτου, ὁ</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>soldier</div><div class='meta'>noun · H&Q U4</div>",
+     "frontAudio": "792b7a1b9058",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-στρατιώτης, στρατιώτου, ὁ-eg",
+     "front": "<div class='prompt'>soldier</div><div class='ask'>Greek? (noun)</div>",
+     "back": "<div class='answer'><span class=\"gk\">στρατιώτης, στρατιώτου, ὁ</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "792b7a1b9058",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-σύν-ge",
+     "front": "<div class='answer'><span class=\"gk\">σύν</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>(+ dat.) with</div><div class='meta'>preposition · H&Q U4</div>",
+     "frontAudio": "3d4a83d1468a",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-σύν-eg",
+     "front": "<div class='prompt'>(+ dat.) with</div><div class='ask'>Greek? (preposition)</div>",
+     "back": "<div class='answer'><span class=\"gk\">σύν</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "3d4a83d1468a",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-τάττω, τάξω, ἔταξα, τέταχα, τέταγμαι, ἐτάχθην-ge",
+     "front": "<div class='answer'><span class=\"gk\">τάττω, τάξω, ἔταξα, τέταχα, τέταγμαι, ἐτάχθην</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>draw up in order, station, appoint</div><div class='meta'>verb · H&Q U4</div>",
+     "frontAudio": "e8df3e3e41fe",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-τάττω, τάξω, ἔταξα, τέταχα, τέταγμαι, ἐτάχθην-eg",
+     "front": "<div class='prompt'>draw up in order, station, appoint</div><div class='ask'>Greek? (verb)</div>",
+     "back": "<div class='answer'><span class=\"gk\">τάττω, τάξω, ἔταξα, τέταχα, τέταγμαι, ἐτάχθην</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "e8df3e3e41fe",
+     "tags": [
+      "english-to-greek"
+     ]
+    },
+    {
+     "id": "w10-vocab-φίλος, φίλη, φίλον-ge",
+     "front": "<div class='answer'><span class=\"gk\">φίλος, φίλη, φίλον</span></div><div class='ask'>Meaning?</div>",
+     "back": "<div class='answer small'>dear, beloved, one&#x27;s own</div><div class='meta'>adjective · H&Q U4</div>",
+     "frontAudio": "d57451deb284",
+     "backAudio": null,
+     "tags": [
+      "greek-to-english"
+     ]
+    },
+    {
+     "id": "w10-vocab-φίλος, φίλη, φίλον-eg",
+     "front": "<div class='prompt'>dear, beloved, one&#x27;s own</div><div class='ask'>Greek? (adjective)</div>",
+     "back": "<div class='answer'><span class=\"gk\">φίλος, φίλη, φίλον</span></div><div class='meta'>H&Q U4</div>",
+     "frontAudio": null,
+     "backAudio": "d57451deb284",
+     "tags": [
+      "english-to-greek"
+     ]
+    }
+   ],
+   "apkg": "Greek_W10_Vocab.apkg",
+   "ankiName": "Ancient Greek::Week 10::Vocab — Vocabulary: Hansen & Quinn Unit 4"
   }
  ],
  "review": {
@@ -12720,6 +16127,1225 @@
        "pos": "conjunction (purpose clauses)",
        "src": "H&Q U3",
        "audio": "ed10ab8590ec"
+      }
+     ]
+    }
+   ]
+  },
+  "w10": {
+   "tables": [
+    {
+     "type": "noun",
+     "title": "1st decl. short α (gen. sg. -ης)",
+     "source": "Hansen & Quinn, §37.1, short α (other stems)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾰ",
+      "-ης",
+      "-ῃ",
+      "-ᾰν",
+      "-ᾰ",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "θάλαττα",
+       "gloss": "sea",
+       "gender": "f.",
+       "recite": "c10a9d088349",
+       "forms": [
+        {
+         "stem": "θάλαττ",
+         "end": "α",
+         "audio": "ab65824692d1"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "ης",
+         "audio": "897eda729561"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "ῃ",
+         "audio": "cc6e044d7bf3"
+        },
+        {
+         "stem": "θάλαττ",
+         "end": "αν",
+         "audio": "f215e893cfe7"
+        },
+        {
+         "stem": "θάλαττ",
+         "end": "α",
+         "audio": "ab65824692d1"
+        },
+        {
+         "stem": "θάλαττ",
+         "end": "αι",
+         "audio": "cf1d188cf655"
+        },
+        {
+         "stem": "θαλαττ",
+         "end": "ῶν",
+         "audio": "b1d277064df8"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "αις",
+         "audio": "4b91a1177a2a"
+        },
+        {
+         "stem": "θαλάττ",
+         "end": "ας",
+         "audio": "c165a3e0560b"
+        }
+       ]
+      },
+      {
+       "lemma": "μοῦσα",
+       "gloss": "muse",
+       "gender": "f.",
+       "recite": "9c5987b20f78",
+       "forms": [
+        {
+         "stem": "μοῦσ",
+         "end": "α",
+         "audio": "acc1eddb7c7c"
+        },
+        {
+         "stem": "μούσ",
+         "end": "ης",
+         "audio": "9e4a71b29767"
+        },
+        {
+         "stem": "μούσ",
+         "end": "ῃ",
+         "audio": "fe39a685105f"
+        },
+        {
+         "stem": "μοῦσ",
+         "end": "αν",
+         "audio": "49f537e43e96"
+        },
+        {
+         "stem": "μοῦσ",
+         "end": "α",
+         "audio": "acc1eddb7c7c"
+        },
+        {
+         "stem": "μοῦσ",
+         "end": "αι",
+         "audio": "aa3f2533310a"
+        },
+        {
+         "stem": "μουσ",
+         "end": "ῶν",
+         "audio": "57727a633445"
+        },
+        {
+         "stem": "μούσ",
+         "end": "αις",
+         "audio": "0fac90286a19"
+        },
+        {
+         "stem": "μούσ",
+         "end": "ας",
+         "audio": "96f442ad0939"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. short α (gen. sg. -ᾱς)",
+     "source": "Hansen & Quinn, §37.1, short α (stem in ε, ι, ρ)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾰ",
+      "-ᾱς",
+      "-ᾳ",
+      "-ᾰν",
+      "-ᾰ",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "γέφυρα",
+       "gloss": "bridge",
+       "gender": "f.",
+       "recite": "d4e633a65216",
+       "forms": [
+        {
+         "stem": "γέφυρ",
+         "end": "α",
+         "audio": "572be279494e"
+        },
+        {
+         "stem": "γεφύρ",
+         "end": "ας",
+         "audio": "5b66d1c59f79"
+        },
+        {
+         "stem": "γεφύρ",
+         "end": "ᾳ",
+         "audio": "625b5db2ef52"
+        },
+        {
+         "stem": "γέφυρ",
+         "end": "αν",
+         "audio": "22994f74d9ec"
+        },
+        {
+         "stem": "γέφυρ",
+         "end": "α",
+         "audio": "572be279494e"
+        },
+        {
+         "stem": "γέφυρ",
+         "end": "αι",
+         "audio": "2e992d2cd7ad"
+        },
+        {
+         "stem": "γεφυρ",
+         "end": "ῶν",
+         "audio": "7a3d3e579dea"
+        },
+        {
+         "stem": "γεφύρ",
+         "end": "αις",
+         "audio": "093d5a1d479c"
+        },
+        {
+         "stem": "γεφύρ",
+         "end": "ας",
+         "audio": "5b66d1c59f79"
+        }
+       ]
+      },
+      {
+       "lemma": "μοῖρα",
+       "gloss": "fate",
+       "gender": "f.",
+       "recite": "05c1fbe0ef0a",
+       "forms": [
+        {
+         "stem": "μοῖρ",
+         "end": "α",
+         "audio": "0e89b42f7588"
+        },
+        {
+         "stem": "μοίρ",
+         "end": "ας",
+         "audio": "f19f99ffaf2e"
+        },
+        {
+         "stem": "μοίρ",
+         "end": "ᾳ",
+         "audio": "4ef4d1ecfe0c"
+        },
+        {
+         "stem": "μοῖρ",
+         "end": "αν",
+         "audio": "661df0cccebf"
+        },
+        {
+         "stem": "μοῖρ",
+         "end": "α",
+         "audio": "0e89b42f7588"
+        },
+        {
+         "stem": "μοῖρ",
+         "end": "αι",
+         "audio": "a35f13b5691b"
+        },
+        {
+         "stem": "μοιρ",
+         "end": "ῶν",
+         "audio": "0c38f626fc5b"
+        },
+        {
+         "stem": "μοίρ",
+         "end": "αις",
+         "audio": "0ef3a03f5df4"
+        },
+        {
+         "stem": "μοίρ",
+         "end": "ας",
+         "audio": "f19f99ffaf2e"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. masculine (nom. sg. -ης)",
+     "source": "Hansen & Quinn, §37.2, masculine in -ης",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ης",
+      "-ου",
+      "-ῃ",
+      "-ην",
+      "-ᾰ",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "πολίτης",
+       "gloss": "citizen",
+       "gender": "m.",
+       "recite": "9e5c4e8c998b",
+       "forms": [
+        {
+         "stem": "πολίτ",
+         "end": "ης",
+         "audio": "838958b70cee"
+        },
+        {
+         "stem": "πολίτ",
+         "end": "ου",
+         "audio": "ddfeef165ac8"
+        },
+        {
+         "stem": "πολίτ",
+         "end": "ῃ",
+         "audio": "74beded6f63e"
+        },
+        {
+         "stem": "πολίτ",
+         "end": "ην",
+         "audio": "b22d5080edd4"
+        },
+        {
+         "stem": "πολῖτ",
+         "end": "α",
+         "audio": "73d144d943a6"
+        },
+        {
+         "stem": "πολῖτ",
+         "end": "αι",
+         "audio": "25423ad90768"
+        },
+        {
+         "stem": "πολιτ",
+         "end": "ῶν",
+         "audio": "f5b34fb379bf"
+        },
+        {
+         "stem": "πολίτ",
+         "end": "αις",
+         "audio": "e57a47791760"
+        },
+        {
+         "stem": "πολίτ",
+         "end": "ας",
+         "audio": "8b7d9f76df93"
+        }
+       ]
+      },
+      {
+       "lemma": "ποιητής",
+       "gloss": "poet",
+       "gender": "m.",
+       "recite": "624cceaaef37",
+       "forms": [
+        {
+         "stem": "ποιητ",
+         "end": "ής",
+         "audio": "66709cd0e153"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "οῦ",
+         "audio": "b1421e103c82"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "ῇ",
+         "audio": "8cf11045c0e8"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "ήν",
+         "audio": "e28622aae807"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "ά",
+         "audio": "fa8f4989868e"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "αί",
+         "audio": "4bf87487f89d"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "ῶν",
+         "audio": "0d2470592a4b"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "αῖς",
+         "audio": "3e2b52d9d76c"
+        },
+        {
+         "stem": "ποιητ",
+         "end": "άς",
+         "audio": "a0b4316735be"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "noun",
+     "title": "1st decl. masculine (nom. sg. -ᾱς)",
+     "source": "Hansen & Quinn, §37.2, masculine in -ᾱς (stem in ε, ι, ρ)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "endings": [
+      "-ᾱς",
+      "-ου",
+      "-ᾳ",
+      "-ᾱν",
+      "-ᾱ",
+      "-αι",
+      "-ῶν",
+      "-αις",
+      "-ᾱς"
+     ],
+     "words": [
+      {
+       "lemma": "νεανίας",
+       "gloss": "young man",
+       "gender": "m.",
+       "recite": "e742b5db4cc8",
+       "forms": [
+        {
+         "stem": "νεανί",
+         "end": "ας",
+         "audio": "3c6eb6114436"
+        },
+        {
+         "stem": "νεανί",
+         "end": "ου",
+         "audio": "3924374b75e5"
+        },
+        {
+         "stem": "νεανί",
+         "end": "ᾳ",
+         "audio": "271f20183f9d"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αν",
+         "audio": "f8d87e75250a"
+        },
+        {
+         "stem": "νεανί",
+         "end": "α",
+         "audio": "56ee249ad9d7"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αι",
+         "audio": "afb9630695be"
+        },
+        {
+         "stem": "νεανι",
+         "end": "ῶν",
+         "audio": "b14aa4392370"
+        },
+        {
+         "stem": "νεανί",
+         "end": "αις",
+         "audio": "085908181aec"
+        },
+        {
+         "stem": "νεανί",
+         "end": "ας",
+         "audio": "3c6eb6114436"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "article",
+     "title": "ἀγαθός, ἀγαθή, ἀγαθόν “good”",
+     "source": "Hansen & Quinn, §38.1, three endings · adjective, three endings (fem. η)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "genders": [
+      "masc.",
+      "fem.",
+      "neut."
+     ],
+     "recite": [
+      "3cc7595a6ee8",
+      "a60205fbd797",
+      "fa2225c2bd21"
+     ],
+     "rows": [
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "ός",
+        "audio": "65256fc0f259"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ή",
+        "audio": "1b96743a45cf"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "όν",
+        "audio": "20f33fdefadd"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "οῦ",
+        "audio": "0edc3e56a6b6"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ῆς",
+        "audio": "a1225aa53fe2"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "οῦ",
+        "audio": "0edc3e56a6b6"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "ῷ",
+        "audio": "a63d6d4fbefe"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ῇ",
+        "audio": "3c3b5ca148f5"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ῷ",
+        "audio": "a63d6d4fbefe"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "όν",
+        "audio": "20f33fdefadd"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ήν",
+        "audio": "b108adba5e0b"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "όν",
+        "audio": "20f33fdefadd"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "έ",
+        "audio": "a5a5292c8bfe"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ή",
+        "audio": "1b96743a45cf"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "όν",
+        "audio": "20f33fdefadd"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "οί",
+        "audio": "8bddb74c8e3d"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "αί",
+        "audio": "7c82549cf73b"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ά",
+        "audio": "47d5b9798a15"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "ῶν",
+        "audio": "bdefdd66c2d7"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ῶν",
+        "audio": "bdefdd66c2d7"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ῶν",
+        "audio": "bdefdd66c2d7"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "οῖς",
+        "audio": "795521f9e65e"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "αῖς",
+        "audio": "2ac8a43b34f4"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "οῖς",
+        "audio": "795521f9e65e"
+       }
+      ],
+      [
+       {
+        "stem": "ἀγαθ",
+        "end": "ούς",
+        "audio": "356b62b5e0b0"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "άς",
+        "audio": "329f15073fe7"
+       },
+       {
+        "stem": "ἀγαθ",
+        "end": "ά",
+        "audio": "47d5b9798a15"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "article",
+     "title": "ἄξιος, ἀξία, ἄξιον “worthy”",
+     "source": "Hansen & Quinn, §38.1, three endings, stem in ε, ι, ρ · adjective, three endings (fem. ᾱ)",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "genders": [
+      "masc.",
+      "fem.",
+      "neut."
+     ],
+     "recite": [
+      "20283284eda0",
+      "5b6e9026dd23",
+      "02f32af760bc"
+     ],
+     "rows": [
+      [
+       {
+        "stem": "ἄξι",
+        "end": "ος",
+        "audio": "3ab3da3d76eb"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "α",
+        "audio": "3a1e03ea42b9"
+       },
+       {
+        "stem": "ἄξι",
+        "end": "ον",
+        "audio": "e3ae02a700f4"
+       }
+      ],
+      [
+       {
+        "stem": "ἀξί",
+        "end": "ου",
+        "audio": "56e85dfc42ae"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ας",
+        "audio": "b65c07e1522f"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ου",
+        "audio": "56e85dfc42ae"
+       }
+      ],
+      [
+       {
+        "stem": "ἀξί",
+        "end": "ῳ",
+        "audio": "ab9dbd656bb2"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ᾳ",
+        "audio": "b67729043061"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ῳ",
+        "audio": "ab9dbd656bb2"
+       }
+      ],
+      [
+       {
+        "stem": "ἄξι",
+        "end": "ον",
+        "audio": "e3ae02a700f4"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "αν",
+        "audio": "3365e9a92db7"
+       },
+       {
+        "stem": "ἄξι",
+        "end": "ον",
+        "audio": "e3ae02a700f4"
+       }
+      ],
+      [
+       {
+        "stem": "ἄξι",
+        "end": "ε",
+        "audio": "893a59302125"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "α",
+        "audio": "3a1e03ea42b9"
+       },
+       {
+        "stem": "ἄξι",
+        "end": "ον",
+        "audio": "e3ae02a700f4"
+       }
+      ],
+      [
+       {
+        "stem": "ἄξι",
+        "end": "οι",
+        "audio": "e7d8cbca308c"
+       },
+       {
+        "stem": "ἄξι",
+        "end": "αι",
+        "audio": "4c6e5679f520"
+       },
+       {
+        "stem": "ἄξι",
+        "end": "α",
+        "audio": "956e1189b4eb"
+       }
+      ],
+      [
+       {
+        "stem": "ἀξί",
+        "end": "ων",
+        "audio": "edf7e2a6c036"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ων",
+        "audio": "edf7e2a6c036"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ων",
+        "audio": "edf7e2a6c036"
+       }
+      ],
+      [
+       {
+        "stem": "ἀξί",
+        "end": "οις",
+        "audio": "14dacb182db8"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "αις",
+        "audio": "2c5e25b34785"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "οις",
+        "audio": "14dacb182db8"
+       }
+      ],
+      [
+       {
+        "stem": "ἀξί",
+        "end": "ους",
+        "audio": "85e963c49c86"
+       },
+       {
+        "stem": "ἀξί",
+        "end": "ας",
+        "audio": "b65c07e1522f"
+       },
+       {
+        "stem": "ἄξι",
+        "end": "α",
+        "audio": "956e1189b4eb"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "article",
+     "title": "ἄδικος, ἄδικον “unjust”",
+     "source": "Hansen & Quinn, §38.2, two endings · adjective, two endings",
+     "slots": [
+      "nom. sg.",
+      "gen. sg.",
+      "dat. sg.",
+      "acc. sg.",
+      "voc. sg.",
+      "nom./voc. pl.",
+      "gen. pl.",
+      "dat. pl.",
+      "acc. pl."
+     ],
+     "genders": [
+      "masc./fem.",
+      "neut."
+     ],
+     "recite": [
+      "b87c6c82d2dc",
+      "a5160ba8ea8c"
+     ],
+     "rows": [
+      [
+       {
+        "stem": "ἄδικ",
+        "end": "ος",
+        "audio": "ed73d4987d54"
+       },
+       {
+        "stem": "ἄδικ",
+        "end": "ον",
+        "audio": "939e255b3a7d"
+       }
+      ],
+      [
+       {
+        "stem": "ἀδίκ",
+        "end": "ου",
+        "audio": "aebf2e5ceed8"
+       },
+       {
+        "stem": "ἀδίκ",
+        "end": "ου",
+        "audio": "aebf2e5ceed8"
+       }
+      ],
+      [
+       {
+        "stem": "ἀδίκ",
+        "end": "ῳ",
+        "audio": "050fbf6526bc"
+       },
+       {
+        "stem": "ἀδίκ",
+        "end": "ῳ",
+        "audio": "050fbf6526bc"
+       }
+      ],
+      [
+       {
+        "stem": "ἄδικ",
+        "end": "ον",
+        "audio": "939e255b3a7d"
+       },
+       {
+        "stem": "ἄδικ",
+        "end": "ον",
+        "audio": "939e255b3a7d"
+       }
+      ],
+      [
+       {
+        "stem": "ἄδικ",
+        "end": "ε",
+        "audio": "3823a7f85e66"
+       },
+       {
+        "stem": "ἄδικ",
+        "end": "ον",
+        "audio": "939e255b3a7d"
+       }
+      ],
+      [
+       {
+        "stem": "ἄδικ",
+        "end": "οι",
+        "audio": "102bd2418e45"
+       },
+       {
+        "stem": "ἄδικ",
+        "end": "α",
+        "audio": "9d95834ef20a"
+       }
+      ],
+      [
+       {
+        "stem": "ἀδίκ",
+        "end": "ων",
+        "audio": "2cdeb2a959b3"
+       },
+       {
+        "stem": "ἀδίκ",
+        "end": "ων",
+        "audio": "2cdeb2a959b3"
+       }
+      ],
+      [
+       {
+        "stem": "ἀδίκ",
+        "end": "οις",
+        "audio": "57064bc4fd40"
+       },
+       {
+        "stem": "ἀδίκ",
+        "end": "οις",
+        "audio": "57064bc4fd40"
+       }
+      ],
+      [
+       {
+        "stem": "ἀδίκ",
+        "end": "ους",
+        "audio": "0697e6c5bd70"
+       },
+       {
+        "stem": "ἄδικ",
+        "end": "α",
+        "audio": "9d95834ef20a"
+       }
+      ]
+     ]
+    }
+   ],
+   "vocab": [
+    {
+     "type": "vocab",
+     "title": "Hansen & Quinn Unit 4",
+     "entries": [
+      {
+       "head": "ἀγαθός, ἀγαθή, ἀγαθόν",
+       "eng": "good (morally good; serviceable)",
+       "pos": "adjective",
+       "src": "H&Q U4",
+       "audio": "93e6996d055c"
+      },
+      {
+       "head": "ἄν",
+       "eng": "used in some conditional sentences (not translated; never first in its clause)",
+       "pos": "particle",
+       "src": "H&Q U4",
+       "audio": "af086958adc4"
+      },
+      {
+       "head": "ἄξιος, ἀξίᾱ, ἄξιον",
+       "eng": "worthy, worth (+ gen.)",
+       "pos": "adjective",
+       "src": "H&Q U4",
+       "audio": "e8f8a99b5901"
+      },
+      {
+       "head": "ἀνάξιος, ἀνάξιον",
+       "eng": "unworthy (+ gen.)",
+       "pos": "adjective, two endings (alpha privative)",
+       "src": "H&Q U4",
+       "audio": "9dd812ac7cdb"
+      },
+      {
+       "head": "ἀρχή, ἀρχῆς, ἡ",
+       "eng": "beginning; rule, empire",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "963092d52dde"
+      },
+      {
+       "head": "γέφῡρα, γεφῡ́ρᾱς, ἡ",
+       "eng": "bridge",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "798bfa030a72"
+      },
+      {
+       "head": "διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην",
+       "eng": "teach",
+       "pos": "verb",
+       "src": "H&Q U4",
+       "audio": "a02a08274fac"
+      },
+      {
+       "head": "δίκη, δίκης, ἡ",
+       "eng": "justice; lawsuit",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "6dafcf030939"
+      },
+      {
+       "head": "ἄδικος, ἄδικον",
+       "eng": "unjust",
+       "pos": "adjective, two endings (alpha privative)",
+       "src": "H&Q U4",
+       "audio": "347791f6a2de"
+      },
+      {
+       "head": "δίκαιος, δικαίᾱ, δίκαιον",
+       "eng": "just",
+       "pos": "adjective",
+       "src": "H&Q U4",
+       "audio": "ef9448217a69"
+      },
+      {
+       "head": "ἐθέλω, ἐθελήσω, ἠθέλησα, ἠθέληκα, —, —",
+       "eng": "be willing, wish (+ infinitive); οὐκ ἐθέλω: refuse",
+       "pos": "verb; ἐ- belongs to the stem; augment lengthens it to ἠ- (imperf. ἤθελον)",
+       "src": "H&Q U4",
+       "audio": "d2d05768b8c2"
+      },
+      {
+       "head": "εἰ",
+       "eng": "if",
+       "pos": "particle (proclitic)",
+       "src": "H&Q U4",
+       "audio": "23866effb849"
+      },
+      {
+       "head": "ἐάν",
+       "eng": "if (= εἰ + ἄν)",
+       "pos": "particle",
+       "src": "H&Q U4",
+       "audio": "ef09b12aaf17"
+      },
+      {
+       "head": "ἡμέρᾱ, ἡμέρᾱς, ἡ",
+       "eng": "day",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "f601a5696bf0"
+      },
+      {
+       "head": "θάλαττα, θαλάττης, ἡ",
+       "eng": "sea",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "e2ac8001f956"
+      },
+      {
+       "head": "θάπτω, θάψω, ἔθαψα, —, τέθαμμαι, ἐτάφην",
+       "eng": "bury",
+       "pos": "verb",
+       "src": "H&Q U4",
+       "audio": "fc3e1f52e149"
+      },
+      {
+       "head": "καίτοι",
+       "eng": "and further, and yet",
+       "pos": "particle (accent is an exception)",
+       "src": "H&Q U4",
+       "audio": "6835cd5c2d74"
+      },
+      {
+       "head": "κακός, κακή, κακόν",
+       "eng": "bad, evil",
+       "pos": "adjective",
+       "src": "H&Q U4",
+       "audio": "63b1cae0f124"
+      },
+      {
+       "head": "καλός, καλή, καλόν",
+       "eng": "beautiful, noble, good",
+       "pos": "adjective",
+       "src": "H&Q U4",
+       "audio": "41a912c3e3de"
+      },
+      {
+       "head": "μετά",
+       "eng": "(+ gen.) with; (+ acc.) after",
+       "pos": "preposition",
+       "src": "H&Q U4",
+       "audio": "3c4f3eef0f7a"
+      },
+      {
+       "head": "μοῖρα, μοίρᾱς, ἡ",
+       "eng": "fate",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "c3dc67f6c333"
+      },
+      {
+       "head": "μοῦσα, μούσης, ἡ",
+       "eng": "muse",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "a50d4d15494f"
+      },
+      {
+       "head": "νεᾱνίᾱς, νεᾱνίου, ὁ",
+       "eng": "young man",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "19c49a61c8a6"
+      },
+      {
+       "head": "ὅπλον, ὅπλου, τό",
+       "eng": "tool; (pl.) weapons",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "bd1230a4f9d4"
+      },
+      {
+       "head": "ὁπλῑ́της, ὁπλῑ́του, ὁ",
+       "eng": "hoplite, heavy-armed foot-soldier",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "e47656b2966a"
+      },
+      {
+       "head": "πάλαι",
+       "eng": "long ago",
+       "pos": "adverb (also attributive: οἱ πάλαι ἄνθρωποι, men of old)",
+       "src": "H&Q U4",
+       "audio": "8a9382f7595c"
+      },
+      {
+       "head": "ποιητής, ποιητοῦ, ὁ",
+       "eng": "poet, author",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "3a4fddab96c6"
+      },
+      {
+       "head": "πολῑ́της, πολῑ́του, ὁ",
+       "eng": "citizen",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "fe1529d352f9"
+      },
+      {
+       "head": "στρατιώτης, στρατιώτου, ὁ",
+       "eng": "soldier",
+       "pos": "noun",
+       "src": "H&Q U4",
+       "audio": "792b7a1b9058"
+      },
+      {
+       "head": "σύν",
+       "eng": "(+ dat.) with",
+       "pos": "preposition",
+       "src": "H&Q U4",
+       "audio": "3d4a83d1468a"
+      },
+      {
+       "head": "τάττω, τάξω, ἔταξα, τέταχα, τέταγμαι, ἐτάχθην",
+       "eng": "draw up in order, station, appoint",
+       "pos": "verb",
+       "src": "H&Q U4",
+       "audio": "e8df3e3e41fe"
+      },
+      {
+       "head": "φίλος, φίλη, φίλον",
+       "eng": "dear, beloved, one's own",
+       "pos": "adjective",
+       "src": "H&Q U4",
+       "audio": "d57451deb284"
       }
      ]
     }
